@@ -18,8 +18,9 @@ python3 -m jupyter lab hello.ipynb
 ### Windowns
 
 ```
-py -m pip install jupyter jupyterlab
+py -m pip install jupyter 
 py -m pip install matplotlib plotly
+py -m pip install pyyaml
 py -m jupyter lab hello.ipynb
 ```
 
