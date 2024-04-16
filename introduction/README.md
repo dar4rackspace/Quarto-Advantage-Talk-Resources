@@ -28,3 +28,4 @@ py -m jupyter lab hello.ipynb
 
 - [Hello Quarto](https://quarto.org/docs/get-started/hello/jupyter.html)
 - [All Quarto Output Formats](https://quarto.org/docs/output-formats/all-formats.html)
+- [Quarto for the Python User](https://www.jumpingrivers.com/blog/quarto-for-python-users/)
