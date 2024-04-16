@@ -1,0 +1,285 @@
+[
+  {
+    "objectID": "onboarding docs/first_week_onboarding.html",
+    "href": "onboarding docs/first_week_onboarding.html",
+    "title": "Onboarding Guide for Reporting & Analytics Team",
+    "section": "",
+    "text": "PENDING IMAGES: https://raxglobal-my.sharepoint.com/:w:/r/personal/guillermo_pereztello_rackspace_com/_layouts/15/doc2.aspx?sourcedoc=%7Bc3aef85e-7a0e-45c6-aa8e-90452ca5da8a%7D&action=edit&wdPid=a1e27ad",
+    "crumbs": [
+      "First Week @Rackspace",
+      "Onboarding Guide for Reporting & Analytics Team"
+    ]
+  },
+  {
+    "objectID": "onboarding docs/first_week_onboarding.html#logging-in",
+    "href": "onboarding docs/first_week_onboarding.html#logging-in",
+    "title": "Onboarding Guide for Reporting & Analytics Team",
+    "section": "Logging In",
+    "text": "Logging In\n\n\n\n\n\n\nCaution\n\n\n\nMany of the items below require double authentication\n\n\n\nWhen prompted for your SSO, use what is given to you by Help Desk. Your Password for your SSO is something that you will create following the steps that Help Desk provides.\nThe next type of authentication requires your SSO and your RSA Token (app). Instructions for this should be given to you with your laptop.\n\n\n\n\n\n\n\n\nAlways use password to login in your machine.\n\n\n\nThere is a known issue where logging in with PIN on Windows machines will cause issues connecting to SQL Server. This can be done by clicking on “Sign-in Options” and choosing the key icon in the log-in screen.\n\n\n\nIf some of the log-in is not working, make sure that you are connected to the VPN (see below)\nIf you receive your laptop before your start date, don’t set up anything.\n\n\n\n\n\n\n\nTip\n\n\n\nJust in case that that you are having issues with the setup of you computer please connect with:\n\nVíctor Navarrovictor.navarro@rackspace.com\nJohn Spencer john.spencer@rackspace.com\nEduardo Coccaro eduardo.coccaro@rackspace.com",
+    "crumbs": [
+      "First Week @Rackspace",
+      "Onboarding Guide for Reporting & Analytics Team"
+    ]
+  },
+  {
+    "objectID": "onboarding docs/first_week_onboarding.html#computer-setup",
+    "href": "onboarding docs/first_week_onboarding.html#computer-setup",
+    "title": "Onboarding Guide for Reporting & Analytics Team",
+    "section": "Computer setup",
+    "text": "Computer setup\n\nCompany Portal / Software Center: this is the place where you can download all the apps directly from Rackspace\nTry this: click on the windows search on the toolbar, type company portal or portal de compania\n\nIMAGE HEEREEEEEEEEEEEEEEEEE\n\nEnsure your computer is set up with\nSQL Server Management Studio (specifically MS SQL)\n\nZoom\nTeams\nApplication installation requires getting a username and temporary password from LAPS\nNeed to be connected to the VPN\nClick on “Accept Racker UAP and view password”\nWrite down your USERNAME and PASSWORD (if you are unsure of a symbol, then paste the password on a quick note)\n\n\n\n\n\n\n\nNote\n\n\n\n\nDo NOT just copy and paste, write this down somewhere (for System DSN)\nThis password is a temporary password please change it whenever it suits you HEREEEEEEEE\n\n\n\n\nUpdate your Racker Email signature\n\n\nGo to “Outlook”\nClick on “File”\nClick on “Options”\nClick on “Mail” tab\nClick on “Signatures”\nClick on “New”\nGive your signature a name – just something for you reference\nNew Branding Signature. Here is the link so you can update yours: Link 2 Making your Custom Racker Signature\n\n\nGo for the rest of the apps that you will need in your computer, for instance PDF, Winzip, Chrome, etc…",
+    "crumbs": [
+      "First Week @Rackspace",
+      "Onboarding Guide for Reporting & Analytics Team"
+    ]
+  },
+  {
+    "objectID": "onboarding docs/first_week_onboarding.html#vpn-setup",
+    "href": "onboarding docs/first_week_onboarding.html#vpn-setup",
+    "title": "Onboarding Guide for Reporting & Analytics Team",
+    "section": "VPN Setup",
+    "text": "VPN Setup\n\nGlobal protect set up\nConnect to the VPN by clicking on the AppGate icon in the system tray.\n\nIMAGE HERE\n\nEnter the following URL if you have not validated your credentials yet (or whichever link you received for setup)\nValidate your credentials with your RSA Token/password\nOnce done should be like the following image\n\nIMAGE APP GATE",
+    "crumbs": [
+      "First Week @Rackspace",
+      "Onboarding Guide for Reporting & Analytics Team"
+    ]
+  },
+  {
+    "objectID": "onboarding docs/first_week_onboarding.html#sailpoint-access-request",
+    "href": "onboarding docs/first_week_onboarding.html#sailpoint-access-request",
+    "title": "Onboarding Guide for Reporting & Analytics Team",
+    "section": "Sailpoint access request",
+    "text": "Sailpoint access request\nThese are the key groups that you need to request access to. Follow these instructions:\n\nEnter Sailpoint Access Request Page\nRequest Access for these Groups:\n\n\n\n\n\n\n\n\nAD Group Name\nDedicated For\n\n\n\n\nrax-gdo-bianalyst\nBI Analyst (GDO & Others) - Read Only Access of GCP data and services\n\n\nrax-gdo-powerBi\nGDO BI Developer\n\n\nrax-gdo-datascience\nGDO Data Science\n\n\nrax-gdo-gts-bi\nGlobal Technical Support Operations\n\n\napp-qliksense-analyst\nAccess to the dev include folder\n\n\nfs_datawarehouse\nAllows access to the \\rackspace.corpfile share\n\n\nfs_Strategic_Account\nStrategic Team to share files/folder from the shared drive\n\n\njira-cloud-users\nJira\n\n\napp-tableau-creator\nTableau",
+    "crumbs": [
+      "First Week @Rackspace",
+      "Onboarding Guide for Reporting & Analytics Team"
+    ]
+  },
+  {
+    "objectID": "onboarding docs/first_week_onboarding.html#gcp-bigquery-setup",
+    "href": "onboarding docs/first_week_onboarding.html#gcp-bigquery-setup",
+    "title": "Onboarding Guide for Reporting & Analytics Team",
+    "section": "GCP (BigQuery) Setup",
+    "text": "GCP (BigQuery) Setup\n\nGCP access is managed via AD Groups. Please check this link for access.\nOnce registered, you should be able to use Create, Read, Update, and Delete tables within the rax-enterprisebi-dev project:\n\nIMAGE HEREEEEE\n\nAlso for more information about GCP set up\nThis is a great tool to compare your groups to one of your peers. Use it to make sure you have the right access: Identity Access Comparison",
+    "crumbs": [
+      "First Week @Rackspace",
+      "Onboarding Guide for Reporting & Analytics Team"
+    ]
+  },
+  {
+    "objectID": "onboarding docs/first_week_onboarding.html#timesheets",
+    "href": "onboarding docs/first_week_onboarding.html#timesheets",
+    "title": "Onboarding Guide for Reporting & Analytics Team",
+    "section": "Timesheets",
+    "text": "Timesheets\n1.- Start your VPN and go to this link\nIMAGEEEEEEEE\n3.- Click on submit timesheet\nIMAGGEEEEEE\n4.- Select a date and click the populate button.\nIMAGGEEEEEE\n5.- Look at the projects you have assigned. Type the hours you worked. (Change the zeros). Fill up the all the weekdays. There must be 8 hours per workday.\nIMAGGEEEEEE\n\nClick on the Submit button",
+    "crumbs": [
+      "First Week @Rackspace",
+      "Onboarding Guide for Reporting & Analytics Team"
+    ]
+  },
+  {
+    "objectID": "onboarding docs/first_week_onboarding.html#meetings-to-be-aware-of",
+    "href": "onboarding docs/first_week_onboarding.html#meetings-to-be-aware-of",
+    "title": "Onboarding Guide for Reporting & Analytics Team",
+    "section": "Meetings to be aware of",
+    "text": "Meetings to be aware of\n\nBI Daily Standup\nThe BI Daily Standup is our recurring meeting where each member communicates three key points:\n\nThe previous day’s advancements\nThe current day’s objectives\nAny blockers or questions that affect the tickets\n\n\nIn addition to these, our team leaders, scrum master, or product managers may give announcements or ask on specific critical objectives\nIt is also a good moment to raise awareness on any issue that might affect the team’s work (for example, a newly bug found on a commonly used table)\nIf more than a few quick comments are needed for any point, these are usually taken to calls after the standup, to be mindful of everyone’s time\n\n\n\nPeer Reivew/Release Planning\nThere are also two peer review/release planning meetings every week to the vet the Tableau Cloud and Big Query code and apps that are ready to be pushed to production.\n\nThese are mandatory for our team\nFor your development to be peer reviewed, it must first be added to the table at this link\nThe obligatory fields are “App Name”, “Update Description (contains the ticket)”, and Developer (contains your name)",
+    "crumbs": [
+      "First Week @Rackspace",
+      "Onboarding Guide for Reporting & Analytics Team"
+    ]
+  },
+  {
+    "objectID": "onboarding docs/first_week_onboarding.html#innovation-day",
+    "href": "onboarding docs/first_week_onboarding.html#innovation-day",
+    "title": "Onboarding Guide for Reporting & Analytics Team",
+    "section": "Innovation Day",
+    "text": "Innovation Day\n\nThe third Thursday (try saying that quickly) of every month is Innovation Day. During this time, meetings should not be happening, unless they’re related to innovation work\nAll related info on this should be available at inside.rackspace.com\nKeep in mind that innovation does not have to be groundbreaking, technically astounding, nor a full solution – when in doubt, think of small and workable solutions that can help the team or stakeholders (processes, communications, tools, etc.)",
+    "crumbs": [
+      "First Week @Rackspace",
+      "Onboarding Guide for Reporting & Analytics Team"
+    ]
+  },
+  {
+    "objectID": "onboarding docs/first_week_onboarding.html#communication-tools",
+    "href": "onboarding docs/first_week_onboarding.html#communication-tools",
+    "title": "Onboarding Guide for Reporting & Analytics Team",
+    "section": "Communication Tools",
+    "text": "Communication Tools\n\nZoom – Video Conferencing\nOutlook – Email\n\nTeams – chat and Video Conferencing\nJIRA – Internal ticketing and the way we track our work",
+    "crumbs": [
+      "First Week @Rackspace",
+      "Onboarding Guide for Reporting & Analytics Team"
+    ]
+  },
+  {
+    "objectID": "onboarding docs/first_week_onboarding.html#data-intake-process",
+    "href": "onboarding docs/first_week_onboarding.html#data-intake-process",
+    "title": "Onboarding Guide for Reporting & Analytics Team",
+    "section": "Data Intake Process",
+    "text": "Data Intake Process\n\nNew Data requests can be created in DATA Intake Request ?????? or ITS Form\nStakeholders asking for work should always be directed through the portal, or sent to Ashley and Nivruth, to keep our work visible and in-scope (and avoid last-minute requests)\nAny new request will be Triaged by the Product team and the Product Owners and then gets assigned to the right racker.",
+    "crumbs": [
+      "First Week @Rackspace",
+      "Onboarding Guide for Reporting & Analytics Team"
+    ]
+  },
+  {
+    "objectID": "onboarding docs/first_week_onboarding.html#important-links",
+    "href": "onboarding docs/first_week_onboarding.html#important-links",
+    "title": "Onboarding Guide for Reporting & Analytics Team",
+    "section": "Important Links",
+    "text": "Important Links\n\nWiki – Contains all sorts of documentation from teams in RXT. Cansometimes be out-of-date but is invaluable Example:\nGPI Analysis\nInside Rack – Important Internal Rackspace information\nGPS – Logging time off, Annual Reviews, Goals, etc.\nSailPoint – Managing passwords, making process requests\nSNOW – Report an Issue, Software/Application requests\nRackspace Identity Portal (“Finder”) – Very useful if looking up your SSO and permissions from SailPoint.\nIf you can’t access a resource, it’s 95% likely due to you not having a SailPoint permission\n\n\nRXT Data Sources\n\nCORE – Dedicated ticketing, Account Information\nEncore – Cloud ticketing, Account Information\nTeam Files – Central Repository for team work/outputs\nSalesforce – A tool that mostly Sales Rackers use to track inputs for sales metrics and customer information (may not have access – that’s okay, no need for now)\nEl Templo – Mexico office FAQ on access to the office",
+    "crumbs": [
+      "First Week @Rackspace",
+      "Onboarding Guide for Reporting & Analytics Team"
+    ]
+  },
+  {
+    "objectID": "onboarding docs/first_week_onboarding.html#learning-resources",
+    "href": "onboarding docs/first_week_onboarding.html#learning-resources",
+    "title": "Onboarding Guide for Reporting & Analytics Team",
+    "section": "Learning resources",
+    "text": "Learning resources\nREVIEW\n\nMyLearn – Rackspace University\nLynda.com – Additional, more technical training resources – free to Racker (Rackspace funds this, so it’s free for us)\nSafari.com – Additional, more technical training resources – free to Racker (Rackspace funds this, so it’s free for us)\nRackspace Acronyms – Rackspace has a lot of Acronyms – this will help – promise!\nLinkedin Learning",
+    "crumbs": [
+      "First Week @Rackspace",
+      "Onboarding Guide for Reporting & Analytics Team"
+    ]
+  },
+  {
+    "objectID": "index.html#simple-valuebox",
+    "href": "index.html#simple-valuebox",
+    "title": "BI Enterprise Docs",
+    "section": "Simple Valuebox",
+    "text": "Simple Valuebox\n\n\n\n\n\n\n\n\n\nI got\n99 problems\n\nbslib ain't one\n\n\n\n\nhit me"
+  },
+  {
+    "objectID": "index.html#simple-reactable",
+    "href": "index.html#simple-reactable",
+    "title": "BI Enterprise Docs",
+    "section": "Simple Reactable",
+    "text": "Simple Reactable\n\n\nB.I Enterprise \nRelation of Datasource 2 GCP Column Level Information\n\n Authors: Allison Marie Horst, Alison Presmanes Hill, and Kristen B Gorman   Artwork by @allison_horst \n Link to package: {palmerpenguins}"
+  },
+  {
+    "objectID": "index.html#demo-static",
+    "href": "index.html#demo-static",
+    "title": "BI Enterprise Docs",
+    "section": "Demo Static",
+    "text": "Demo Static\n\n\n\n\n\nType\n\n\n\n\nCompact\n\n\n\n\n\nLarge\n\n\n\n\n\nMidsize\n\n\n\n\n\nSmall\n\n\n\n\n\nSporty\n\n\n\n\n\nVan\n\n\n\n\n\n\nPrice\n\n\n\n\nManufacturer"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "[https://one.rackspace.com/display/SDM/Acronyms]"
+  },
+  {
+    "objectID": "about.html#old-acronyms-website",
+    "href": "about.html#old-acronyms-website",
+    "title": "About",
+    "section": "",
+    "text": "[https://one.rackspace.com/display/SDM/Acronyms]"
+  },
+  {
+    "objectID": "about.html#acronyms",
+    "href": "about.html#acronyms",
+    "title": "About",
+    "section": "Acronyms",
+    "text": "Acronyms\n\n\n\n\n\n\n\nAbbreviation\nDefinition\n\n\n\n\nAAA\nAuthentication, Authorization, and Accounting\n\n\nACL\nAccess control list\n\n\nACV\nAnnual Contract Value\n\n\nAccount Team\nSee Support Team\n\n\nAccount Name\nThe name given to the account. In Dedicated this is likely to be the organisation’s name. In Cloud, this is created by the customer representative creating the account so can be anything.\n\n\nAIP\nAccount Intensity Plan\n\n\nAM\nAccount Manager (also see SDM)\n\n\nAMG\nAccount Management Guidelines\n\n\nAOB\nAny Other Business\n\n\nAPI\nApplication Programming Interface\n\n\nARPU\nAverage Revenue Per Unit\n\n\nASR\nAccount Strategy Review\n\n\nAUP\nAcceptable Use Policy\n\n\nBCB\nBlacksburg office according to the IATA airport code protocol.\n\n\nBDA\nBusiness Development Associate\n\n\nBDC\nBusiness Development Consultant\n\n\nBRD\nBusiness Requirements Document\n\n\nBRM\nOracle’s Billing and Revenue Management system. See Oracle’s FAQs about BRM for basic information.\n\n\nCAS\nCritical Application Services\n\n\nCAVA\nCommon Anti-Virus Agent\n\n\nCBT\nComputer-based training\n\n\nCCM\nCustomer Care Manager\n\n\nCChurn\nCloud Churn\n\n\nCE\nClient Executive\n\n\nCI/CD\nContinuous Integration/Continuous Delivery\n\n\nCEC\nCustomer Experience Center\n\n\nCES\nCustomer Effort Score\n\n\nChurn Pipeline\nA forecast of future churn with varying levels of probability of that churn occurring. The pipeline is created and maintained in CORE. It is also known as System Churn.\n\n\nControl Plane\nOpenStack Project APIs (Application Programming Interfaces) used to perform various functions on the Rackspace Private Cloud System.\n\n\nCORE\nThe operational system for Dedicated accounts, devices and tickets.\n\n\nCP2/CP3\nEmail & Apps Control Panel\n\n\nCSM\nCustomer Success Manager (previously also called Service Delivery Manager (SDM) or Account Manager (AM)\n\n\nCVP\nContract Verification Processing\n\n\nDAS\nDirect-attached storage\n\n\nDBA\nDatabase Administrator\n\n\nDBaaS\nDatabase as a Service\n\n\nDC\nData Center\n\n\nDCR\nDelta Cloud Revenue\n\n\nDChurn\nDedicated Churn\n\n\nDCOps\nDatacenter Operations\n\n\nDD\nDesign Document\n\n\nDFW\nRackspace Data Center in the Dallas/Fort Worth area, named after the DFW airport.\n\n\nDHR\nDelta Hosting Revenue\n\n\nDNS\nDomain Name Service\n\n\nDDoS\nDistributed Denial of Service Attack\n\n\nDMG\nDevice Management Guidelines\n\n\nDNSaaS\nDomain Name System as a Service\n\n\nDom0\nDomain zero\n\n\nDomU\nDomain unprivileged\n\n\nDR\nDisaster recovery\n\n\nDDTC\nDevice Due To Customer: The Percentage of On Time dedicated Device Deployments Due to the Customer.\n\n\nDTC\nDue To Customer: The Percentage of On Time dedicated Deployments Due to the Customer.\n\n\nDQD\nDiscovery Question Document\n\n\nELE\nExtinction Level Event. This was the code name for the project that became MaaS.\n\n\nE&A\nEmail & Apps\n\n\nEMEA\nEurope, Middle East and Africa, usually referring to the markets in these regions.\n\n\nEncore\nThe operational system for Cloud accounts, devices and tickets.\n\n\nEOL\nEnd of life (for a product)\n\n\nESE\nEnterprise Support Engineer (similar to Lead Engineer or LE)\n\n\nESS\nEncore Support Service. A global system that maintains relationships between teams, segments, sub-segments, business units.\n\n\nETS\nEnterprise Technical Support\n\n\nFDM\nFanatical Delivery Model\n\n\nLBaaS\nLoad balancer as a service\n\n\nGA\nGeneral Availability\n\n\nGDCI\nGlobal Data Center Infrastructure\n\n\nGPS\nGlobal People System. The system for People and HR related data.\n\n\nGRDS\nGeneral Rackspace Services Description\n\n\nGSS\nGlobal Security Services\n\n\nGTS\nGlobal Technical Support\n\n\nHEX\nHosted Microsoft Exchange service at Rackspace.\n\n\nHIPS\nHost Intrusion Prevention Systems\n\n\nHKG\nRackspace Data Center in Hong Kong, named after Hong Kong airport.\n\n\nHLP\nHigh Level Proposal (old name - now known as PD)\n\n\nHIPAA\nHealth Insurance Portability and Accountability Act\n\n\nHMDB\nHosting Matrix Data Base\n\n\nIAD\nRackspace Data Center in Dulles, named after Dulles airport in D.C.\n\n\nIB\nCustomer installed base\n\n\nIC\nImplementation Coordinator\n\n\nIDL\nInterface Description Language\n\n\nIDM\nIdentity management\n\n\nIDS/IPS\nIntrusion Detection System / Intrusion Prevention System\n\n\nIMAP\nInternet Message Access Protocol. See the Wikiipedia article Internet Message Access Protocol.\n\n\nIR\nImmediate Reactions\n\n\nIRC\nInternet Relay Chat. At Rackspace, this is the internal IRC system (irc.intra.rackspace.com). See the Wikipedia article IRC.\n\n\nISP\nInternet Service Provider.\n\n\nISR\nInside Sales Representative / Internal Strategy Review\n\n\nITPS\nInnovation Technical Planning Session\n\n\nITSM\nInformation Technology Service Management\n\n\nITIL\nIT Information Library - the implementation of ITSM that Rackspace is adopting\n\n\nKIR\nKick in the Rack\n\n\nK-RACK\nRackspace radio station\n\n\nKVM\nKernel-based Virtual Machine (KVM)\n\n\nLAMP\nLinux, Apache, MySql, and PHP (or sometimes Python or Perl).\n\n\nLDAP\nLightweight Directory Access Protocol. See the Wikipedia article LIghtweight Directory Access Protocol for an overview.\n\n\nLE\nLead Engineer (sometimes referred to as Lead Tech)\n\n\nLOE\nLevel Of Effort. This provides an estimate of time to complete a task.\n\n\nLON\nRackspace Data Center in London, named after London airport\n\n\nLT\nLead Technician\n\n\nMAR\nMonthly Account Review\n\n\nMAS\nManaged Application Services\n\n\nMaaS\nMonitoring as a Service, the project also known as ELE.\n\n\nMAMP\nFor the Mac platform, package of Apache, MySql, and PHP (or sometimes Python or Perl).\n\n\nMEX\nManaged Microsoft Exchange service at Rackspace.\n\n\nMPC\nManaged Public Cloud\n\n\nMRR\nMonthly Recurring Revenue\n\n\nMSA\nMaster Services Agreement\n\n\nMSR\nMonthly Service Review\n\n\nMVP\nMinimal Viable Product. This is used to describe a product with the minimum number of features which is still a viable product.\n\n\nNIST\nNational Institute of Standards and Technology\n\n\nNOC\nNetwork Operations Center\n\n\nNPS\nNet Promoter Score. See term in main glossary.\n\n\nNVP\nNetwork virtualization platform\n\n\nOCP\nOpen Compute Project\n\n\nONO\nOnline not in Oracle\n\n\nOracle\nThe Finance system\n\n\nORD\nRackspace Data Center in Chicago, named after Chicago airport.\n\n\nOSPC\nOpenStack Public Cloud\n\n\nOTC\nOn Time to Customer. Implementation measure of time from receipt of contract to all devices in the deployment being Online /Complete.\n\n\nPCI\nPayment Card Industry\n\n\nPD\nProposal Design\n\n\nPEN testing\nPenetration Testing\n\n\nPHI\nProtected Health Information\n\n\nPIN\nPersonal Identification Number\n\n\nPLL\nProduct Line Leader\n\n\nPM\nProject Manager or Product Manager.\n\n\nPAPI\nPower API. See Repose.\n\n\nPMO\nProgram Management Office\n\n\nPOP\nPost Office Protocol\n\n\nPPM\nPolicy and Procedures Manual\n\n\nPSH\nPublisher-Subscriber Hub, or PubSubHub for short.\n\n\nPV-OPS\nparavirt_ops or paravirtualized operations\n\n\nQBR\nQuarterly Business Review\n\n\nQE\nQuality Engineering\n\n\nQEMU\nQuick emulator\n\n\nQM\nQueue Management\n\n\nRBA\nRunbook automation\n\n\nRBAC\nRole-Based Access Control: the ability to control access to a product or service in a fine-grained way, so that people in different groups can access different parts of the service.\n\n\nRED\nRackspace Experience Design\n\n\nRGB\nRack Gives Back. Rackers get time off work to participate in community and charitable activities.\n\n\nRBAC\nRole-based access control\n\n\nRMS\nRackspace Managed Security\n\n\nRPC\nRackspace Private Cloud\n\n\nRRR\nRacker Rally Room\n\n\nRTS\nRackspace Technical Services\n\n\nRU\nRackspace University\n\n\nSA3\nSuperAdmin3\n\n\nSaaS\nSoftware as a Service\n\n\nSAN\nStorage Area Network\n\n\nSAT\nRackspace Data Center in San Antonio, named after San Antonio airport.\n\n\nSBD\nSecurity By Design\n\n\nSCIM\nSingle Customer Incident Management\n\n\nSDA\nService Delivery Associate\n\n\nSDD\nSolutions Design Document\n\n\nSDM\nService Delivery Manager (also see Account Manager)\n\n\nSDP\nService Delivery Plan\n\n\nSE\nSolutions Engineer\n\n\nSFDC\nSalesforce\n\n\nSegment\nA name given to a grouping of like Support Teams.\n\n\nSLA\nService Level Agreement\n\n\nSLT\nSenior Leadership Team\n\n\nSMP\nService Management Plan\n\n\nSMR\nService Management Report\n\n\nSSE\nSenior Support Engineer\n\n\nSSL\nSecure Socket Layer. This refers to a technology and team at Rackspace that have nothing to do with maintaining Segment to Team relationships. There is a common mi-understanding that SSL stands for Support Service Layer and carries out the function of ESS.\n\n\nSSO\nSingle Sign On\n\n\nSOA\nService-oriented architecture\n\n\nSOAP\nSimple Object Access Protocol\n\n\nSLA\nService Level Agreement\n\n\nSLT\nSenior Leadership Team\n\n\nSME\nSubject Matter Expert. A Racker that is recognised as knowledgeable in their field.\n\n\nSSL\nSecure Socket Layer. This refers to a technology and team at Rackspace and IS NOT the system that maintains segment hierarchies. See ESS for information on this.\n\n\nSupport Team\nA grouping of SDMs with a CCM managing the team. Like accounts are placed with a Support Team who manage the relationship between the accounts and Rackspace. Current examples of support Teams are EM1, Cirrus TRN1.\n\n\nSYD\nData Center in Sydney, Australia\n\n\nSystem Churn\nSee Churn Pipeline.\n\n\nTAM\nTechnical Account Manager\n\n\nTCV\nTotal Contract Value\n\n\nTPM\nTechnical Product Manager\n\n\nTSR\nTechnical Service Review\n\n\nUX\nUser Experience\n\n\nVC\nVideo Conference\n\n\nWAF\nWeb Application Firewall\n\n\nXAPI\nXen Management API"
+  },
+  {
+    "objectID": "bi-infrastructure.html",
+    "href": "bi-infrastructure.html",
+    "title": "B.I Enterprise Infrastructure",
+    "section": "",
+    "text": "Big Query is used as the landing place for most datasources @ Rackspace in the form of ods (original datasource). Then that information is used, replicated and transformed by different Google Projects across the organization. Below is a rough sketch of the databases identified that point towards Big Query:\n\n\n\n\n\n---\ntitle: \"ODS identified that have a dataset in BigQuery\"\n---\n\ngraph TD;\n\n BigQuery[(BigQuery)]\n\nsubgraph \"Customer Management\"\n    Datasource1[(Salesforce)] \n    Datasource4[(Inhouse CMS)]\n    Datasource6[(Encore)] \nend\n\nDatasource1[(Salesforce)] --&gt; |salesforce_ods| BigQuery;\n    Datasource4[(Inhouse CMS)] --&gt; |cms_ods| BigQuery;\n    Datasource6[(Encore)] --&gt; |encore_ticketing_ods|BigQuery;\n    \nsubgraph \"Billing\"\n    Datasource2[(Oracle BRM)] \nend\n\nDatasource2[(Oracle BRM)] --&gt; |brm_ods| BigQuery;\n\nsubgraph \"IT Services\"\n    Datasource5[(Core)] \n    Datasource7[(VMWare)]\n    Datasource8[(SCCM)] \n    Datasource9[(Microsoft365)]\nend\n\nsubgraph \"B.I Internal\"\n    Datasource10[(Jira)] \n    Datasource11[(Tableau)]\n    Datasource12[(PowerBI)] \nend\n\n Datasource5[(Core)] --&gt; |core_ods| BigQuery;\n    Datasource7[(VMWare)] --&gt; |double check| BigQuery;\n    Datasource8[(SCCM)] --&gt; |PENDING: system center configuration manager| BigQuery;\n    Datasource10 --&gt; |jira_ods| BigQuery"
+  },
+  {
+    "objectID": "bi-infrastructure.html#the-datalake",
+    "href": "bi-infrastructure.html#the-datalake",
+    "title": "B.I Enterprise Infrastructure",
+    "section": "",
+    "text": "Big Query is used as the landing place for most datasources @ Rackspace in the form of ods (original datasource). Then that information is used, replicated and transformed by different Google Projects across the organization. Below is a rough sketch of the databases identified that point towards Big Query:\n\n\n\n\n\n---\ntitle: \"ODS identified that have a dataset in BigQuery\"\n---\n\ngraph TD;\n\n BigQuery[(BigQuery)]\n\nsubgraph \"Customer Management\"\n    Datasource1[(Salesforce)] \n    Datasource4[(Inhouse CMS)]\n    Datasource6[(Encore)] \nend\n\nDatasource1[(Salesforce)] --&gt; |salesforce_ods| BigQuery;\n    Datasource4[(Inhouse CMS)] --&gt; |cms_ods| BigQuery;\n    Datasource6[(Encore)] --&gt; |encore_ticketing_ods|BigQuery;\n    \nsubgraph \"Billing\"\n    Datasource2[(Oracle BRM)] \nend\n\nDatasource2[(Oracle BRM)] --&gt; |brm_ods| BigQuery;\n\nsubgraph \"IT Services\"\n    Datasource5[(Core)] \n    Datasource7[(VMWare)]\n    Datasource8[(SCCM)] \n    Datasource9[(Microsoft365)]\nend\n\nsubgraph \"B.I Internal\"\n    Datasource10[(Jira)] \n    Datasource11[(Tableau)]\n    Datasource12[(PowerBI)] \nend\n\n Datasource5[(Core)] --&gt; |core_ods| BigQuery;\n    Datasource7[(VMWare)] --&gt; |double check| BigQuery;\n    Datasource8[(SCCM)] --&gt; |PENDING: system center configuration manager| BigQuery;\n    Datasource10 --&gt; |jira_ods| BigQuery"
+  },
+  {
+    "objectID": "bi-infrastructure.html#the-b.i-tools",
+    "href": "bi-infrastructure.html#the-b.i-tools",
+    "title": "B.I Enterprise Infrastructure",
+    "section": "The B.I Tools",
+    "text": "The B.I Tools\nFor now tableau the architecture is as follows:\nA dashboard in tableau is a Workbook with a collection of 1 or more Views. A Workbook needs at least 1 Datasource to connect to. Most connections we have are with BigQuery but its possible to have others.\nFor compliance and governability is best advise to seek to land all information in BigQuery, and from there connect to tableau.\n\n\n\n\n\n\n\n\ngraph TD;\n\nsubgraph \"Tableau Environment\"\nsubgraph \"Tableau Dashboard\"\n    Views --&gt; Workbooks;\nend\n\n    Workbooks --&gt; Datasources;\n\nsubgraph \"Datasources\"\n    BQTables;\n    GoogleSheets;\n    ODS;\nend\n\n    Datasources --&gt; |BigQuery Tables| BQTables;\n    Datasources --&gt; |Google Sheets| GoogleSheets;\n    Datasources --&gt; |Operational Data Stores| ODS;\n\nend\n\n\n\n\n\n\n\n\nFigure 1"
+  },
+  {
+    "objectID": "onboarding docs/bi_sql_development_standards.html",
+    "href": "onboarding docs/bi_sql_development_standards.html",
+    "title": "BI SQL Development Standards",
+    "section": "",
+    "text": "This Document contained BI development standards…..",
+    "crumbs": [
+      "Our Best Practices",
+      "BI SQL Development Standards"
+    ]
+  },
+  {
+    "objectID": "onboarding docs/bi_sql_development_standards.html#dataform-standards",
+    "href": "onboarding docs/bi_sql_development_standards.html#dataform-standards",
+    "title": "BI SQL Development Standards",
+    "section": "Dataform Standards",
+    "text": "Dataform Standards\nThe exact same as the BigQuery standards apply to Dataform, with the following exceptions:\n\nA single sqlx script generates a single table / view\nAll tables created in Dataform go to rax-enterprisebi.dataform.&lt;table_name&gt; (production) or rax-enterprisebi-dev.dataform.&lt;table_name&gt; (development)\nThere are no prefixes nor suffixes to sqlx scripts. The only rule is &lt;report_name&gt;.sqlx or &lt;report_name&gt;_&lt;table_name&gt;.sqlx (if more than one table)\nSingle table in report: report_specific/account_alignment/account_alignment.sqlx\nOne of multiple tables in same report: report_specific/pull_account/pull_account_contact_info.sqlx\nTable creation, documentation, clustering, etc. happen in the config object\nVariable declarations happen in the pre_operations object\nOperation sqlx scripts are used to do anything outside table creation - such as exporting data to GCS",
+    "crumbs": [
+      "Our Best Practices",
+      "BI SQL Development Standards"
+    ]
+  },
+  {
+    "objectID": "onboarding docs/bi_sql_development_standards.html#bigquery-standards",
+    "href": "onboarding docs/bi_sql_development_standards.html#bigquery-standards",
+    "title": "BI SQL Development Standards",
+    "section": "BigQuery Standards",
+    "text": "BigQuery Standards\n\nGeneral Coding Practices\n\nTables\n\nDo not use nesting for subqueries, unless they’re extremely simple. Use CTEs instead (or temporary tables if CTEs are not an option)\nThree-part naming standards must be followed when referring to datasets (e.g. rax-landing-dev.cms_ods.customer_account)\nWhen querying more than one table:\n\nAll tables should be aliased with 1-3 characters (Iines 31, 32, 35)\nAll field names should be preceded by the table alias in the query (l. 17-30)\nAll tables and field names must be snake_case (lowercase letters, with words separated by underscores)\nTables and column names must not set reserved words (i.e. function names)\nFields should be aliased with AS instead of using the = keyword (l. 7)\n\n\n\n\nComments\n\nCode should have sections and in line comments indicating what is happening:\n\nSections should use multi-line comments (lines 1-3)\nSpecific purpose of the code can be documented with one-line comments (l. 4)\n\n\n\n\nLine format\n\nEach new field should be carried down to its own line.\nCommas should be placed at the end of the line, and not at the beginning.\nCase statements should be structured and indented as shown (l. 19-23).\n\n\n\nKey Words\n\nAll keywords (SELECT, FROM, JOIN, WHERE, GROUP BY, HAVING, INTO, CASE, SUM, COUNT, etc.) should be all caps.\nThe GROUP BY statement should be written with field names all on the same line.\n\n\n\nVariables\n\nUse declared variables when programming hard-coded dates (ie: min / max dates) or conditions that are repeated.\nVariable names must always start with v_. This is done in order to make it easier to find variables within the script (e.g.: v_min_date).\n\n\n\nNested queries (don’t)\n\nNested queries (sub selects) should be avoided, and temp tables or common table expressions should be used instead. This makes code easier to read and maintain.\n\n\n\nOperators\n\nFor mostly all operators such as =, +, &gt;=, &lt;=, &gt;, &lt;, there needs to be only one space before and after each operator:\n\nCorrect Formatting - Operators\n\nTHIS:\n\nfoo + bar\n\nNOT THIS:\n\nfoo+ bar\nfoo +bar\nfoo+bar\n\n\nThe only exceptions are parentheses, quotes and brackets:\n\nCorrect Formatting - Operators\n\nTHIS:\n\nCAST(foo AS STRING)\n\nNOT THIS:\n\nCAST( foo AS STRING )\nCAST(foo AS STRING )\nCAST( foo AS STRING)\n\n\n\n\n\n\n\nComments\n\nCode is thoroughly commented so any developer can understand what it is doing when necessary. The proper way to comment is shown below.\n\nProper Commenting On Qlik Code (Multiline)\n\n\n    /*********************************************************************************************\n    Insert comment here\n    This is a multiline comment - best used at the start of sections\n    *********************************************************************************************/\n    SELECT foo\n    FROM bar # This is an in-line comment\n\n\nIndentation\n\nCode is consistently indented properly to make it readable. This means it can follow any of the below examples (but not mix their rules)\n\nAlingment examples\n\n– Format A: Indent by alighning on field name\n\nSELECT foo, bar, CASE WHEN foo = 1 THEN foo WHEN foo = 0 THEN no_foo ELSE NULL END AS foo_flag FROM foo_bar_table;\n\n– Format B: Indent on tab (4 spaces)\n\nSELECT DISTINCT foo, bar, CASE WHEN foo = 1 THEN foo WHEN foo = 0 THEN no_foo ELSE NULL END AS foo_flag FROM foo_bar_table;\n\n\nRegardless of which indentation rules are used, tabs are converted to spaces to avoid GitHub messing up file readability (for more on this, read What’s the deal with tab sizes on GitHub Gists? - GitHub Help / How to use Git and GitHub - GitHub Community)\nThis changes nothing in the script itself, except the way in which the IDE processes indentation, so your code should look the same.\nYou can set this once and forget it in any IDE, usually through a menu or the command palette (SHIFT+CTRL+P).\nHere’s how to do it for the more popular IDEs: Notepad ++ | VSCode | Sublime | Atom\nFor an example of how tabs affect document formatting, look at how the dots (spaces) and arrows (tabs) look in the IDE (left) vs GitHub (right):",
+    "crumbs": [
+      "Our Best Practices",
+      "BI SQL Development Standards"
+    ]
+  },
+  {
+    "objectID": "onboarding docs/bi_sql_development_standards.html#optimization-guidelines-for-bi-report-building",
+    "href": "onboarding docs/bi_sql_development_standards.html#optimization-guidelines-for-bi-report-building",
+    "title": "BI SQL Development Standards",
+    "section": "Optimization Guidelines for BI Report Building",
+    "text": "Optimization Guidelines for BI Report Building\n\nLIMIT N does not reduce query cost.\nDo not use SELECT * unless you need all the columns in a table. Each column queried increases cost.\n\n“But I need 19 out of 20 fields and writing them all is just wasted space…” - use SELECT * EXCEPT(field_name).\nSELECT * EXCEPT() must not be used to pull data from a source table (i.e. a table outside the scope of the BI report that is used as the source of data).\n\nUse the partitioning and clustering fields in WHERE and JOIN clauses to reduce costs.\nUse UNION ALL instead of UNION DISTINCT where possible.\nDo not use complicated calculated fields in JOINS or GROUP BY clauses.\n\nCreate the key fields beforehand in temporary tables.\n\nDo not use OR in JOIN statements. This is extremely slow.\n\nSeparate your table into smaller pieces, do the separate JOINS and then UNION the new tables instead.\n\nDo not use views to query other views, unless these views are from a different report, dataset, or project.",
+    "crumbs": [
+      "Our Best Practices",
+      "BI SQL Development Standards"
+    ]
+  },
+  {
+    "objectID": "onboarding docs/bi_sql_development_standards.html#table-view-creation-standards",
+    "href": "onboarding docs/bi_sql_development_standards.html#table-view-creation-standards",
+    "title": "BI SQL Development Standards",
+    "section": "Table / View Creation Standards",
+    "text": "Table / View Creation Standards\n\nStored Procedure Scripts\n\nNames for stored procedures all start with udsp_ and end in either _full or _incremental, depending on the load type.\n\nFull means the entire table is truncated and all data is inserted from scratch, every time it reloads.\nIncrement al means only the latest part of the table is truncated and replaced by new data. This is more efficient, but also harder to code.\n\nThe entire stored procedure should be contained in a single script.\nStored procedures must NOT create tables. They must instead truncate / delete and insert data to tables created by table creation scripts.\nAll stored procedures must include error handling.\nAll stored procedures must invoke the logging for load dependencies.\nThere are specific folders for report-specific and general-reporting scripts in the GitHub repo.\n\nStored Proc Boilerplate \nCREATE OR REPLACE PROCEDURE `rax-enterprisebi.report_specific / report_table.TABLE NAME`()\nBEGIN\n    DECLARE log_start TIMESTAMP DEFAULT CURRENT_TIMESTAMP(); # This is used for table logging\n    BEGIN\n        CALL `rax-enterprisebi.load_dependencies.udsp_table_load_log`('report_specific / report table', 'Table name', 'SP Name', log_start, NULL, NULL); # Invoke table logging\n        ------\n        /*************************************************************************************\n        Section notes go here\n        *************************************************************************************/\n        &lt;CTE or Temp table creation code goes here&gt;\n\n        # If above query was successful, truncate table\n        TRUNCATE TABLE `TABLE NAME`;\n\n        # Insert new data into table\n        INSERT INTO `TABLE NAME` \n        SELECT * \n        FROM `TEMP TABLE NAME`;\n\n        # Call table log as completed\n        CALL`rax-enterprisebi.load_dependencies.udsp_table_load_log`('report_specific / report table', 'Table name', 'SP Name', log_start, CURRENT_TIMESTAMP(), NULL);\n\n    # Call table log as failed, including error message\n    EXCEPTION WHEN ERROR THEN   \n        CALL`rax-enterprisebi.load_dependencies.udsp_table_load_log`('report_specific / report table', 'Table name', 'SP Name', log_start, CURRENT_TIMESTAMP(), @@error.message);\n\n        # Restore table back to original to ensure it is not empty\n        INSERT INTO `TABLE NAME` \n        SELECT * FROM `TEMP TABLE NAME` \n        FOR SYSTEM_TIME AS OF log_start\n    END;\nEND\n\nTable Creation Scripts (for Stored Procedures)\n\nPartitioning and clustering should be added to final tables where it makes sense.\n\nKeep in mind there is a limit of 4000 unique partition values on a table (~10 years, or way more if partitioning by month).\nTo partition by month, use a truncated date field. This avoids confusion and allows for better data handling in Tableau.\n\nIf incremental loading will be used for the table, add a partition expiration.\nThe name for the table creation script should be the name of the table.\nAn individual table creation script is needed for every table created (this should be changed) ??????????????????????\n\n\n\nTable Creation Example\nCREATE OR REPLACE TABLE `rax-enterprisebi.report_specific.account360_account_data`(\n account_number STRING,\n account_type STRING,\n account_id STRING,\n company_name STRING,\n company_name_filter_a STRING,\n company_name_filter_b STRING,\n top_200_salesforce BOOLEAN,\n naics_description STRING,\n discoverorgid STRING,\n parent_id STRING,\n account_identifier STRING,\n date_partition DATE #Need to partition table in order to cluster\n)\nPARTITION BY DATE_TRUNC(date_partition, MONTH)\nCLUSTER BY account_type, account_number, account_identifier, account_id;\n\n\n\nView Creation Scripts\n\nViews should follow the same naming convention as other tables (we do not prefix with vw_ now, as table functions can change)\nAll views for a specific workbook / report should be contained within a single script.\nViews should only be used at the very end of the data flow, as inputs for BI reports, such as Tableau workbooks, for example.\n\n\n\nWhen Should I Use a Stored Proc and When Should I Use a View?\n\nUse a stored procedure when:\n\nThe operation is data intensive and creates big tables (query times greater than a minute in BQ).\nTable logging is required.\nThe output will be used by more than one BI report.\nA custom function or variables need to be defined.\n\nUse a view when:\n\nThere is a clear need for the data to be calculated at the time of the query.\nThere are only small changes needed to an existing general-use table, like new field calculations.\n\n\n\n\n\n\n\n\nDO NOT USE A VIEW\n\n\n\n\nTo query another view within the scope of the same BI report. This is expensive, inefficient, and hard to maintain.\nEither query the source table behind the view or refactor your script.\n\n\n\n\nTo change data types for existing tables.\n\nData types can be changed by refactoring the source table, or inside the Tableau Data Source.\nViews that are used for multiple workbooks should be turned into stored procedures that create general-reporting tables. This reduces query time and costs:\n\nIMAGEEEEEEEEEEEEEEEEE",
+    "crumbs": [
+      "Our Best Practices",
+      "BI SQL Development Standards"
+    ]
+  },
+  {
+    "objectID": "onboarding docs/bi_sql_development_standards.html#github",
+    "href": "onboarding docs/bi_sql_development_standards.html#github",
+    "title": "BI SQL Development Standards",
+    "section": "GitHub",
+    "text": "GitHub\n\nWe use GitHub as our Version Control System (VCS).\nOur GitHub workflow is based off of Understanding the GitHub Flow\nYou can work with GitHub through the UI or using git command line, whichever is more comfortable for you\nTeam walkthrough video can be found here with passcode 33n*$gWg DEPRECATED!\n\n\nGitHub Access\n\nTo develop tables and stored procedures for the rax-enterprisebi project, you will need to request access to rax-gdo-bideveloper through SailPoint.\nIf not developing tables and stored procedures, please work with the Ops team to determine the proper group for access.\n\n\n\nBranches:\n\nMain will reflect the code that is running on production\n\nNo development work should be done on the main branch\nAll code on the main branch has been reviewed\n\nA new branch is created for each feature being worked\n\nAfter a pull request/review is completed for the feature branch, the items can be merged with main and the branch removed",
+    "crumbs": [
+      "Our Best Practices",
+      "BI SQL Development Standards"
+    ]
+  },
+  {
+    "objectID": "onboarding docs/bi_sql_development_standards.html#bigquery-vcs",
+    "href": "onboarding docs/bi_sql_development_standards.html#bigquery-vcs",
+    "title": "BI SQL Development Standards",
+    "section": "BigQuery VCS",
+    "text": "BigQuery VCS\n\nAll GCP table and stored procedure code is stored in our entreprise GitHub repository\nEdit: most of these tables will eventually be migrated into the new Dataform repository, which allows for CI/CD with our BI code: rax-bivis/dataform\n\n\nAccess\n\nRequest access to github-cloud-users through SailPoint\nCreate a public GitHub account\nYou must use your full name and Rackspace email\nYour username must be your SSO\nTwo-factor authentication must be enabled\nAdd your GitHub username to the identity portal\nRequest access to Global Data Office by submitting a JIRA request to GDO\n\nExample ticket\n\nFolders:\n\nThe folders in GitHub will be the same as the datasets in GCP and there will be a separate folder for tables and stored procedures\nYour create table statements will go into the tables folder\nThe stored procedures used to populate the table will go in the stored procedures folder\nYou may have more than one stored procedure per table (one that is full and a second that is incremental, if applicable)\n\n\n\n\nProcess Details:\n\nClone the main branch to your computer git clone and git pull\nCreate a new branch for you feature/development git branch\n\nAdd new .sql files with your BigQuery code OR edit existing files\n\nAdd your files to your branch git add and commit them git commit and when you are ready for review git push\nCreate a pull request and fill in the Developer items on the pull request template (to make this easiest, this entire step should be done through the UI on GitHub’s website)\n\nAsk someone to review (reviews will also be assigned in the bi-weekly peer review meetings)\nReviewer reviews code and comments on any changes that are needed\n\nReviewer must check all boxes in the pull request template\nReviewer should only approve pull request when it is deemed ready for production\n\n\nAfter pull request is approved, it can be merged with main, deployed to production (rax-enterprisebi), and the development/feature branch can be removed\nDeployment is a manual process right now and will be done by the Developer",
+    "crumbs": [
+      "Our Best Practices",
+      "BI SQL Development Standards"
+    ]
+  }
+]

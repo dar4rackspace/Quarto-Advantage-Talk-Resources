@@ -1,0 +1,194 @@
+---
+title: "About"
+---
+
+## Old acronyms website
+
+[https://one.rackspace.com/display/SDM/Acronyms]
+
+## Acronyms
+
+| Abbreviation | Definition                                                                                                 |
+|--------------|------------------------------------------------------------------------------------------------------------|
+| AAA          | Authentication, Authorization, and Accounting                                                              |
+| ACL          | Access control list                                                                                        |
+| ACV          | Annual Contract Value                                                                                      |
+| Account Team | See Support Team                                                                                           |
+| Account Name | The name given to the account. In Dedicated this is likely to be the organisation's name. In Cloud, this is created by the customer representative creating the account so can be anything. |
+| AIP          | Account Intensity Plan                                                                                     |
+| AM           | Account Manager (also see SDM)                                                                             |
+| AMG          | Account Management Guidelines                                                                               |
+| AOB          | Any Other Business                                                                                         |
+| API          | Application Programming Interface                                                                          |
+| ARPU         | Average Revenue Per Unit                                                                                   |
+| ASR          | Account Strategy Review                                                                                    |
+| AUP          | Acceptable Use Policy                                                                                      |
+| BCB          | Blacksburg office according to the IATA airport code protocol.                                             |
+| BDA          | Business Development Associate                                                                             |
+| BDC          | Business Development Consultant                                                                            |
+| BRD          | Business Requirements Document                                                                             |
+| BRM          | Oracle's Billing and Revenue Management system. See Oracle's FAQs about BRM for basic information.        |
+| CAS          | Critical Application Services                                                                               |
+| CAVA         | Common Anti-Virus Agent                                                                                    |
+| CBT          | Computer-based training                                                                                    |
+| CCM          | Customer Care Manager                                                                                      |
+| CChurn       | Cloud Churn                                                                                                |
+| CE           | Client Executive                                                                                           |
+| CI/CD        | Continuous Integration/Continuous Delivery                                                                |
+| CEC          | Customer Experience Center                                                                                 |
+| CES          | Customer Effort Score                                                                                      |
+| Churn Pipeline | A forecast of future churn with varying levels of probability of that churn occurring. The pipeline is created and maintained in CORE. It is also known as System Churn. |
+| Control Plane | OpenStack Project APIs (Application Programming Interfaces) used to perform various functions on the Rackspace Private Cloud System. |
+| CORE         | The operational system for Dedicated accounts, devices and tickets.                                         |
+| CP2/CP3     | Email & Apps Control Panel                                                                                 |
+| CSM          | Customer Success Manager (previously also called Service Delivery Manager (SDM) or Account Manager (AM)    |
+| CVP          | Contract Verification Processing                                                                           |
+| DAS          | Direct-attached storage                                                                                    |
+| DBA          | Database Administrator                                                                                     |
+| DBaaS        | Database as a Service                                                                                      |
+| DC           | Data Center                                                                                                |
+| DCR          | Delta Cloud Revenue                                                                                        |
+| DChurn       | Dedicated Churn                                                                                            |
+| DCOps        | Datacenter Operations                                                                                      |
+| DD           | Design Document                                                                                            |
+| DFW          | Rackspace Data Center in the Dallas/Fort Worth area, named after the DFW airport.                          |
+| DHR          | Delta Hosting Revenue                                                                                      |
+| DNS          | Domain Name Service                                                                                        |
+| DDoS         | Distributed Denial of Service Attack                                                                       |
+| DMG          | Device Management Guidelines                                                                               |
+| DNSaaS       | Domain Name System as a Service                                                                            |
+| Dom0         | Domain zero                                                                                                |
+| DomU         | Domain unprivileged                                                                                        |
+| DR           | Disaster recovery                                                                                          |
+| DDTC         | Device Due To Customer: The Percentage of On Time dedicated Device Deployments Due to the Customer.        |
+| DTC          | Due To Customer: The Percentage of On Time dedicated Deployments Due to the Customer.                      |
+| DQD          | Discovery Question Document                                                                                |
+| ELE          | Extinction Level Event. This was the code name for the project that became MaaS.                            |
+| E&A          | Email & Apps                                                                                               |
+| EMEA         | Europe, Middle East and Africa, usually referring to the markets in these regions.                          |
+| Encore       | The operational system for Cloud accounts, devices and tickets.                                            |
+| EOL          | End of life (for a product)                                                                                |
+| ESE          | Enterprise Support Engineer (similar to Lead Engineer or LE)                                                |
+| ESS          | Encore Support Service. A global system that maintains relationships between teams, segments, sub-segments, business units. |
+| ETS          | Enterprise Technical Support                                                                               |
+| FDM          | Fanatical Delivery Model                                                                                   |
+| LBaaS        | Load balancer as a service                                                                                 |
+| GA           | General Availability                                                                                       |
+| GDCI         | Global Data Center Infrastructure                                                                          |
+| GPS          | Global People System. The system for People and HR related data.                                            |
+| GRDS         | General Rackspace Services Description                                                                     |
+| GSS          | Global Security Services                                                                                   |
+| GTS          | Global Technical Support                                                                                   |
+| HEX          | Hosted Microsoft Exchange service at Rackspace.                                                             |
+| HIPS         | Host Intrusion Prevention Systems                                                                          |
+| HKG          | Rackspace Data Center in Hong Kong, named after Hong Kong airport.                                           |
+| HLP          | High Level Proposal (old name - now known as PD)                                                           |
+| HIPAA        | Health Insurance Portability and Accountability Act                                                        |
+| HMDB         | Hosting Matrix Data Base                                                                                   |
+| IAD          | Rackspace Data Center in Dulles, named after Dulles airport in D.C.                                         |
+| IB           | Customer installed base                                                                                     |
+| IC           | Implementation Coordinator                                                                                 |
+| IDL          | Interface Description Language                                                                              |
+| IDM          | Identity management                                                                                        |
+| IDS/IPS      | Intrusion Detection System / Intrusion Prevention System                                                    |
+| IMAP         | Internet Message Access Protocol. See the Wikiipedia article Internet Message Access Protocol.             |
+| IR           | Immediate Reactions                                                                                        |
+| IRC          | Internet Relay Chat. At Rackspace, this is the internal IRC system (irc.intra.rackspace.com). See the Wikipedia article IRC. |
+| ISP          | Internet Service Provider.                                                                                 |
+| ISR          | Inside Sales Representative / Internal Strategy Review                                                      |
+| ITPS         | Innovation Technical Planning Session                                                                       |
+| ITSM         | Information Technology Service Management                                                                  |
+| ITIL         | IT Information Library - the implementation of ITSM that Rackspace is adopting                              |
+| KIR          | Kick in the Rack                                                                                           |
+| K-RACK       | Rackspace radio station                                                                                    |
+| KVM          | Kernel-based Virtual Machine (KVM)                                                                         |
+| LAMP         | Linux, Apache, MySql, and PHP (or sometimes Python or Perl).                                               |
+| LDAP         | Lightweight Directory Access Protocol. See the Wikipedia article LIghtweight Directory Access Protocol for an overview. |
+| LE           | Lead Engineer (sometimes referred to as Lead Tech)                                                          |
+| LOE          | Level Of Effort. This provides an estimate of time to complete a task.                                      |
+| LON          | Rackspace Data Center in London, named after London airport                                                 |
+| LT           | Lead Technician                                                                                            |
+| MAR          | Monthly Account Review                                                                                     |
+| MAS          | Managed Application Services                                                                               |
+| MaaS         | Monitoring as a Service, the project also known as ELE.                                                     |
+| MAMP         | For the Mac platform, package of Apache, MySql, and PHP (or sometimes Python or Perl).                       |
+| MEX          | Managed Microsoft Exchange service at Rackspace.                                                            |
+| MPC          | Managed Public Cloud                                                                                       |
+| MRR          | Monthly Recurring Revenue                                                                                  |
+| MSA          | Master Services Agreement                                                                                  |
+| MSR          | Monthly Service Review                                                                                     |
+| MVP          | Minimal Viable Product. This is used to describe a product with the minimum number of features which is still a viable product. |
+| NIST         | National Institute of Standards and Technology                                                             |
+| NOC          | Network Operations Center                                                                                   |
+| NPS          | Net Promoter Score. See term in main glossary.                                                              |
+| NVP          | Network virtualization platform                                                                            |
+| OCP          | Open Compute Project                                                                                       |
+| ONO          | Online not in Oracle                                                                                       |
+| Oracle       | The Finance system                                                                                         |
+| ORD          | Rackspace Data Center in Chicago, named after Chicago airport.                                              |
+| OSPC         | OpenStack Public Cloud                                                                                     |
+| OTC          | On Time to Customer. Implementation measure of time from receipt of contract to all devices in the deployment being Online /Complete. |
+| PCI          | Payment Card Industry                                                                                      |
+| PD           | Proposal Design                                                                                            |
+| PEN testing  | Penetration Testing                                                                                        |
+| PHI          | Protected Health Information                                                                               |
+| PIN          | Personal Identification Number                                                                             |
+| PLL          | Product Line Leader                                                                                        |
+| PM           | Project Manager or Product Manager.                                                                        |
+| PAPI         | Power API. See Repose.                                                                                     |
+| PMO          | Program Management Office                                                                                  |
+| POP          | Post Office Protocol                                                                                       |
+| PPM          | Policy and Procedures Manual                                                                               |
+| PSH          | Publisher-Subscriber Hub, or PubSubHub for short.                                                          |
+| PV-OPS       | paravirt_ops or paravirtualized operations                                                                 |
+| QBR          | Quarterly Business Review                                                                                  |
+| QE           | Quality Engineering                                                                                        |
+| QEMU         | Quick emulator                                                                                             |
+| QM           | Queue Management                                                                                           |
+| RBA          | Runbook automation                                                                                         |
+| RBAC         | Role-Based Access Control: the ability to control access to a product or service in a fine-grained way, so that people in different groups can access different parts of the service. |
+| RED          | Rackspace Experience Design                                                                                |
+| RGB          | Rack Gives Back. Rackers get time off work to participate in community and charitable activities.          |
+| RBAC         | Role-based access control                                                                                  |
+| RMS          | Rackspace Managed Security                                                                                 |
+| RPC          | Rackspace Private Cloud                                                                                    |
+| RRR          | Racker Rally Room                                                                                          |
+| RTS          | Rackspace Technical Services                                                                               |
+| RU           | Rackspace University                                                                                       |
+| SA3          | SuperAdmin3                                                                                                |
+| SaaS         | Software as a Service                                                                                      |
+| SAN          | Storage Area Network                                                                                       |
+| SAT          | Rackspace Data Center in San Antonio, named after San Antonio airport.                                      |
+| SBD          | Security By Design                                                                                         |
+| SCIM         | Single Customer Incident Management                                                                        |
+| SDA          | Service Delivery Associate                                                                                 |
+| SDD          | Solutions Design Document                                                                                  |
+| SDM          | Service Delivery Manager (also see Account Manager)                                                         |
+| SDP          | Service Delivery Plan                                                                                      |
+| SE           | Solutions Engineer                                                                                         |
+| SFDC         | Salesforce                                                                                                  |
+| Segment      | A name given to a grouping of like Support Teams.                                                          |
+| SLA          | Service Level Agreement                                                                                    |
+| SLT          | Senior Leadership Team                                                                                     |
+| SMP          | Service Management Plan                                                                                    |
+| SMR          | Service Management Report                                                                                  |
+| SSE          | Senior Support Engineer                                                                                    |
+| SSL          | Secure Socket Layer. This refers to a technology and team at Rackspace that have nothing to do with maintaining Segment to Team relationships. There is a common mi-understanding that SSL stands for Support Service Layer and carries out the function of ESS. |
+| SSO          | Single Sign On                                                                                             |
+| SOA          | Service-oriented architecture                                                                               |
+| SOAP         | Simple Object Access Protocol                                                                              |
+| SLA          | Service Level Agreement                                                                                    |
+| SLT          | Senior Leadership Team                                                                                     |
+| SME          | Subject Matter Expert. A Racker that is recognised as knowledgeable in their field.                        |
+| SSL          | Secure Socket Layer. This refers to a technology and team at Rackspace and IS NOT the system that maintains segment hierarchies. See ESS for information on this. |
+| Support Team | A grouping of SDMs with a CCM managing the team. Like accounts are placed with a Support Team who manage the relationship between the accounts and Rackspace. Current examples of support Teams are EM1, Cirrus TRN1. |
+| SYD          | Data Center in Sydney, Australia                                                                           |
+| System Churn | See Churn Pipeline.                                                                                        |
+| TAM          | Technical Account Manager                                                                                  |
+| TCV          | Total Contract Value                                                                                       |
+| TPM          | Technical Product Manager                                                                                  |
+| TSR          | Technical Service Review                                                                                   |
+| UX           | User Experience                                                                                            |
+| VC           | Video Conference                                                                                           |
+| WAF          | Web Application Firewall                                                                                   |
+| XAPI         | Xen Management API                                                                                         |

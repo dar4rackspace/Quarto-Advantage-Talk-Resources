@@ -1,0 +1,212 @@
+---
+title: "The Quarto Advantage"
+subtitle: "Report Automation and Beautiful Documentation"
+author: "Daniel Amieva Rodriguez"
+title-slide-attributes:
+    data-background-image: backgrounds/4.jpg
+    data-background-size: contain
+    data-background-opacity: "0.6"
+date: last-modified
+format: 
+    revealjs:
+        transition: slide
+        output-file: presentation-revealjs.html
+        background-transition: fade
+        theme: blood
+        progress: true
+        history: true
+        chalkboard: 
+            src: drawings.json
+        logo: images/r-icon-White-Square.png
+        footer: "Footer text"
+        preview-links: auto
+        menu:
+            numbers: true
+    html:
+        theme: cyborg
+        logo: images/r-icon-White-Square.png
+        toc: true
+        toc-location: right
+        smooth-scroll: true
+        message: false
+        warning: false
+    PrettyPDF-pdf: default
+---
+
+
+## Quarto
+
+Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+
+### Running Code
+
+When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
+
+```{r}
+1 + 1
+```
+
+You can add options to executable code like this
+
+```{r}
+#| echo: false
+2 * 2
+```
+
+The `echo: false` option disables the printing of code (only output is displayed).
+
+## Getting up
+
+- Turn off alarm
+- Get out of bed
+
+## Breakfast
+
+- Eat eggs
+- Drink coffee
+
+# In the evening
+
+## Dinner
+
+- Eat spaghetti
+- Drink wine
+
+## Going to sleep
+
+- Get in bed
+- Count sheep
+
+## Slide with speaker notes
+
+Slide content
+
+::: {.notes}
+Speaker notes go here.
+:::
+
+## Slide Title
+
+- Green ^[A footnote]
+- Brown
+- Purple
+
+::: aside
+Some additional commentary of more peripheral interest.
+:::
+
+## Slide Code 1
+
+```{.python code-line-numbers="6-8"}
+import numpy as np
+import matplotlib.pyplot as plt
+
+r = np.arange(0, 2, 0.01)
+theta = 2 * np.pi * r
+fig, ax = plt.subplots(subplot_kw={'projection': 'polar'})
+ax.plot(theta, r)
+ax.set_rticks([0.5, 1, 1.5, 2])
+ax.grid(True)
+plt.show()
+```
+
+## Slide Code 2
+
+```{.python code-line-numbers="7,9"}
+import numpy as np
+import matplotlib.pyplot as plt
+
+r = np.arange(0, 2, 0.01)
+theta = 2 * np.pi * r
+fig, ax = plt.subplots(subplot_kw={'projection': 'polar'})
+ax.plot(theta, r)
+ax.set_rticks([0.5, 1, 1.5, 2])
+ax.grid(True)
+plt.show()
+```
+
+## Demo Tabsets
+
+::: {.panel-tabset}
+
+### Tab A
+
+Content for `Tab A`
+
+### Tab B
+
+Content for `Tab B`
+
+:::
+
+## Link previews
+
+[Preview](https://example.com){preview-link="true"}
+
+[NoPreview](https://example.com){preview-link="false"}
+
+## Stack
+
+::: {.r-stack}
+![](images/notpenguins.jpg){.fragment width="450" height="300"}
+
+![](images/r-Icon-White-Square.png){.fragment width="300" height="450"}
+
+![](images/Rackspace_Technology_Logo_RGB_RED.png){.fragment width="400" height="400"}
+:::
+
+## Fit text 
+
+::: {.r-fit-text}
+Big Text
+:::
+
+## Animations 
+
+## {auto-animate=true}
+
+::: {style="margin-top: 100px;"}
+Animating content
+:::
+
+## {auto-animate=true}
+
+::: {style="margin-top: 200px; font-size: 3em; color: red;"}
+Animating content
+:::
+
+## Code animations
+
+## {auto-animate="true"}
+
+```r
+# Fill in the spot we created for a plot
+output$phonePlot <- renderPlot({
+  # Render a barplot
+})
+```
+
+## {auto-animate=true}
+
+```r
+# Fill in the spot we created for a plot
+output$phonePlot <- renderPlot({
+  # Render a barplot
+  barplot(WorldPhones[,input$region]*1000, 
+          main=input$region,
+          ylab="Number of Telephones",
+          xlab="Year")
+})
+```
+
+## Implicit Animation
+
+## {auto-animate=true}
+
+Animation
+
+## {auto-animate=true}
+
+Implicit
+
+Animation

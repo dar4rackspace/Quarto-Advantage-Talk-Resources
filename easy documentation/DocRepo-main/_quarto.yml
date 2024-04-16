@@ -1,0 +1,67 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "BI Enterprise Docs"
+  favicon: "images/r-Icon-White-Square.png"
+  back-to-top-navigation: true
+  search: true
+  page-footer: 
+    left: "Rackspace 2024" 
+    right: 
+      - icon: github
+        href: https://github.com/
+      - icon: google 
+        href: https://google.com/
+        
+  navbar:
+    logo: "images/Rackspace_Technology_Logo_RGB_RED.png"
+    background: "#003482"
+    left:
+      - href: index.qmd
+        text: Home
+      - sidebar:Onboarding
+      - bi-infrastructure.qmd
+      - about.qmd
+  
+  sidebar:
+    - id: Onboarding
+      alignment: center
+      tools:
+      - icon: google
+        href: https://google.com
+      - icon: github
+        menu:
+          - text: Source Code
+            url:  https://code.com
+          - text: Report a Bug
+            url:  https://bugs.com
+      border: true
+      title: "Onboarding"
+      logo: "images/Rackspace_Technology_Logo_RGB_WHT.png"
+      style: "docked"
+      background: "#95008A"
+      collapse-level: 2
+      contents: 
+        - section: "First Week @Rackspace"
+          contents:
+            - onboarding docs/first_week_onboarding.qmd
+        - section: "Our Best Practices"
+          contents:
+            - onboarding docs/bi_sql_development_standards.qmd
+
+format:
+  html:
+    theme: cyborg
+    css: styles.css
+    toc: true
+    toc-location: right
+    smooth-scroll: true
+    message: false
+    warning: false
+    mermaid:
+      theme: default
+
+
+

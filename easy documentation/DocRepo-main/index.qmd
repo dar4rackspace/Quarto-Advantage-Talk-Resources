@@ -1,0 +1,89 @@
+---
+title: "BI Enterprise Docs"
+execute:
+  echo: false
+  message: false
+  warning: false
+---
+
+## Single Source of Truth
+
+```{r}
+library(reactablefmtr)
+library(dplyr)
+library(bslib)
+library(htmltools)
+library(bsicons)
+
+unified_data_assets <- readr::read_csv("unified_datasource_2_table_column_information.csv") |> 
+  janitor::clean_names() |> 
+  rename(
+    "column_name_in_tbl" = full_name,
+    "tableau_column" = field_name
+    )
+
+
+```
+
+## Simple Valuebox
+
+```{r}
+bslib::value_box(
+  title = "I got",
+  value = "99 problems",
+  showcase = bs_icon("music-note-beamed"),
+  p("bslib ain't one", bs_icon("emoji-smile")),
+  p("hit me", bs_icon("suit-spade"))
+)
+```
+
+## Simple Reactable
+
+```{r}
+reactable(unified_data_assets,
+          theme = cyborg(),
+          searchable = TRUE,
+          filterable = TRUE) %>% 
+  add_title(
+    title = reactablefmtr::html("B.I Enterprise <img src='https://752f77aa107738c25d93-f083e9a6295a3f0714fa019ffdca65c3.ssl.cf1.rackcdn.com/newsroom/2020/logos/png/Rackspace_Technology_Logo_RGB_BLK.png' alt='Rackspace Logo' width='200' height='110'>")
+  ) %>% 
+  add_subtitle(
+    subtitle = 'Relation of Datasource 2 GCP Column Level Information',
+    font_size = 20,
+    font_color = '#666666',
+    margin = reactablefmtr::margin(t=10,r=0,b=15,l=0)
+  ) %>% 
+  add_source(
+    source = reactablefmtr::html("<i class='fas fa-book'></i> Authors: Allison Marie Horst, Alison Presmanes Hill, and Kristen B Gorman <br> <i class='fas fa-palette'></i> Artwork by @allison_horst "),
+    font_style = 'italic',
+    font_weight = 'bold'
+  ) %>% 
+  add_source(
+    source = html("<i class='fas fa-link'></i> Link to package: <a href='https://allisonhorst.github.io/palmerpenguins/'>{palmerpenguins}</a>"),
+    font_style = 'italic',
+    font_weight = 'bold'
+  )
+```
+
+## Demo Static
+
+```{r}
+library(crosstalk)
+
+cars <- MASS::Cars93[1:20, c("Manufacturer", "Model", "Type", "Price")]
+data <- SharedData$new(cars)
+
+shiny::fluidRow(
+  shiny::column(
+    4,
+    filter_checkbox("type", "Type", data, ~Type),
+    filter_slider("price", "Price", data, ~Price, width = "100%"),
+    filter_select("mfr", "Manufacturer", data, ~Manufacturer)
+  ),
+  shiny::column(
+    8,
+    reactable(data, minRows = 10)
+  )
+)
+```
+

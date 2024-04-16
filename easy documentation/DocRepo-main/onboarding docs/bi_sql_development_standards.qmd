@@ -1,0 +1,404 @@
+---
+title: "BI SQL Development Standards"
+author: "B.I Enterprise Team"
+date-modified: "`r Sys.Date()`"
+---
+
+This Document contained BI development standards.....
+
+## Dataform Standards
+
+The exact same as the BigQuery standards apply to Dataform, with the following exceptions:
+
+  - A single sqlx script generates a single table / view
+  
+  - All tables created in Dataform go to `rax-enterprisebi.dataform.<table_name>` (production) or `rax-enterprisebi-dev.dataform.<table_name>` (development)
+  
+  - There are no prefixes nor suffixes to sqlx scripts. The only rule is `<report_name>.sqlx` or `<report_name>_<table_name>.sqlx` (if more than one table)
+  
+  - Single table in report: `report_specific/account_alignment/account_alignment.sqlx`
+  
+  - One of multiple tables in same report: `report_specific/pull_account/pull_account_contact_info.sqlx`
+  
+  - Table creation, documentation, clustering, etc. happen in the config object
+  
+  - Variable declarations happen in the pre_operations object
+  
+  - Operation sqlx scripts are used to do anything outside table creation - such as exporting data to GCS
+
+## BigQuery Standards
+
+### General Coding Practices
+
+#### Tables
+
+- Do not use nesting for subqueries, unless they're extremely simple. Use CTEs instead (or temporary tables if CTEs are not an option)
+
+- Three-part naming standards must be followed when referring to datasets (e.g. `rax-landing-dev.cms_ods.customer_account`)
+
+- When querying more than one table:
+
+  - All tables should be aliased with 1-3 characters (Iines 31, 32, 35)
+  
+  - All field names should be preceded by the table alias in the query (l. 17-30)
+  
+  - All tables and field names must be snake_case (lowercase letters, with words separated by underscores)
+  
+  - Tables and column names must not set reserved words (i.e. function names)
+  
+  - Fields should be aliased with AS instead of using the = keyword (l. 7)
+
+#### Comments
+
+- Code should have sections and in line comments indicating what is happening:
+
+  - Sections should use multi-line comments (lines 1-3)
+  
+  - Specific purpose of the code can be documented with one-line comments (l. 4)
+
+#### Line format
+
+- Each new field should be carried down to its own line.
+
+- Commas should be placed at the end of the line, and not at the beginning.
+
+- Case statements should be structured and indented as shown (l. 19-23).
+
+#### Key Words
+
+- All keywords (SELECT, FROM, JOIN, WHERE, GROUP BY, HAVING, INTO, CASE, SUM, COUNT, etc.) should be all caps.
+
+- The GROUP BY statement should be written with field names all on the same line.
+
+#### Variables
+
+- Use declared variables when programming hard-coded dates (ie: min / max dates) or conditions that are repeated.
+
+- Variable names must always start with `v_`. This is done in order to make it easier to find variables within the script (e.g.: v_min_date).
+
+#### Nested queries (don't)
+
+- Nested queries (sub selects) should be avoided, and temp tables or common table expressions should be used instead. This makes code easier to read and maintain.
+
+#### Operators
+
+- For mostly all operators such as `=`, `+`, `>=`, `<=`, `>`, `<`, there needs to be only one space before and after each operator:
+
+  - Correct Formatting - Operators
+    - THIS:
+      - foo + bar
+    - NOT THIS:
+      - foo+ bar 
+      - foo +bar
+      - foo+bar
+      
+  - The only exceptions are parentheses, quotes and brackets:
+    - Correct Formatting - Operators
+      - THIS:
+        - CAST(foo AS STRING)
+      - NOT THIS:
+        - CAST( foo AS STRING )
+        - CAST(foo AS STRING )
+        - CAST( foo AS STRING)
+
+#### Comments
+
+- Code is thoroughly commented so any developer can understand what it is doing when necessary. The proper way to comment is shown below.
+
+  - Proper Commenting On Qlik Code (Multiline)
+  
+```sql
+    /*********************************************************************************************
+    Insert comment here
+    This is a multiline comment - best used at the start of sections
+    *********************************************************************************************/
+    SELECT foo
+    FROM bar # This is an in-line comment
+
+```
+
+
+#### Indentation
+
+- Code is consistently indented properly to make it readable. This means it can follow any of the below examples (but not mix their rules)
+ 
+  - Alingment examples
+  
+    - -- Format A: Indent by alighning on field name
+      - SELECT foo,
+               bar,
+               CASE 
+                 WHEN foo = 1 THEN foo
+                 WHEN foo = 0 THEN no_foo
+                 ELSE NULL 
+               END AS foo_flag
+        FROM foo_bar_table;
+    - -- Format B: Indent on tab (4 spaces)
+      - SELECT DISTINCT
+               foo,
+               bar,
+               CASE
+                 WHEN foo = 1 THEN foo
+                 WHEN foo = 0 THEN no_foo
+                 ELSE NULL 
+               END AS foo_flag
+        FROM foo_bar_table;
+        
+  - Regardless of which indentation rules are used, tabs are converted to spaces to avoid GitHub messing up file readability (for more on this, read What's the deal with tab sizes on GitHub Gists? - GitHub Help / How to use Git and GitHub - GitHub Community)
+  
+  - This changes nothing in the script itself, except the way in which the IDE processes indentation, so your code should look the same.
+  
+  - You can set this once and forget it in any IDE, usually through a menu or the command palette (SHIFT+CTRL+P).
+  
+  - Here's how to do it for the more popular IDEs: Notepad ++ | VSCode | Sublime | Atom
+  
+  - For an example of how tabs affect document formatting, look at how the dots (spaces) and arrows (tabs) look in the IDE (left) vs GitHub (right):
+
+## Optimization Guidelines for BI Report Building
+
+- LIMIT N does not reduce query cost.
+
+- Do not use SELECT * unless you need all the columns in a table. Each column queried increases cost.
+
+  - "But I need 19 out of 20 fields and writing them all is just wasted space..." - use SELECT * EXCEPT(field_name).
+  
+  - SELECT * EXCEPT() must not be used to pull data from a source table (i.e. a table outside the scope of the BI report that is used as the source of data).
+
+- Use the partitioning and clustering fields in WHERE and JOIN clauses to reduce costs.
+
+- Use UNION ALL instead of UNION DISTINCT where possible.
+
+- Do not use complicated calculated fields in JOINS or GROUP BY clauses.
+
+  - Create the key fields beforehand in temporary tables.
+
+- Do not use OR in JOIN statements. This is extremely slow.
+
+  - Separate your table into smaller pieces, do the separate JOINS and then UNION the new tables instead.
+
+- Do not use views to query other views, unless these views are from a different report, dataset, or project. 
+
+## Table / View Creation Standards
+
+### Stored Procedure Scripts
+
+- Names for stored procedures all start with udsp_ and end in either _full or _incremental, depending on the load type.
+
+  - **Full** means the entire table is truncated and all data is inserted from scratch, every time it reloads.
+  
+  - **Increment** al means only the latest part of the table is truncated and replaced by new data. This is more efficient, but also harder to code. 
+
+- The entire stored procedure should be contained in a **single script**.
+
+- **Stored procedures must NOT create tables**. They must instead truncate / delete and insert data to tables created by table creation scripts.
+
+- All stored procedures must include error handling.
+
+- All stored procedures must invoke the logging for load dependencies.
+
+- There are specific folders for [report-specific](https://github.com/global-data-office/rax-enterprisebi/tree/main/report_specific_stored_procs) and [general-reporting](https://github.com/global-data-office/rax-enterprisebi/tree/main/report_tables_stored_procs) scripts in the GitHub repo.
+
+```sql
+Stored Proc Boilerplate 
+CREATE OR REPLACE PROCEDURE `rax-enterprisebi.report_specific / report_table.TABLE NAME`()
+BEGIN
+	DECLARE log_start TIMESTAMP DEFAULT CURRENT_TIMESTAMP(); # This is used for table logging
+	BEGIN
+		CALL `rax-enterprisebi.load_dependencies.udsp_table_load_log`('report_specific / report table', 'Table name', 'SP Name', log_start, NULL, NULL); # Invoke table logging
+		------
+		/*************************************************************************************
+		Section notes go here
+		*************************************************************************************/
+		<CTE or Temp table creation code goes here>
+
+		# If above query was successful, truncate table
+		TRUNCATE TABLE `TABLE NAME`;
+
+		# Insert new data into table
+		INSERT INTO `TABLE NAME` 
+		SELECT * 
+		FROM `TEMP TABLE NAME`;
+
+		# Call table log as completed
+		CALL`rax-enterprisebi.load_dependencies.udsp_table_load_log`('report_specific / report table', 'Table name', 'SP Name', log_start, CURRENT_TIMESTAMP(), NULL);
+
+	# Call table log as failed, including error message
+	EXCEPTION WHEN ERROR THEN	
+		CALL`rax-enterprisebi.load_dependencies.udsp_table_load_log`('report_specific / report table', 'Table name', 'SP Name', log_start, CURRENT_TIMESTAMP(), @@error.message);
+
+		# Restore table back to original to ensure it is not empty
+		INSERT INTO `TABLE NAME` 
+		SELECT * FROM `TEMP TABLE NAME` 
+		FOR SYSTEM_TIME AS OF log_start
+	END;
+END
+```
+
+
+#### Table Creation Scripts (for Stored Procedures)
+
+- [Partitioning](https://cloud.google.com/bigquery/docs/partitioned-tables) and [clustering](https://cloud.google.com/bigquery/docs/clustered-tables) should be added to final tables where it makes sense.
+
+  - Keep in mind there is a limit of 4000 unique partition values on a table (~10 years, or way more if partitioning by month).
+  
+  - To partition by month, use a [truncated date field](https://cloud.google.com/bigquery/docs/reference/standard-sql/date_functions#date_trunc). This avoids confusion and allows for better data handling in Tableau.
+
+- If **incremental loading** will be used for the table, add a partition expiration.
+
+- The name for the table creation script should be the name of the table.
+
+- An individual table creation script is needed for every table created (this should be changed) ??????????????????????
+
+#### Table Creation Example
+
+```sql
+CREATE OR REPLACE TABLE `rax-enterprisebi.report_specific.account360_account_data`(
+ account_number STRING,
+ account_type STRING,
+ account_id STRING,
+ company_name STRING,
+ company_name_filter_a STRING,
+ company_name_filter_b STRING,
+ top_200_salesforce BOOLEAN,
+ naics_description STRING,
+ discoverorgid STRING,
+ parent_id STRING,
+ account_identifier STRING,
+ date_partition DATE #Need to partition table in order to cluster
+)
+PARTITION BY DATE_TRUNC(date_partition, MONTH)
+CLUSTER BY account_type, account_number, account_identifier, account_id;
+```
+
+### View Creation Scripts
+
+- Views should follow the same naming convention as other tables (we do not prefix with vw_ now, as table functions can change)
+
+- All views for a specific workbook / report should be contained within a single script.
+
+- Views should only be used at the very end of the data flow, as inputs for BI reports, such as Tableau workbooks, for example.
+
+### When Should I Use a Stored Proc and When Should I Use a View?
+
+- **Use a stored procedure when**:
+
+  - The operation is data intensive and creates big tables (query times greater than a minute in BQ).
+  
+  - Table logging is required.
+  
+  - The output will be used by more than one BI report.
+  
+  - A custom function or variables need to be defined.
+  
+- **Use a view when**:
+
+  - There is a clear need for the data to be calculated at the time of the query.
+  
+  - There are only small changes needed to an existing general-use table, like new field calculations.
+  
+::: {.callout-important}
+
+## DO NOT USE A VIEW
+
+- To query another view within the scope of the same BI report. This is expensive, inefficient, and hard to maintain.
+
+- Either query the source table behind the view or refactor your script.
+
+:::
+
+- To change data types for existing tables.
+
+  - Data types can be changed by refactoring the source table, or inside the Tableau Data Source.
+  
+  - Views that are used for multiple workbooks should be turned into stored procedures that create general-reporting tables. This reduces query time and costs:
+  
+  IMAGEEEEEEEEEEEEEEEEE
+
+## GitHub
+
+- We use GitHub as our Version Control System (VCS).
+
+- Our GitHub workflow is based off of [Understanding the GitHub Flow](https://guides.github.com/introduction/flow/)
+
+- You can work with GitHub through the UI or using [git command line](https://git-scm.com/docs/git), whichever is more comfortable for you
+
+- Team walkthrough video can be found here with passcode 33n*$gWg DEPRECATED!
+
+### GitHub Access
+
+- To develop tables and stored procedures for the rax-enterprisebi project, you will need to request access to [rax-gdo-bideveloper](https://identity.rackspace.corp/Finder?g=rax-gdo-bideveloper) through SailPoint.
+
+- If not developing tables and stored procedures, please work with the Ops team to determine the proper group for access.
+
+### Branches:
+
+- Main will reflect the code that is running on production
+
+  - No development work should be done on the main branch
+  
+  - All code on the main branch has been reviewed
+
+- A new branch is created for each feature being worked
+
+  - After a pull request/review is completed for the feature branch, the items can be merged with main and the branch removed
+
+## BigQuery VCS
+
+- All GCP table and stored procedure code is stored in our [entreprise GitHub repository](https://github.com/global-data-office/rax-enterprisebi)
+
+- Edit: most of these tables will eventually be migrated into the new Dataform repository, which allows for CI/CD with our BI code: [rax-bivis/dataform](https://github.com/rax-bivis/dataform)
+
+### Access
+
+  - Request access to [github-cloud-users](https://identity.rackspace.corp/Finder?g=github-cloud-users) through SailPoint
+  
+  - Create a public [GitHub account](https://github.com)
+  
+  - You must use your full name and Rackspace email
+  
+  - Your username must be your SSO
+  
+  - Two-factor authentication must be enabled
+  
+  - Add your GitHub username to the [identity portal](https://identity.rackspace.corp/ManageYourAttributes)
+  
+  - Request access to [Global Data Office](https://github.com/global-data-office) by submitting a JIRA request to GDO
+  
+    - [Example ticket](https://rackspace.atlassian.net/browse/DATA-25458)
+
+- Folders:
+  
+  - The folders in GitHub will be the same as the datasets in GCP and there will be a separate folder for tables and stored procedures
+  
+  - Your create table statements will go into the tables folder
+  
+  - The stored procedures used to populate the table will go in the stored procedures folder
+  
+  - You may have more than one stored procedure per table (one that is full and a second that is incremental, if applicable)
+
+### Process Details:
+
+- Clone the main branch to your computer **git clone** and **git pull**
+
+- Create a new branch for you feature/development **git branch**
+
+  - Add new .sql files with your BigQuery code OR edit existing files
+
+- Add your files to your branch **git add** and commit them **git commit** and when you are ready for review **git push**
+
+- Create a pull request and fill in the Developer items on the pull request template (to make this easiest, this entire step should be done through the UI on GitHub's website)
+
+  - Ask someone to review (reviews will also be assigned in the bi-weekly peer review meetings)
+  
+  - Reviewer reviews code and comments on any changes that are needed
+  
+    - Reviewer must check all boxes in the pull request template
+    
+    - Reviewer should only approve pull request when it is deemed ready for production
+
+- After pull request is approved, it can be merged with main, deployed to production (rax-enterprisebi), and the development/feature branch can be removed
+
+- Deployment is a manual process right now and will be done by the Developer
+
+
+

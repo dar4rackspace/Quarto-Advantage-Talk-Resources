@@ -1,0 +1,89 @@
+---
+title: "B.I Enterprise Infrastructure"
+---
+
+## The Datalake 
+
+Big Query is used as the landing place for most datasources @ Rackspace in the form of `ods` (**original datasource**). Then that information is used, replicated and transformed by different **Google Projects** across the organization. 
+Below is a rough sketch of the databases identified that point towards Big Query:
+
+```{mermaid}
+---
+title: "ODS identified that have a dataset in BigQuery"
+---
+
+graph TD;
+
+ BigQuery[(BigQuery)]
+
+subgraph "Customer Management"
+    Datasource1[(Salesforce)] 
+    Datasource4[(Inhouse CMS)]
+    Datasource6[(Encore)] 
+end
+
+Datasource1[(Salesforce)] --> |salesforce_ods| BigQuery;
+    Datasource4[(Inhouse CMS)] --> |cms_ods| BigQuery;
+    Datasource6[(Encore)] --> |encore_ticketing_ods|BigQuery;
+    
+subgraph "Billing"
+    Datasource2[(Oracle BRM)] 
+end
+
+Datasource2[(Oracle BRM)] --> |brm_ods| BigQuery;
+
+subgraph "IT Services"
+    Datasource5[(Core)] 
+    Datasource7[(VMWare)]
+    Datasource8[(SCCM)] 
+    Datasource9[(Microsoft365)]
+end
+
+subgraph "B.I Internal"
+    Datasource10[(Jira)] 
+    Datasource11[(Tableau)]
+    Datasource12[(PowerBI)] 
+end
+
+ Datasource5[(Core)] --> |core_ods| BigQuery;
+    Datasource7[(VMWare)] --> |double check| BigQuery;
+    Datasource8[(SCCM)] --> |PENDING: system center configuration manager| BigQuery;
+    Datasource10 --> |jira_ods| BigQuery
+
+
+```
+
+## The B.I Tools
+
+For now tableau the architecture is as follows: 
+
+A `dashboard in tableau` is a **Workbook** with a collection of 1 or more **Views**. A Workbook needs at least 1 **Datasource** to connect to. Most connections we have are with `BigQuery` but its possible to have others. 
+
+For compliance and governability is best advise to seek to land all information in `BigQuery`, and from there connect to tableau.
+
+::: {#fig-mermaid}
+
+```{mermaid}
+graph TD;
+
+subgraph "Tableau Environment"
+subgraph "Tableau Dashboard"
+    Views --> Workbooks;
+end
+
+    Workbooks --> Datasources;
+
+subgraph "Datasources"
+    BQTables;
+    GoogleSheets;
+    ODS;
+end
+
+    Datasources --> |BigQuery Tables| BQTables;
+    Datasources --> |Google Sheets| GoogleSheets;
+    Datasources --> |Operational Data Stores| ODS;
+
+end
+```
+
+:::

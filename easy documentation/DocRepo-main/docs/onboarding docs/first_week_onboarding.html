@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.550">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="B.I Enterprise Team">
+
+<title>BI Enterprise Docs - Onboarding Guide for Reporting &amp; Analytics Team</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../images/r-Icon-White-Square.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-sidebar docked nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../images/Rackspace_Technology_Logo_RGB_RED.png" alt="" class="navbar-logo">
+    </a>
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">BI Enterprise Docs</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="../index.html" aria-current="page"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-onboarding" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Onboarding</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-onboarding">    
+        <li class="dropdown-header">First Week <span class="citation" data-cites="Rackspace">@Rackspace</span></li>
+        <li>
+    <a class="dropdown-item" href="../onboarding docs/first_week_onboarding.html">
+ <span class="dropdown-text">Onboarding Guide for Reporting &amp; Analytics Team</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li class="dropdown-header">Our Best Practices</li>
+        <li>
+    <a class="dropdown-item" href="../onboarding docs/bi_sql_development_standards.html">
+ <span class="dropdown-text">BI SQL Development Standards</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../bi-infrastructure.html"> 
+<span class="menu-text">B.I Enterprise Infrastructure</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../onboarding docs/first_week_onboarding.html">First Week <span class="citation" data-cites="Rackspace">@Rackspace</span></a></li><li class="breadcrumb-item"><a href="../onboarding docs/first_week_onboarding.html">Onboarding Guide for Reporting &amp; Analytics Team</a></li></ol></nav>
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-center sidebar-header sidebar-header-stacked">
+      <a href="../index.html" class="sidebar-logo-link">
+      <img src="../images/Rackspace_Technology_Logo_RGB_WHT.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      </a>
+      <div class="sidebar-tools-main">
+    <a href="https://google.com" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-google"></i></a>
+    <div class="dropdown">
+      <a href="" title="" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" aria-label=""><i class="bi bi-github"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://code.com">
+            Source Code
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://bugs.com">
+            Report a Bug
+            </a>
+          </li>
+      </ul>
+    </div>
+</div>
+      </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text">First Week <span class="citation" data-cites="Rackspace">@Rackspace</span></span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../onboarding docs/first_week_onboarding.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Onboarding Guide for Reporting &amp; Analytics Team</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+ <span class="menu-text">Our Best Practices</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../onboarding docs/bi_sql_development_standards.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">BI SQL Development Standards</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#logging-in" id="toc-logging-in" class="nav-link active" data-scroll-target="#logging-in">Logging In</a></li>
+  <li><a href="#computer-setup" id="toc-computer-setup" class="nav-link" data-scroll-target="#computer-setup">Computer setup</a></li>
+  <li><a href="#vpn-setup" id="toc-vpn-setup" class="nav-link" data-scroll-target="#vpn-setup">VPN Setup</a></li>
+  <li><a href="#sailpoint-access-request" id="toc-sailpoint-access-request" class="nav-link" data-scroll-target="#sailpoint-access-request">Sailpoint access request</a></li>
+  <li><a href="#gcp-bigquery-setup" id="toc-gcp-bigquery-setup" class="nav-link" data-scroll-target="#gcp-bigquery-setup">GCP (BigQuery) Setup</a></li>
+  <li><a href="#timesheets" id="toc-timesheets" class="nav-link" data-scroll-target="#timesheets">Timesheets</a></li>
+  <li><a href="#meetings-to-be-aware-of" id="toc-meetings-to-be-aware-of" class="nav-link" data-scroll-target="#meetings-to-be-aware-of">Meetings to be aware of</a>
+  <ul class="collapse">
+  <li><a href="#bi-daily-standup" id="toc-bi-daily-standup" class="nav-link" data-scroll-target="#bi-daily-standup">BI Daily Standup</a></li>
+  <li><a href="#peer-reivewrelease-planning" id="toc-peer-reivewrelease-planning" class="nav-link" data-scroll-target="#peer-reivewrelease-planning">Peer Reivew/Release Planning</a></li>
+  </ul></li>
+  <li><a href="#innovation-day" id="toc-innovation-day" class="nav-link" data-scroll-target="#innovation-day">Innovation Day</a></li>
+  <li><a href="#communication-tools" id="toc-communication-tools" class="nav-link" data-scroll-target="#communication-tools">Communication Tools</a></li>
+  <li><a href="#data-intake-process" id="toc-data-intake-process" class="nav-link" data-scroll-target="#data-intake-process">Data Intake Process</a></li>
+  <li><a href="#important-links" id="toc-important-links" class="nav-link" data-scroll-target="#important-links">Important Links</a>
+  <ul class="collapse">
+  <li><a href="#rxt-data-sources" id="toc-rxt-data-sources" class="nav-link" data-scroll-target="#rxt-data-sources">RXT Data Sources</a></li>
+  </ul></li>
+  <li><a href="#learning-resources" id="toc-learning-resources" class="nav-link" data-scroll-target="#learning-resources">Learning resources</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../onboarding docs/first_week_onboarding.html">First Week <span class="citation" data-cites="Rackspace">@Rackspace</span></a></li><li class="breadcrumb-item"><a href="../onboarding docs/first_week_onboarding.html">Onboarding Guide for Reporting &amp; Analytics Team</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Onboarding Guide for Reporting &amp; Analytics Team</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>B.I Enterprise Team </p>
+          </div>
+  </div>
+    
+  
+    <div>
+    <div class="quarto-title-meta-heading">Modified</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date-modified">March 1, 2024</p>
+    </div>
+  </div>
+    
+  </div>
+  
+
+
+</header>
+
+
+<ul>
+<li>PENDING IMAGES: https://raxglobal-my.sharepoint.com/:w:/r/personal/guillermo_pereztello_rackspace_com/_layouts/15/doc2.aspx?sourcedoc=%7Bc3aef85e-7a0e-45c6-aa8e-90452ca5da8a%7D&amp;action=edit&amp;wdPid=a1e27ad</li>
+</ul>
+<section id="logging-in" class="level2">
+<h2 class="anchored" data-anchor-id="logging-in">Logging In</h2>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Caution
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Many of the items below require double authentication</p>
+</div>
+</div>
+<ul>
+<li><p>When prompted for your <strong>SSO</strong>, use what is given to you by Help Desk. Your <strong>Password</strong> for your SSO is something that you will create following the steps that Help Desk provides.</p></li>
+<li><p>The next type of authentication requires your <strong>SSO</strong> and your <strong>RSA Token (app)</strong>. Instructions for this should be given to you with your laptop.<br>
+</p></li>
+</ul>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Always use password to login in your machine.
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>There is a known issue where logging in with PIN on Windows machines will cause issues connecting to SQL Server. This can be done by clicking on “Sign-in Options” and choosing the key icon in the log-in screen.</p>
+</div>
+</div>
+<ul>
+<li><p>If some of the log-in is not working, make sure that you are connected to the VPN (see below)</p></li>
+<li><p>If you receive your laptop before your start date, don’t set up anything.</p></li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Just in case that that you are having issues with the setup of you computer please connect with:</p>
+<ul>
+<li><p>Víctor Navarro<a href="mailto:victor.navarro@rackspace.com">victor.navarro@rackspace.com</a></p></li>
+<li><p>John Spencer <a href="mailto:john.spencer@rackspace.com">john.spencer@rackspace.com</a></p></li>
+<li><p>Eduardo Coccaro <a href="mailto:eduardo.coccaro@rackspace.com">eduardo.coccaro@rackspace.com</a></p></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="computer-setup" class="level2">
+<h2 class="anchored" data-anchor-id="computer-setup">Computer setup</h2>
+<ul>
+<li><p><strong>Company Portal / Software Center</strong>: this is the place where you can download all the apps directly from Rackspace</p></li>
+<li><p>Try this: click on the windows search on the toolbar, type company portal or portal de compania</p></li>
+</ul>
+<p>IMAGE HEEREEEEEEEEEEEEEEEEE</p>
+<ul>
+<li><p>Ensure your computer is set up with</p></li>
+<li><p><label><input type="checkbox">SQL Server Management Studio (specifically MS SQL)<br>
+</label></p></li>
+<li><p><label><input type="checkbox">Zoom</label></p></li>
+<li><p><label><input type="checkbox">Teams</label></p></li>
+<li><p>Application installation requires getting a username and temporary password from LAPS</p></li>
+<li><p>Need to be connected to the VPN</p></li>
+<li><p>Click on <strong>“Accept Racker UAP and view password”</strong></p></li>
+<li><p>Write down your USERNAME and PASSWORD (if you are unsure of a symbol, then paste the password on a quick note)</p></li>
+</ul>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><p>Do NOT just copy and paste, write this down somewhere (for System DSN)</p></li>
+<li><p>This password is a temporary password please change it whenever it suits you HEREEEEEEEE</p></li>
+</ul>
+</div>
+</div>
+<ul>
+<li>Update your Racker Email signature</li>
+</ul>
+<ol type="1">
+<li>Go to “Outlook”</li>
+<li>Click on “File”</li>
+<li>Click on “Options”</li>
+<li>Click on “Mail” tab</li>
+<li>Click on “Signatures”</li>
+<li>Click on “New”</li>
+<li>Give your signature a name – just something for you reference</li>
+<li>New Branding Signature. Here is the link so you can update yours: <a href="https://inside.rackspace.com/departments/salesandmarketing/marketing/branding/HTML/index.aspx">Link 2 Making your Custom Racker Signature</a></li>
+</ol>
+<ul>
+<li>Go for the rest of the apps that you will need in your computer, for instance PDF, Winzip, Chrome, etc…</li>
+</ul>
+</section>
+<section id="vpn-setup" class="level2">
+<h2 class="anchored" data-anchor-id="vpn-setup">VPN Setup</h2>
+<ul>
+<li><p><a href="https://one.rackspace.com/display/gss/User+Guide+-+Connect+to+Prisma+Access">Global protect set up</a></p></li>
+<li><p>Connect to the VPN by clicking on the AppGate icon in the system tray.</p></li>
+</ul>
+<p>IMAGE HERE</p>
+<ul>
+<li><p><a href="appgate://appgate.security.rackspace.net/eyJzcGEiOnsibW9kZSI6IlRDUCIsIm5hbWUiOiJyYWNrc3BhY2UiLCJrZXkiOiI5M2RjNzI2ZGZhZTQzMzE5MTI0NzViNDNmY2Y5YzkyN2JmOTI3M2Y0MjlhZWQyYzdhOWFjYjc1NWE4MDQ4ZTYzIn0sImNhRmluZ2VycHJpbnQiOiI1MmFlYTYxNWQzYjc5MTNjNzI2NmVhZWM3MTUzNWE5YWU1NjMwYmE3MDYzYWEwYTQ2NzE2NzQ0NDYwZjQxMDRkIiwiaWRlbnRpdHlQcm92aWRlck5hbWUiOiJBREZTIn0=">Enter the following URL if you have not validated your credentials yet</a> (or whichever link you received for setup)</p></li>
+<li><p>Validate your credentials with your RSA Token/password</p></li>
+<li><p>Once done should be like the following image</p></li>
+</ul>
+<p>IMAGE APP GATE</p>
+</section>
+<section id="sailpoint-access-request" class="level2">
+<h2 class="anchored" data-anchor-id="sailpoint-access-request">Sailpoint access request</h2>
+<p>These are the key groups that you need to request access to. Follow these instructions:</p>
+<ol type="1">
+<li><a href="https://one.rackspace.com/pages/viewpage.action?pageId=723555047#GCPAccess&amp;Permissions-Instructions:AccesstoGCPviaanexistingADGroup">Enter Sailpoint Access Request Page</a></li>
+<li>Request Access for these Groups:</li>
+</ol>
+<table class="table">
+<colgroup>
+<col style="width: 32%">
+<col style="width: 67%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>AD Group Name</th>
+<th>Dedicated For</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>rax-gdo-bianalyst</td>
+<td>BI Analyst (GDO &amp; Others) - Read Only Access of GCP data and services</td>
+</tr>
+<tr class="even">
+<td>rax-gdo-powerBi</td>
+<td>GDO BI Developer</td>
+</tr>
+<tr class="odd">
+<td>rax-gdo-datascience</td>
+<td>GDO Data Science</td>
+</tr>
+<tr class="even">
+<td>rax-gdo-gts-bi</td>
+<td>Global Technical Support Operations</td>
+</tr>
+<tr class="odd">
+<td>app-qliksense-analyst</td>
+<td>Access to the dev include folder</td>
+</tr>
+<tr class="even">
+<td>fs_datawarehouse</td>
+<td>Allows access to the \rackspace.corpfile share</td>
+</tr>
+<tr class="odd">
+<td>fs_Strategic_Account</td>
+<td>Strategic Team to share files/folder from the shared drive</td>
+</tr>
+<tr class="even">
+<td>jira-cloud-users</td>
+<td>Jira</td>
+</tr>
+<tr class="odd">
+<td>app-tableau-creator</td>
+<td>Tableau</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="gcp-bigquery-setup" class="level2">
+<h2 class="anchored" data-anchor-id="gcp-bigquery-setup">GCP (BigQuery) Setup</h2>
+<ul>
+<li><p>GCP access is managed via AD Groups. Please check <a href="https://one.rackspace.com/pages/viewpage.action?pageId=723555047#GCPAccess&amp;Permissions-Instructions:AccesstoGCPviaanexistingADGroup">this link</a> for access.</p></li>
+<li><p>Once registered, you should be able to use Create, Read, Update, and Delete tables within the <a href="https://console.cloud.google.com/bigquery?project=rax-enterprisebi-dev&amp;ws=!1m0">rax-enterprisebi-dev project</a>:</p></li>
+</ul>
+<p>IMAGE HEREEEEE</p>
+<ul>
+<li><p>Also for more <a href="https://one.rackspace.com/pages/viewpage.action?pageId=723555047#GCPAccess&amp;Permissions-Instructions:AccesstoGCPviaanexistingADGroup">information about GCP set up</a></p></li>
+<li><p>This is a great tool to <strong>compare your groups to one of your peers</strong>. Use it to make sure you have the right access: <a href="https://identity.rackspace.corp/GroupDiff">Identity Access Comparison</a></p></li>
+</ul>
+</section>
+<section id="timesheets" class="level2">
+<h2 class="anchored" data-anchor-id="timesheets">Timesheets</h2>
+<p>1.- Start your VPN and go to <a href="https://rackspace.service-now.com/rack_sp?id=rack_sp">this link</a></p>
+<p>IMAGEEEEEEEE</p>
+<p>3.- Click on submit timesheet</p>
+<p>IMAGGEEEEEE</p>
+<p>4.- Select a date and click the populate button.</p>
+<p>IMAGGEEEEEE</p>
+<p>5.- Look at the projects you have assigned. Type the hours you worked. (Change the zeros). Fill up the all the weekdays. There must be 8 hours per workday.</p>
+<p>IMAGGEEEEEE</p>
+<ol start="6" type="1">
+<li>Click on the Submit button</li>
+</ol>
+</section>
+<section id="meetings-to-be-aware-of" class="level2">
+<h2 class="anchored" data-anchor-id="meetings-to-be-aware-of">Meetings to be aware of</h2>
+<section id="bi-daily-standup" class="level3">
+<h3 class="anchored" data-anchor-id="bi-daily-standup">BI Daily Standup</h3>
+<p>The <strong>BI Daily Standup</strong> is our recurring meeting where each member communicates three key points:</p>
+<ol type="1">
+<li><p>The previous day’s advancements</p></li>
+<li><p>The current day’s objectives</p></li>
+<li><p>Any blockers or questions that affect the tickets</p></li>
+</ol>
+<ul>
+<li><p>In addition to these, our team leaders, scrum master, or product managers may give announcements or ask on specific critical objectives</p></li>
+<li><p>It is also a good moment to raise awareness on any issue that might affect the team’s work (for example, a newly bug found on a commonly used table)</p></li>
+<li><p>If more than a few quick comments are needed for any point, these are usually taken to calls after the standup, to be mindful of everyone’s time</p></li>
+</ul>
+</section>
+<section id="peer-reivewrelease-planning" class="level3">
+<h3 class="anchored" data-anchor-id="peer-reivewrelease-planning">Peer Reivew/Release Planning</h3>
+<p>There are also two <strong>peer review/release planning meetings</strong> every week to the vet the Tableau Cloud and Big Query code and apps that are ready to be pushed to production.</p>
+<ul>
+<li><p>These are mandatory for our team</p></li>
+<li><p>For your development to be peer reviewed, it must first be added to the table at <a href="https://one.rackspace.com/pages/viewpage.action?pageId=702199836">this link</a></p></li>
+<li><p>The obligatory fields are “App Name”, “Update Description (contains the ticket)”, and Developer (contains your name)</p></li>
+</ul>
+</section>
+</section>
+<section id="innovation-day" class="level2">
+<h2 class="anchored" data-anchor-id="innovation-day">Innovation Day</h2>
+<ul>
+<li><p>The <strong>third Thursday</strong> (try saying that quickly) of <strong>every month</strong> is <code>Innovation Day</code>. During this time, meetings should not be happening, unless they’re related to innovation work</p></li>
+<li><p>All related info on this should be available at inside.rackspace.com</p></li>
+<li><p>Keep in mind that innovation does not have to be groundbreaking, technically astounding, nor a full solution – when in doubt, think of small and workable solutions that can help the team or stakeholders (processes, communications, tools, etc.)</p></li>
+</ul>
+</section>
+<section id="communication-tools" class="level2">
+<h2 class="anchored" data-anchor-id="communication-tools">Communication Tools</h2>
+<ul>
+<li>Zoom – Video Conferencing</li>
+<li>Outlook – Email<br>
+</li>
+<li>Teams – chat and Video Conferencing</li>
+<li><a href="https://rackspace.atlassian.net/jira/software/c/projects/BIVIS/boards/4997?quickFilter=25918">JIRA</a> – Internal ticketing and the way we track our work</li>
+</ul>
+</section>
+<section id="data-intake-process" class="level2">
+<h2 class="anchored" data-anchor-id="data-intake-process">Data Intake Process</h2>
+<ul>
+<li><p>New Data requests can be created in <a href="https://one.rackspace.com/display/GET/Global+Data+Intake">DATA Intake Request</a> ?????? or <a href="https://rackspace.atlassian.net/jira/software/c/projects/ITS/forms/form/direct/3/13">ITS Form</a></p></li>
+<li><p>Stakeholders asking for work should always be directed through the portal, or sent to Ashley and Nivruth, to keep our work visible and in-scope (and avoid last-minute requests)</p></li>
+<li><p>Any new request will be Triaged by the Product team and the Product Owners and then gets assigned to the right racker.</p></li>
+</ul>
+</section>
+<section id="important-links" class="level2">
+<h2 class="anchored" data-anchor-id="important-links">Important Links</h2>
+<ul>
+<li><p><a href="https://one.rackspace.com/">Wiki</a> – Contains all sorts of documentation from teams in RXT. Cansometimes be out-of-date but is invaluable Example:</p>
+<p><a href="https://one.rackspace.com/display/GDO/Global+Price+Increase+%28GPI%29+Analysis">GPI Analysis</a></p></li>
+<li><p><a href="https://inside.rackspace.com/Pages/default.aspx">Inside Rack</a> – Important Internal Rackspace information</p></li>
+<li><p><a href="https://www.myworkday.com/rackspace/d/home.htmld">GPS</a> – Logging time off, Annual Reviews, Goals, etc.</p></li>
+<li><p><a href="https://sailpoint.rackspace.corp/identityiq/home.jsf">SailPoint</a> – Managing passwords, making process requests</p></li>
+<li><p><a href="https://rackspace.service-now.com/rack_sp">SNOW</a> – Report an Issue, Software/Application requests</p></li>
+<li><p><a href="https://identity.rackspace.corp/Finder?g=app-qliksense-administrator">Rackspace Identity Portal (“Finder”)</a> – Very useful if looking up your SSO and permissions from SailPoint.</p></li>
+<li><p>If you can’t access a resource, it’s 95% likely due to you not having a SailPoint permission</p></li>
+</ul>
+<section id="rxt-data-sources" class="level3">
+<h3 class="anchored" data-anchor-id="rxt-data-sources">RXT Data Sources</h3>
+<ul>
+<li><p><a href="https://core.rackspace.com/">CORE</a> – Dedicated ticketing, Account Information</p></li>
+<li><p><a href="https://encore.rackspace.com/api/encore/write-local-storage">Encore</a> – Cloud ticketing, Account Information</p></li>
+<li><p><a href="https://raxglobal.sharepoint.com/:f:/r/sites/GlobalDataTeam-GDO_Analysts/Shared%20Documents/GDO_Analysts?csf=1&amp;web=1&amp;e=ohiAVi">Team Files</a> – Central Repository for team work/outputs</p></li>
+<li><p><a href="https://rax.lightning.force.com/one/one.app#/sObject/0066100000K9H9DAAV/view">Salesforce</a> – A tool that mostly Sales Rackers use to track inputs for sales metrics and customer information (may not have access – that’s okay, no need for now)</p></li>
+<li><p><a href="https://one.rackspace.com/pages/viewpage.action?pageId=787752020">El Templo</a> – Mexico office FAQ on access to the office</p></li>
+</ul>
+</section>
+</section>
+<section id="learning-resources" class="level2">
+<h2 class="anchored" data-anchor-id="learning-resources">Learning resources</h2>
+<p>REVIEW</p>
+<ul>
+<li><p><a href="https://learn.rackspace.com/">MyLearn</a> – Rackspace University</p></li>
+<li><p><a href="https://app.smartsheet.com/b/form?EQBCT=f662d0e596704f2fb008aa6d16e2f10b">Lynda.com</a> – Additional, more technical training resources – free to Racker (Rackspace funds this, so it’s free for us)</p></li>
+<li><p><a href="https://www.safaribooksonline.com/accounts/login/">Safari.com</a> – Additional, more technical training resources – free to Racker (Rackspace funds this, so it’s free for us)</p></li>
+<li><p><a href="https://one.rackspace.com/display/SDM/Acronyms">Rackspace Acronyms</a> – Rackspace has a lot of Acronyms – this will help – promise!</p></li>
+<li><p>Linkedin Learning</p></li>
+</ul>
+
+
+</section>
+
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Rackspace 2024</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/">
+      <i class="bi bi-github" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://google.com/">
+      <i class="bi bi-google" role="img">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>
