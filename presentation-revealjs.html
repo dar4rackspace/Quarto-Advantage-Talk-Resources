@@ -407,9 +407,32 @@ Daniel Amieva Rodriguez
 
   <p class="date">2024-04-18</p>
 </section>
+<section id="index" class="slide level2">
+<h2>Index</h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<ol type="1">
+<li>What is Quarto?</li>
+<li>Parameterized Reporting</li>
+<li>Happy Documentation</li>
+</ol>
+</div><div class="column" style="width:60%;">
+<p>All resources of this talk @</p>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/qrcode_repo.png" class="quarto-figure quarto-figure-center"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
 <section>
 <section id="what-is-quarto" class="title-slide slide level1 center">
 <h1>What is Quarto?</h1>
+
+</section>
+<section id="tldr" class="slide level2">
+<h2>TLDR</h2>
 <ul>
 <li><p>Quarto enables you to weave together content and executable code into a finished document.</p></li>
 <li><p>Highlight Quarto’s seamless integration with Python, R, Julia, and Observable, enabling dynamic content generation and interactive data exploration</p></li>
@@ -419,18 +442,18 @@ Daniel Amieva Rodriguez
 <h2>Running Code</h2>
 <p>When you click the <strong>Render</strong> button a document will be generated that includes both content and the output of embedded code. You can embed code like this:</p>
 <div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href=""></a><span class="dv">1</span> <span class="sc">+</span> <span class="dv">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 2</code></pre>
 </div>
 </div>
-<p>You can add options to executable code like this</p>
-<div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 4</code></pre>
-</div>
-</div>
-<p>The <code>echo: false</code> option disables the printing of code (only output is displayed).</p>
-</section>
+
+<aside><div>
+<p><a href="https://quarto.org/docs/computations/execution-options.html">Check other execution options</a></p>
+</div></aside></section>
 <section id="explore-the-qmd-benefits" class="slide level2">
 <h2>Explore the QMD benefits</h2>
 <ul>
@@ -441,13 +464,39 @@ Daniel Amieva Rodriguez
 <section id="demo-1" class="slide level2">
 <h2>DEMO 1</h2>
 <ul>
-<li>show 1 file multiple outputs (introduction folder)</li>
+<li>show 1 file multiple outputs (<a href="/introduction">introduction folder</a>)</li>
 </ul>
-</section></section>
-<section>
-<section id="parameterized-reports" class="title-slide slide level1 center">
-<h1>Parameterized Reports</h1>
-
+</section>
+<section id="parameterized-reports" class="slide level2">
+<h2>Parameterized Reports</h2>
+<p>One Template, many hats.</p>
+<div class="columns">
+<div class="column" style="width:25%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/cat1.jpg." class="fragment quarto-figure quarto-figure-center"></p>
+</figure>
+</div>
+</div><div class="column" style="width:25%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/cat2.jpg." class="fragment quarto-figure quarto-figure-center"></p>
+</figure>
+</div>
+</div><div class="column" style="width:25%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/cat3.jpg." class="fragment quarto-figure quarto-figure-center"></p>
+</figure>
+</div>
+</div><div class="column" style="width:25%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/cat4.jpg." class="fragment quarto-figure quarto-figure-center"></p>
+</figure>
+</div>
+</div>
+</div>
 </section>
 <section id="whyuse-cases" class="slide level2">
 <h2>Why/Use cases</h2>
@@ -464,13 +513,6 @@ Daniel Amieva Rodriguez
 <ul>
 <li>simple demo</li>
 <li>invoice demo python</li>
-</ul>
-</section>
-<section id="going-to-sleep" class="slide level2">
-<h2>Going to sleep</h2>
-<ul>
-<li>Get in bed</li>
-<li>Count sheep</li>
 </ul>
 </section>
 <section id="slide-with-speaker-notes" class="slide level2">
@@ -619,16 +661,27 @@ Daniel Amieva Rodriguez
 </section>
 <section id="qna" class="slide level2">
 <h2>QnA</h2>
-<p><img data-src="images/notpenguins.jpg" class="quarto-figure quarto-figure-left"> <img data-src="images/notpenguins.jpg" class="quarto-figure quarto-figure-right"></p>
-<p>add QR to repo</p>
+<div class="columns">
+<div class="column" style="width:70%;">
+<p><img data-src="images/notpenguins.jpg" width="750" height="650"></p>
+</div><div class="column" style="width:30%;">
+<p>All resources of this talk @</p>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/qrcode_repo.png" class="quarto-figure quarto-figure-center"></p>
+</figure>
+</div>
+</div>
+</div>
 </section>
 <section id="further-resources" class="slide level2">
 <h2>Further Resources</h2>
-<pre><code>-  To learn more about Quarto see &lt;https://quarto.org&gt;.</code></pre>
+<pre><code>-  [To learn more about Quarto](https://quarto.org)
+- [Awesome Quarto](https://github.com/mcanouil/awesome-quarto#presentations)</code></pre>
 <div class="quarto-auto-generated-content">
 <p><img src="images/r-icon-White-Square.png" class="slide-logo"></p>
 <div class="footer footer-default">
-<p>Footer text</p>
+<p>Rax.io 2024</p>
 </div>
 </div>
 </section></section>

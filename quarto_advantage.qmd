@@ -15,10 +15,11 @@ format:
         theme: blood
         progress: true
         history: true
+        code-fold: true
         chalkboard: 
             src: drawings.json
         logo: images/r-icon-White-Square.png
-        footer: "Footer text"
+        footer: "Rax.io 2024"
         preview-links: auto
         menu:
             numbers: true
@@ -33,8 +34,30 @@ format:
     PrettyPDF-pdf: default
 ---
 
+## Index
+
+:::: {.columns}
+
+
+::: {.column width="40%"}
+1. What is Quarto?
+2. Parameterized Reporting
+3. Happy Documentation
+:::
+
+::: {.column width="60%"}
+
+All resources of this talk @
+
+![](images/qrcode_repo.png){fig-align="center"}
+
+:::
+
+::::
 
 # What is Quarto?
+
+## TLDR
 
 - Quarto enables you to weave together content and executable code into a finished document.
 
@@ -45,17 +68,13 @@ format:
 When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
 
 ```{r}
+#| echo: true
 1 + 1
 ```
 
-You can add options to executable code like this
-
-```{r}
-#| echo: false
-2 * 2
-```
-
-The `echo: false` option disables the printing of code (only output is displayed).
+::: aside
+[Check other execution options](https://quarto.org/docs/computations/execution-options.html)
+:::
 
 ## Explore the QMD benefits
 
@@ -64,28 +83,50 @@ The `echo: false` option disables the printing of code (only output is displayed
 
 ## DEMO 1
 
- - show 1 file multiple outputs (introduction folder)
+ - show 1 file multiple outputs ([introduction folder](/introduction))
 
-# Parameterized Reports
 
-## Why/Use cases
+## Parameterized Reports
 
-- why?
-- how to?
-- inside file
-- using yaml
+One Template, many hats.
+
+:::: {.columns}
+
+
+::: {.column width="25%"}
+![](images/cat1.jpg.){.fragment fig-align="center"}
+:::
+
+::: {.column width="25%"}
+![](images/cat2.jpg.){.fragment fig-align="center"}
+:::
+
+::: {.column width="25%"}
+![](images/cat3.jpg.){.fragment fig-align="center"}
+:::
+
+::: {.column width="25%"}
+![](images/cat4.jpg.){.fragment fig-align="center"}
+
+:::
+
+::::
+
+## Use cases
+
+- Same report, multiple stakeholders
+- Same report, updates periodically
+- ....
+
 
 ## DEMO 2
 
 See (param reports folder)
 
+- inside file
+- using yaml
 - simple demo
 - invoice demo python
-
-## Going to sleep
-
-- Get in bed
-- Count sheep
 
 ## Slide with speaker notes
 
@@ -233,16 +274,26 @@ Your Time and Technical debt isnt.
 
 ## QnA
 
-::: {.r-stack}
-![](images/notpenguins.jpg){.fragment width="450" height="300"}
+:::: {.columns}
 
-![](images/r-Icon-White-Square.png){.fragment width="300" height="450"}
+::: {.column width="70%"}
 
-![](images/Rackspace_Technology_Logo_RGB_RED.png){.fragment width="400" height="400"}
+![](images/notpenguins.jpg){width="750" height="650"}
+
 :::
 
-add QR to repo
+::: {.column width="30%"}
+
+All resources of this talk @
+
+![](images/qrcode_repo.png){fig-align="center"}
+
+:::
+
+::::
+
 
 ## Further Resources
 
-    -  To learn more about Quarto see <https://quarto.org>.
+    -  [To learn more about Quarto](https://quarto.org)
+    - [Awesome Quarto](https://github.com/mcanouil/awesome-quarto#presentations)
