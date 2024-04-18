@@ -34,11 +34,13 @@ format:
 ---
 
 
-## Quarto
+# What is Quarto?
 
-Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+- Quarto enables you to weave together content and executable code into a finished document.
 
-### Running Code
+- Highlight Quarto's seamless integration with Python, R, Julia, and Observable, enabling dynamic content generation and interactive data exploration
+
+## Running Code
 
 When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
 
@@ -55,22 +57,30 @@ You can add options to executable code like this
 
 The `echo: false` option disables the printing of code (only output is displayed).
 
-## Getting up
+## Explore the QMD benefits
 
-- Turn off alarm
-- Get out of bed
+- 1 file
+- multiple outputs
 
-## Breakfast
+## DEMO 1
 
-- Eat eggs
-- Drink coffee
+ - show 1 file multiple outputs (introduction folder)
 
-# In the evening
+# Parameterized Reports
 
-## Dinner
+## Why/Use cases
 
-- Eat spaghetti
-- Drink wine
+- why?
+- how to?
+- inside file
+- using yaml
+
+## DEMO 2
+
+See (param reports folder)
+
+- simple demo
+- invoice demo python
 
 ## Going to sleep
 
@@ -210,3 +220,29 @@ Animation
 Implicit
 
 Animation
+
+## Conclusion {auto-animate=true}
+
+try Quarto, its free
+
+## Conclusion {auto-animate=true}
+
+try Quarto, its free
+
+Your Time and Technical debt isnt.
+
+## QnA
+
+::: {.r-stack}
+![](images/notpenguins.jpg){.fragment width="450" height="300"}
+
+![](images/r-Icon-White-Square.png){.fragment width="300" height="450"}
+
+![](images/Rackspace_Technology_Logo_RGB_RED.png){.fragment width="400" height="400"}
+:::
+
+add QR to repo
+
+## Further Resources
+
+    -  To learn more about Quarto see <https://quarto.org>.
