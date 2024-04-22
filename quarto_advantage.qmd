@@ -260,7 +260,8 @@ Why not try Quarto? its free 💸
 
 ::: {.r-fit-text}
 Why not try Quarto? its free 💸
-Your Time and Technical debt is not 🎰
+
+Time and Technical Debt isnt 🎰
 :::
 
 
@@ -270,7 +271,7 @@ Your Time and Technical debt is not 🎰
 
 ::: {.column width="70%"}
 
-![](images/notpenguins.jpg){width="750" height="650"}
+![](images/notpenguins.jpg){width="650" height="550" fig-align="center"}
 
 :::
 
@@ -287,7 +288,7 @@ All resources of this talk @
 
 ## Further Resources
 
-    -  [To learn more about Quarto](https://quarto.org)
-    - [Awesome Quarto](https://github.com/mcanouil/awesome-quarto#presentations)
-    - [Parameterized Quarto](https://jadeyryan.com/talks/2023-09-25_posit_parameterized-quarto/)
-    - [Quarto Publishing Basics](https://quarto.org/docs/publishing/)
+- [To learn more about Quarto](https://quarto.org)
+- [Awesome Quarto](https://github.com/mcanouil/awesome-quarto#presentations)
+- [Parameterized Quarto](https://jadeyryan.com/talks/2023-09-25_posit_parameterized-quarto/)
+- [Quarto Publishing Basics](https://quarto.org/docs/publishing/)
