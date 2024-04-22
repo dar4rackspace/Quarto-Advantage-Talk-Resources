@@ -1,0 +1,1140 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.553">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="B.I Enterprise Team">
+
+<title>BI Enterprise Docs - BI SQL Development Standards</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../images/r-Icon-White-Square.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-sidebar docked nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../images/Rackspace_Technology_Logo_RGB_RED.png" alt="" class="navbar-logo">
+    </a>
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">BI Enterprise Docs</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="../index.html" aria-current="page"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-onboarding" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Onboarding</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-onboarding">    
+        <li class="dropdown-header">First Week <span class="citation" data-cites="Rackspace">@Rackspace</span></li>
+        <li>
+    <a class="dropdown-item" href="../onboarding docs/first_week_onboarding.html">
+ <span class="dropdown-text">Onboarding Guide for Reporting &amp; Analytics Team</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li class="dropdown-header">Our Best Practices</li>
+        <li>
+    <a class="dropdown-item" href="../onboarding docs/bi_sql_development_standards.html">
+ <span class="dropdown-text">BI SQL Development Standards</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../bi-infrastructure.html"> 
+<span class="menu-text">B.I Enterprise Infrastructure</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../onboarding docs/bi_sql_development_standards.html">Our Best Practices</a></li><li class="breadcrumb-item"><a href="../onboarding docs/bi_sql_development_standards.html">BI SQL Development Standards</a></li></ol></nav>
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-center sidebar-header sidebar-header-stacked">
+      <a href="../index.html" class="sidebar-logo-link">
+      <img src="../images/Rackspace_Technology_Logo_RGB_WHT.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      </a>
+      <div class="sidebar-tools-main">
+    <a href="https://google.com" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-google"></i></a>
+    <div class="dropdown">
+      <a href="" title="" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" aria-label=""><i class="bi bi-github"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://code.com">
+            Source Code
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://bugs.com">
+            Report a Bug
+            </a>
+          </li>
+      </ul>
+    </div>
+</div>
+      </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text">First Week <span class="citation" data-cites="Rackspace">@Rackspace</span></span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../onboarding docs/first_week_onboarding.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Onboarding Guide for Reporting &amp; Analytics Team</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+ <span class="menu-text">Our Best Practices</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../onboarding docs/bi_sql_development_standards.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">BI SQL Development Standards</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#dataform-standards" id="toc-dataform-standards" class="nav-link active" data-scroll-target="#dataform-standards">Dataform Standards</a></li>
+  <li><a href="#bigquery-standards" id="toc-bigquery-standards" class="nav-link" data-scroll-target="#bigquery-standards">BigQuery Standards</a>
+  <ul class="collapse">
+  <li><a href="#general-coding-practices" id="toc-general-coding-practices" class="nav-link" data-scroll-target="#general-coding-practices">General Coding Practices</a></li>
+  </ul></li>
+  <li><a href="#optimization-guidelines-for-bi-report-building" id="toc-optimization-guidelines-for-bi-report-building" class="nav-link" data-scroll-target="#optimization-guidelines-for-bi-report-building">Optimization Guidelines for BI Report Building</a></li>
+  <li><a href="#table-view-creation-standards" id="toc-table-view-creation-standards" class="nav-link" data-scroll-target="#table-view-creation-standards">Table / View Creation Standards</a>
+  <ul class="collapse">
+  <li><a href="#stored-procedure-scripts" id="toc-stored-procedure-scripts" class="nav-link" data-scroll-target="#stored-procedure-scripts">Stored Procedure Scripts</a></li>
+  <li><a href="#view-creation-scripts" id="toc-view-creation-scripts" class="nav-link" data-scroll-target="#view-creation-scripts">View Creation Scripts</a></li>
+  <li><a href="#when-should-i-use-a-stored-proc-and-when-should-i-use-a-view" id="toc-when-should-i-use-a-stored-proc-and-when-should-i-use-a-view" class="nav-link" data-scroll-target="#when-should-i-use-a-stored-proc-and-when-should-i-use-a-view">When Should I Use a Stored Proc and When Should I Use a View?</a></li>
+  </ul></li>
+  <li><a href="#github" id="toc-github" class="nav-link" data-scroll-target="#github">GitHub</a>
+  <ul class="collapse">
+  <li><a href="#github-access" id="toc-github-access" class="nav-link" data-scroll-target="#github-access">GitHub Access</a></li>
+  <li><a href="#branches" id="toc-branches" class="nav-link" data-scroll-target="#branches">Branches:</a></li>
+  </ul></li>
+  <li><a href="#bigquery-vcs" id="toc-bigquery-vcs" class="nav-link" data-scroll-target="#bigquery-vcs">BigQuery VCS</a>
+  <ul class="collapse">
+  <li><a href="#access" id="toc-access" class="nav-link" data-scroll-target="#access">Access</a></li>
+  <li><a href="#process-details" id="toc-process-details" class="nav-link" data-scroll-target="#process-details">Process Details:</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../onboarding docs/bi_sql_development_standards.html">Our Best Practices</a></li><li class="breadcrumb-item"><a href="../onboarding docs/bi_sql_development_standards.html">BI SQL Development Standards</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">BI SQL Development Standards</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>B.I Enterprise Team </p>
+          </div>
+  </div>
+    
+  
+    <div>
+    <div class="quarto-title-meta-heading">Modified</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date-modified">Invalid Date</p>
+    </div>
+  </div>
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>This Document contained BI development standards…..</p>
+<section id="dataform-standards" class="level2">
+<h2 class="anchored" data-anchor-id="dataform-standards">Dataform Standards</h2>
+<p>The exact same as the BigQuery standards apply to Dataform, with the following exceptions:</p>
+<ul>
+<li><p>A single sqlx script generates a single table / view</p></li>
+<li><p>All tables created in Dataform go to <code>rax-enterprisebi.dataform.&lt;table_name&gt;</code> (production) or <code>rax-enterprisebi-dev.dataform.&lt;table_name&gt;</code> (development)</p></li>
+<li><p>There are no prefixes nor suffixes to sqlx scripts. The only rule is <code>&lt;report_name&gt;.sqlx</code> or <code>&lt;report_name&gt;_&lt;table_name&gt;.sqlx</code> (if more than one table)</p></li>
+<li><p>Single table in report: <code>report_specific/account_alignment/account_alignment.sqlx</code></p></li>
+<li><p>One of multiple tables in same report: <code>report_specific/pull_account/pull_account_contact_info.sqlx</code></p></li>
+<li><p>Table creation, documentation, clustering, etc. happen in the config object</p></li>
+<li><p>Variable declarations happen in the pre_operations object</p></li>
+<li><p>Operation sqlx scripts are used to do anything outside table creation - such as exporting data to GCS</p></li>
+</ul>
+</section>
+<section id="bigquery-standards" class="level2">
+<h2 class="anchored" data-anchor-id="bigquery-standards">BigQuery Standards</h2>
+<section id="general-coding-practices" class="level3">
+<h3 class="anchored" data-anchor-id="general-coding-practices">General Coding Practices</h3>
+<section id="tables" class="level4">
+<h4 class="anchored" data-anchor-id="tables">Tables</h4>
+<ul>
+<li><p>Do not use nesting for subqueries, unless they’re extremely simple. Use CTEs instead (or temporary tables if CTEs are not an option)</p></li>
+<li><p>Three-part naming standards must be followed when referring to datasets (e.g.&nbsp;<code>rax-landing-dev.cms_ods.customer_account</code>)</p></li>
+<li><p>When querying more than one table:</p>
+<ul>
+<li><p>All tables should be aliased with 1-3 characters (Iines 31, 32, 35)</p></li>
+<li><p>All field names should be preceded by the table alias in the query (l. 17-30)</p></li>
+<li><p>All tables and field names must be snake_case (lowercase letters, with words separated by underscores)</p></li>
+<li><p>Tables and column names must not set reserved words (i.e.&nbsp;function names)</p></li>
+<li><p>Fields should be aliased with AS instead of using the = keyword (l. 7)</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="comments" class="level4">
+<h4 class="anchored" data-anchor-id="comments">Comments</h4>
+<ul>
+<li><p>Code should have sections and in line comments indicating what is happening:</p>
+<ul>
+<li><p>Sections should use multi-line comments (lines 1-3)</p></li>
+<li><p>Specific purpose of the code can be documented with one-line comments (l. 4)</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="line-format" class="level4">
+<h4 class="anchored" data-anchor-id="line-format">Line format</h4>
+<ul>
+<li><p>Each new field should be carried down to its own line.</p></li>
+<li><p>Commas should be placed at the end of the line, and not at the beginning.</p></li>
+<li><p>Case statements should be structured and indented as shown (l. 19-23).</p></li>
+</ul>
+</section>
+<section id="key-words" class="level4">
+<h4 class="anchored" data-anchor-id="key-words">Key Words</h4>
+<ul>
+<li><p>All keywords (SELECT, FROM, JOIN, WHERE, GROUP BY, HAVING, INTO, CASE, SUM, COUNT, etc.) should be all caps.</p></li>
+<li><p>The GROUP BY statement should be written with field names all on the same line.</p></li>
+</ul>
+</section>
+<section id="variables" class="level4">
+<h4 class="anchored" data-anchor-id="variables">Variables</h4>
+<ul>
+<li><p>Use declared variables when programming hard-coded dates (ie: min / max dates) or conditions that are repeated.</p></li>
+<li><p>Variable names must always start with <code>v_</code>. This is done in order to make it easier to find variables within the script (e.g.: v_min_date).</p></li>
+</ul>
+</section>
+<section id="nested-queries-dont" class="level4">
+<h4 class="anchored" data-anchor-id="nested-queries-dont">Nested queries (don’t)</h4>
+<ul>
+<li>Nested queries (sub selects) should be avoided, and temp tables or common table expressions should be used instead. This makes code easier to read and maintain.</li>
+</ul>
+</section>
+<section id="operators" class="level4">
+<h4 class="anchored" data-anchor-id="operators">Operators</h4>
+<ul>
+<li><p>For mostly all operators such as <code>=</code>, <code>+</code>, <code>&gt;=</code>, <code>&lt;=</code>, <code>&gt;</code>, <code>&lt;</code>, there needs to be only one space before and after each operator:</p>
+<ul>
+<li>Correct Formatting - Operators
+<ul>
+<li>THIS:
+<ul>
+<li>foo + bar</li>
+</ul></li>
+<li>NOT THIS:
+<ul>
+<li>foo+ bar</li>
+<li>foo +bar</li>
+<li>foo+bar</li>
+</ul></li>
+</ul></li>
+<li>The only exceptions are parentheses, quotes and brackets:
+<ul>
+<li>Correct Formatting - Operators
+<ul>
+<li>THIS:
+<ul>
+<li>CAST(foo AS STRING)</li>
+</ul></li>
+<li>NOT THIS:
+<ul>
+<li>CAST( foo AS STRING )</li>
+<li>CAST(foo AS STRING )</li>
+<li>CAST( foo AS STRING)</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+</section>
+<section id="comments-1" class="level4">
+<h4 class="anchored" data-anchor-id="comments-1">Comments</h4>
+<ul>
+<li><p>Code is thoroughly commented so any developer can understand what it is doing when necessary. The proper way to comment is shown below.</p>
+<ul>
+<li>Proper Commenting On Qlik Code (Multiline)</li>
+</ul></li>
+</ul>
+<div class="sourceCode" id="cb1"><pre class="sourceCode sql code-with-copy"><code class="sourceCode sql"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>    <span class="co">/*********************************************************************************************</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co">    Insert comment here</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co">    This is a multiline comment - best used at the start of sections</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co">    *********************************************************************************************/</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    <span class="kw">SELECT</span> foo</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    <span class="kw">FROM</span> bar # This <span class="kw">is</span> an <span class="kw">in</span><span class="op">-</span>line <span class="kw">comment</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="indentation" class="level4">
+<h4 class="anchored" data-anchor-id="indentation">Indentation</h4>
+<ul>
+<li><p>Code is consistently indented properly to make it readable. This means it can follow any of the below examples (but not mix their rules)</p>
+<ul>
+<li><p>Alingment examples</p>
+<ul>
+<li>– Format A: Indent by alighning on field name
+<ul>
+<li>SELECT foo, bar, CASE WHEN foo = 1 THEN foo WHEN foo = 0 THEN no_foo ELSE NULL END AS foo_flag FROM foo_bar_table;</li>
+</ul></li>
+<li>– Format B: Indent on tab (4 spaces)
+<ul>
+<li>SELECT DISTINCT foo, bar, CASE WHEN foo = 1 THEN foo WHEN foo = 0 THEN no_foo ELSE NULL END AS foo_flag FROM foo_bar_table;</li>
+</ul></li>
+</ul></li>
+<li><p>Regardless of which indentation rules are used, tabs are converted to spaces to avoid GitHub messing up file readability (for more on this, read What’s the deal with tab sizes on GitHub Gists? - GitHub Help / How to use Git and GitHub - GitHub Community)</p></li>
+<li><p>This changes nothing in the script itself, except the way in which the IDE processes indentation, so your code should look the same.</p></li>
+<li><p>You can set this once and forget it in any IDE, usually through a menu or the command palette (SHIFT+CTRL+P).</p></li>
+<li><p>Here’s how to do it for the more popular IDEs: Notepad ++ | VSCode | Sublime | Atom</p></li>
+<li><p>For an example of how tabs affect document formatting, look at how the dots (spaces) and arrows (tabs) look in the IDE (left) vs GitHub (right):</p></li>
+</ul></li>
+</ul>
+</section>
+</section>
+</section>
+<section id="optimization-guidelines-for-bi-report-building" class="level2">
+<h2 class="anchored" data-anchor-id="optimization-guidelines-for-bi-report-building">Optimization Guidelines for BI Report Building</h2>
+<ul>
+<li><p>LIMIT N does not reduce query cost.</p></li>
+<li><p>Do not use SELECT * unless you need all the columns in a table. Each column queried increases cost.</p>
+<ul>
+<li><p>“But I need 19 out of 20 fields and writing them all is just wasted space…” - use SELECT * EXCEPT(field_name).</p></li>
+<li><p>SELECT * EXCEPT() must not be used to pull data from a source table (i.e.&nbsp;a table outside the scope of the BI report that is used as the source of data).</p></li>
+</ul></li>
+<li><p>Use the partitioning and clustering fields in WHERE and JOIN clauses to reduce costs.</p></li>
+<li><p>Use UNION ALL instead of UNION DISTINCT where possible.</p></li>
+<li><p>Do not use complicated calculated fields in JOINS or GROUP BY clauses.</p>
+<ul>
+<li>Create the key fields beforehand in temporary tables.</li>
+</ul></li>
+<li><p>Do not use OR in JOIN statements. This is extremely slow.</p>
+<ul>
+<li>Separate your table into smaller pieces, do the separate JOINS and then UNION the new tables instead.</li>
+</ul></li>
+<li><p>Do not use views to query other views, unless these views are from a different report, dataset, or project.</p></li>
+</ul>
+</section>
+<section id="table-view-creation-standards" class="level2">
+<h2 class="anchored" data-anchor-id="table-view-creation-standards">Table / View Creation Standards</h2>
+<section id="stored-procedure-scripts" class="level3">
+<h3 class="anchored" data-anchor-id="stored-procedure-scripts">Stored Procedure Scripts</h3>
+<ul>
+<li><p>Names for stored procedures all start with udsp_ and end in either _full or _incremental, depending on the load type.</p>
+<ul>
+<li><p><strong>Full</strong> means the entire table is truncated and all data is inserted from scratch, every time it reloads.</p></li>
+<li><p><strong>Increment</strong> al means only the latest part of the table is truncated and replaced by new data. This is more efficient, but also harder to code.</p></li>
+</ul></li>
+<li><p>The entire stored procedure should be contained in a <strong>single script</strong>.</p></li>
+<li><p><strong>Stored procedures must NOT create tables</strong>. They must instead truncate / delete and insert data to tables created by table creation scripts.</p></li>
+<li><p>All stored procedures must include error handling.</p></li>
+<li><p>All stored procedures must invoke the logging for load dependencies.</p></li>
+<li><p>There are specific folders for <a href="https://github.com/global-data-office/rax-enterprisebi/tree/main/report_specific_stored_procs">report-specific</a> and <a href="https://github.com/global-data-office/rax-enterprisebi/tree/main/report_tables_stored_procs">general-reporting</a> scripts in the GitHub repo.</p></li>
+</ul>
+<div class="sourceCode" id="cb2"><pre class="sourceCode sql code-with-copy"><code class="sourceCode sql"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>Stored Proc Boilerplate </span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="kw">CREATE</span> <span class="kw">OR</span> <span class="kw">REPLACE</span> <span class="kw">PROCEDURE</span> `rax<span class="op">-</span>enterprisebi.report_specific <span class="op">/</span> report_table.<span class="kw">TABLE</span> NAME`()</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="cf">BEGIN</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    <span class="kw">DECLARE</span> log_start <span class="dt">TIMESTAMP</span> <span class="kw">DEFAULT</span> <span class="fu">CURRENT_TIMESTAMP</span>(); # This <span class="kw">is</span> used <span class="cf">for</span> <span class="kw">table</span> <span class="kw">logging</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">BEGIN</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>        <span class="kw">CALL</span> `rax<span class="op">-</span>enterprisebi.load_dependencies.udsp_table_load_log`(<span class="st">'report_specific / report table'</span>, <span class="st">'Table name'</span>, <span class="st">'SP Name'</span>, log_start, <span class="kw">NULL</span>, <span class="kw">NULL</span>); # Invoke <span class="kw">table</span> <span class="kw">logging</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>        <span class="co">------</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>        <span class="co">/*************************************************************************************</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="co">        Section notes go here</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="co">        *************************************************************************************/</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>        <span class="op">&lt;</span>CTE <span class="kw">or</span> Temp <span class="kw">table</span> creation code goes here<span class="op">&gt;</span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>        # <span class="cf">If</span> above <span class="kw">query</span> was <span class="kw">successful</span>, <span class="kw">truncate</span> <span class="kw">table</span></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>        <span class="kw">TRUNCATE</span> <span class="kw">TABLE</span> `TABLE NAME`;</span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>        # <span class="kw">Insert</span> <span class="kw">new</span> <span class="kw">data</span> <span class="kw">into</span> <span class="kw">table</span></span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>        <span class="kw">INSERT</span> <span class="kw">INTO</span> `TABLE NAME` </span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>        <span class="kw">SELECT</span> <span class="op">*</span> </span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>        <span class="kw">FROM</span> `TEMP <span class="kw">TABLE</span> NAME`;</span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>        # <span class="kw">Call</span> <span class="kw">table</span> <span class="fu">log</span> <span class="kw">as</span> completed</span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>        CALL`rax<span class="op">-</span>enterprisebi.load_dependencies.udsp_table_load_log`(<span class="st">'report_specific / report table'</span>, <span class="st">'Table name'</span>, <span class="st">'SP Name'</span>, log_start, <span class="fu">CURRENT_TIMESTAMP</span>(), <span class="kw">NULL</span>);</span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a>    # <span class="kw">Call</span> <span class="kw">table</span> <span class="fu">log</span> <span class="kw">as</span> failed, <span class="kw">including</span> error message</span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>    <span class="kw">EXCEPTION</span> <span class="cf">WHEN</span> ERROR <span class="cf">THEN</span>   </span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>        CALL`rax<span class="op">-</span>enterprisebi.load_dependencies.udsp_table_load_log`(<span class="st">'report_specific / report table'</span>, <span class="st">'Table name'</span>, <span class="st">'SP Name'</span>, log_start, <span class="fu">CURRENT_TIMESTAMP</span>(), @@error.message);</span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a>        # Restore <span class="kw">table</span> back <span class="kw">to</span> original <span class="kw">to</span> ensure it <span class="kw">is</span> <span class="kw">not</span> <span class="kw">empty</span></span>
+<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a>        <span class="kw">INSERT</span> <span class="kw">INTO</span> `TABLE NAME` </span>
+<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a>        <span class="kw">SELECT</span> <span class="op">*</span> <span class="kw">FROM</span> `TEMP <span class="kw">TABLE</span> NAME` </span>
+<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a>        <span class="cf">FOR</span> SYSTEM_TIME <span class="kw">AS</span> <span class="kw">OF</span> log_start</span>
+<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a>    <span class="cf">END</span>;</span>
+<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a><span class="cf">END</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="table-creation-scripts-for-stored-procedures" class="level4">
+<h4 class="anchored" data-anchor-id="table-creation-scripts-for-stored-procedures">Table Creation Scripts (for Stored Procedures)</h4>
+<ul>
+<li><p><a href="https://cloud.google.com/bigquery/docs/partitioned-tables">Partitioning</a> and <a href="https://cloud.google.com/bigquery/docs/clustered-tables">clustering</a> should be added to final tables where it makes sense.</p>
+<ul>
+<li><p>Keep in mind there is a limit of 4000 unique partition values on a table (~10 years, or way more if partitioning by month).</p></li>
+<li><p>To partition by month, use a <a href="https://cloud.google.com/bigquery/docs/reference/standard-sql/date_functions#date_trunc">truncated date field</a>. This avoids confusion and allows for better data handling in Tableau.</p></li>
+</ul></li>
+<li><p>If <strong>incremental loading</strong> will be used for the table, add a partition expiration.</p></li>
+<li><p>The name for the table creation script should be the name of the table.</p></li>
+<li><p>An individual table creation script is needed for every table created (this should be changed) ??????????????????????</p></li>
+</ul>
+</section>
+<section id="table-creation-example" class="level4">
+<h4 class="anchored" data-anchor-id="table-creation-example">Table Creation Example</h4>
+<div class="sourceCode" id="cb3"><pre class="sourceCode sql code-with-copy"><code class="sourceCode sql"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">CREATE</span> <span class="kw">OR</span> <span class="kw">REPLACE</span> <span class="kw">TABLE</span> `rax<span class="op">-</span>enterprisebi.report_specific.account360_account_data`(</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a> account_number STRING,</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a> account_type STRING,</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a> account_id STRING,</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a> company_name STRING,</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a> company_name_filter_a STRING,</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a> company_name_filter_b STRING,</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a> top_200_salesforce <span class="dt">BOOLEAN</span>,</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a> naics_description STRING,</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a> discoverorgid STRING,</span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a> parent_id STRING,</span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a> account_identifier STRING,</span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a> date_partition <span class="dt">DATE</span> #Need <span class="kw">to</span> <span class="kw">partition</span> <span class="kw">table</span> <span class="kw">in</span> <span class="kw">order</span> <span class="kw">to</span> <span class="kw">cluster</span></span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a><span class="kw">PARTITION</span> <span class="kw">BY</span> DATE_TRUNC(date_partition, <span class="dt">MONTH</span>)</span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a><span class="kw">CLUSTER</span> <span class="kw">BY</span> account_type, account_number, account_identifier, account_id;</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+</section>
+<section id="view-creation-scripts" class="level3">
+<h3 class="anchored" data-anchor-id="view-creation-scripts">View Creation Scripts</h3>
+<ul>
+<li><p>Views should follow the same naming convention as other tables (we do not prefix with vw_ now, as table functions can change)</p></li>
+<li><p>All views for a specific workbook / report should be contained within a single script.</p></li>
+<li><p>Views should only be used at the very end of the data flow, as inputs for BI reports, such as Tableau workbooks, for example.</p></li>
+</ul>
+</section>
+<section id="when-should-i-use-a-stored-proc-and-when-should-i-use-a-view" class="level3">
+<h3 class="anchored" data-anchor-id="when-should-i-use-a-stored-proc-and-when-should-i-use-a-view">When Should I Use a Stored Proc and When Should I Use a View?</h3>
+<ul>
+<li><p><strong>Use a stored procedure when</strong>:</p>
+<ul>
+<li><p>The operation is data intensive and creates big tables (query times greater than a minute in BQ).</p></li>
+<li><p>Table logging is required.</p></li>
+<li><p>The output will be used by more than one BI report.</p></li>
+<li><p>A custom function or variables need to be defined.</p></li>
+</ul></li>
+<li><p><strong>Use a view when</strong>:</p>
+<ul>
+<li><p>There is a clear need for the data to be calculated at the time of the query.</p></li>
+<li><p>There are only small changes needed to an existing general-use table, like new field calculations.</p></li>
+</ul></li>
+</ul>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+DO NOT USE A VIEW
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><p>To query another view within the scope of the same BI report. This is expensive, inefficient, and hard to maintain.</p></li>
+<li><p>Either query the source table behind the view or refactor your script.</p></li>
+</ul>
+</div>
+</div>
+<ul>
+<li><p>To change data types for existing tables.</p>
+<ul>
+<li><p>Data types can be changed by refactoring the source table, or inside the Tableau Data Source.</p></li>
+<li><p>Views that are used for multiple workbooks should be turned into stored procedures that create general-reporting tables. This reduces query time and costs:</p></li>
+</ul>
+<p>IMAGEEEEEEEEEEEEEEEEE</p></li>
+</ul>
+</section>
+</section>
+<section id="github" class="level2">
+<h2 class="anchored" data-anchor-id="github">GitHub</h2>
+<ul>
+<li><p>We use GitHub as our Version Control System (VCS).</p></li>
+<li><p>Our GitHub workflow is based off of <a href="https://guides.github.com/introduction/flow/">Understanding the GitHub Flow</a></p></li>
+<li><p>You can work with GitHub through the UI or using <a href="https://git-scm.com/docs/git">git command line</a>, whichever is more comfortable for you</p></li>
+<li><p>Team walkthrough video can be found here with passcode 33n*$gWg DEPRECATED!</p></li>
+</ul>
+<section id="github-access" class="level3">
+<h3 class="anchored" data-anchor-id="github-access">GitHub Access</h3>
+<ul>
+<li><p>To develop tables and stored procedures for the rax-enterprisebi project, you will need to request access to <a href="https://identity.rackspace.corp/Finder?g=rax-gdo-bideveloper">rax-gdo-bideveloper</a> through SailPoint.</p></li>
+<li><p>If not developing tables and stored procedures, please work with the Ops team to determine the proper group for access.</p></li>
+</ul>
+</section>
+<section id="branches" class="level3">
+<h3 class="anchored" data-anchor-id="branches">Branches:</h3>
+<ul>
+<li><p>Main will reflect the code that is running on production</p>
+<ul>
+<li><p>No development work should be done on the main branch</p></li>
+<li><p>All code on the main branch has been reviewed</p></li>
+</ul></li>
+<li><p>A new branch is created for each feature being worked</p>
+<ul>
+<li>After a pull request/review is completed for the feature branch, the items can be merged with main and the branch removed</li>
+</ul></li>
+</ul>
+</section>
+</section>
+<section id="bigquery-vcs" class="level2">
+<h2 class="anchored" data-anchor-id="bigquery-vcs">BigQuery VCS</h2>
+<ul>
+<li><p>All GCP table and stored procedure code is stored in our <a href="https://github.com/global-data-office/rax-enterprisebi">entreprise GitHub repository</a></p></li>
+<li><p>Edit: most of these tables will eventually be migrated into the new Dataform repository, which allows for CI/CD with our BI code: <a href="https://github.com/rax-bivis/dataform">rax-bivis/dataform</a></p></li>
+</ul>
+<section id="access" class="level3">
+<h3 class="anchored" data-anchor-id="access">Access</h3>
+<ul>
+<li><p>Request access to <a href="https://identity.rackspace.corp/Finder?g=github-cloud-users">github-cloud-users</a> through SailPoint</p></li>
+<li><p>Create a public <a href="https://github.com">GitHub account</a></p></li>
+<li><p>You must use your full name and Rackspace email</p></li>
+<li><p>Your username must be your SSO</p></li>
+<li><p>Two-factor authentication must be enabled</p></li>
+<li><p>Add your GitHub username to the <a href="https://identity.rackspace.corp/ManageYourAttributes">identity portal</a></p></li>
+<li><p>Request access to <a href="https://github.com/global-data-office">Global Data Office</a> by submitting a JIRA request to GDO</p>
+<ul>
+<li><a href="https://rackspace.atlassian.net/browse/DATA-25458">Example ticket</a></li>
+</ul></li>
+<li><p>Folders:</p>
+<ul>
+<li><p>The folders in GitHub will be the same as the datasets in GCP and there will be a separate folder for tables and stored procedures</p></li>
+<li><p>Your create table statements will go into the tables folder</p></li>
+<li><p>The stored procedures used to populate the table will go in the stored procedures folder</p></li>
+<li><p>You may have more than one stored procedure per table (one that is full and a second that is incremental, if applicable)</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="process-details" class="level3">
+<h3 class="anchored" data-anchor-id="process-details">Process Details:</h3>
+<ul>
+<li><p>Clone the main branch to your computer <strong>git clone</strong> and <strong>git pull</strong></p></li>
+<li><p>Create a new branch for you feature/development <strong>git branch</strong></p>
+<ul>
+<li>Add new .sql files with your BigQuery code OR edit existing files</li>
+</ul></li>
+<li><p>Add your files to your branch <strong>git add</strong> and commit them <strong>git commit</strong> and when you are ready for review <strong>git push</strong></p></li>
+<li><p>Create a pull request and fill in the Developer items on the pull request template (to make this easiest, this entire step should be done through the UI on GitHub’s website)</p>
+<ul>
+<li><p>Ask someone to review (reviews will also be assigned in the bi-weekly peer review meetings)</p></li>
+<li><p>Reviewer reviews code and comments on any changes that are needed</p>
+<ul>
+<li><p>Reviewer must check all boxes in the pull request template</p></li>
+<li><p>Reviewer should only approve pull request when it is deemed ready for production</p></li>
+</ul></li>
+</ul></li>
+<li><p>After pull request is approved, it can be merged with main, deployed to production (rax-enterprisebi), and the development/feature branch can be removed</p></li>
+<li><p>Deployment is a manual process right now and will be done by the Developer</p></li>
+</ul>
+
+
+</section>
+</section>
+
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/dar4rackspace\.github\.io\/Quarto-Advantage-Talk-Resources\/");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Rackspace 2024</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/">
+      <i class="bi bi-github" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://google.com/">
+      <i class="bi bi-google" role="img">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>
