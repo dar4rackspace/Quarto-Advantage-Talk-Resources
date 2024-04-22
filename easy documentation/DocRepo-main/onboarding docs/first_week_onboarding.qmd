@@ -7,261 +7,46 @@ editor:
     wrap: 72
 ---
 
-- PENDING IMAGES: https://raxglobal-my.sharepoint.com/:w:/r/personal/guillermo_pereztello_rackspace_com/_layouts/15/doc2.aspx?sourcedoc=%7Bc3aef85e-7a0e-45c6-aa8e-90452ca5da8a%7D&action=edit&wdPid=a1e27ad
-
 ## Logging In
 
-::: callout-caution
-Many of the items below require double authentication
-:::
-
--   When prompted for your **SSO**, use what is given to you by Help
-    Desk. Your **Password** for your SSO is something that you will
-    create following the steps that Help Desk provides.
-
--   The next type of authentication requires your **SSO** and your **RSA
-    Token (app)**. Instructions for this should be given to you with
-    your laptop.\
-
-::: callout-important
-## Always use password to login in your machine.
-
-There is a known issue where logging in with PIN on Windows machines
-will cause issues connecting to SQL Server. This can be done by clicking
-on “Sign-in Options” and choosing the key icon in the log-in screen.
-:::
-
--   If some of the log-in is not working, make sure that you are
-    connected to the VPN (see below)
-
--   If you receive your laptop before your start date, don’t set up
-    anything.
-
-::: callout-tip
-
-Just in case that that you are having issues with the setup of you
-computer please connect with: 
-
-- Víctor Navarro[victor.navarro\@rackspace.com](mailto:victor.navarro@rackspace.com) 
-
-- John Spencer [john.spencer\@rackspace.com](mailto:john.spencer@rackspace.com) 
-
-- Eduardo Coccaro [eduardo.coccaro\@rackspace.com](mailto:eduardo.coccaro@rackspace.com)
-
-:::
-
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla, nulla non posuere mollis, erat augue ultricies lectus, vel feugiat est sapien eget nulla. Vestibulum efficitur, velit id lacinia tristique, ipsum metus aliquam risus, nec hendrerit ligula lorem a risus. Nullam ornare, eros sit amet hendrerit efficitur, dui turpis consequat enim, non congue est libero eu ipsum.
 
 ## Computer setup
 
--   **Company Portal / Software Center**: this is the place where you can download all the apps directly from Rackspace
-
-  - Try this: click on the windows search on the toolbar, type company
-  portal or portal de compania
-  
-  IMAGE HEEREEEEEEEEEEEEEEEEE
-    
--   Ensure your computer is set up with
-
-  - [ ] SQL Server Management Studio (specifically MS SQL)\
-  - [ ] Zoom
-  - [ ] Teams
-    
--   Application installation requires getting a username and temporary password from LAPS
-
-  -   Need to be connected to the VPN
-  
-  -   Click on **“Accept Racker UAP and view password”**
-  
-  -   Write down your USERNAME and PASSWORD (if you are unsure of a symbol, then paste the password on a quick note)
-  
-::: {.callout-note}
-
-  -   Do NOT just copy and paste, write this down somewhere (for System
-      DSN)
-      
-  -   This password is a temporary password please change it whenever it suits you HEREEEEEEEE
-
-:::
-    
--   Update your Racker Email signature
-
-  1.   Go to “Outlook”
-  2.   Click on “File”
-  3.   Click on “Options”
-  4.   Click on “Mail” tab
-  5.   Click on “Signatures”
-  6.   Click on “New”
-  7.   Give your signature a name – just something for you reference
-  8.   New Branding Signature. Here is the link so you can update yours: [Link 2 Making your Custom Racker Signature](https://inside.rackspace.com/departments/salesandmarketing/marketing/branding/HTML/index.aspx)
-      
--   Go for the rest of the apps that you will need in your computer, for instance PDF, Winzip, Chrome, etc...
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla, nulla non posuere mollis, erat augue ultricies lectus, vel feugiat est sapien eget nulla. Vestibulum efficitur, velit id lacinia tristique, ipsum metus aliquam risus, nec hendrerit ligula lorem a risus. Nullam ornare, eros sit amet hendrerit efficitur, dui turpis consequat enim, non congue est libero eu ipsum.
 
 ## VPN Setup
 
--   [Global protect set up](https://one.rackspace.com/display/gss/User+Guide+-+Connect+to+Prisma+Access)
-    
--   Connect to the VPN by clicking on the AppGate icon in the system tray.
-
-IMAGE HERE
-
-
--   [Enter the following URL if you have not validated your credentials
-    yet](appgate://appgate.security.rackspace.net/eyJzcGEiOnsibW9kZSI6IlRDUCIsIm5hbWUiOiJyYWNrc3BhY2UiLCJrZXkiOiI5M2RjNzI2ZGZhZTQzMzE5MTI0NzViNDNmY2Y5YzkyN2JmOTI3M2Y0MjlhZWQyYzdhOWFjYjc1NWE4MDQ4ZTYzIn0sImNhRmluZ2VycHJpbnQiOiI1MmFlYTYxNWQzYjc5MTNjNzI2NmVhZWM3MTUzNWE5YWU1NjMwYmE3MDYzYWEwYTQ2NzE2NzQ0NDYwZjQxMDRkIiwiaWRlbnRpdHlQcm92aWRlck5hbWUiOiJBREZTIn0=) (or whichever link you received for setup)
-        
--   Validate your credentials with your RSA Token/password
-
--   Once done should be like the following image
-
-IMAGE APP GATE
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla, nulla non posuere mollis, erat augue ultricies lectus, vel feugiat est sapien eget nulla. Vestibulum efficitur, velit id lacinia tristique, ipsum metus aliquam risus, nec hendrerit ligula lorem a risus. Nullam ornare, eros sit amet hendrerit efficitur, dui turpis consequat enim, non congue est libero eu ipsum.
 
 ## Sailpoint access request
 
-These are the key groups that you need to request access to. Follow these instructions:
-
-  1. [Enter Sailpoint Access Request Page](https://one.rackspace.com/pages/viewpage.action?pageId=723555047#GCPAccess&Permissions-Instructions:AccesstoGCPviaanexistingADGroup)
-  2. Request Access for these Groups:
-
-| AD Group Name          | Dedicated For                                    |
-|------------------------|--------------------------------------------------|
-| rax-gdo-bianalyst      | BI Analyst (GDO & Others) - Read Only Access of GCP data and services |
-| rax-gdo-powerBi        | GDO BI Developer                                 |
-| rax-gdo-datascience    | GDO Data Science                                 |
-| rax-gdo-gts-bi         | Global Technical Support Operations              |
-| app-qliksense-analyst | Access to the dev include folder                 |
-| fs_datawarehouse       | Allows access to the \\rackspace.corp\DEPT\datawarehouse file share |
-| fs_Strategic_Account   | Strategic Team to share files/folder from the shared drive |
-| jira-cloud-users       | Jira                                             |
-| app-tableau-creator    | Tableau                                          |
-
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla, nulla non posuere mollis, erat augue ultricies lectus, vel feugiat est sapien eget nulla. Vestibulum efficitur, velit id lacinia tristique, ipsum metus aliquam risus, nec hendrerit ligula lorem a risus. Nullam ornare, eros sit amet hendrerit efficitur, dui turpis consequat enim, non congue est libero eu ipsum.
 
 ## GCP (BigQuery) Setup
 
--   GCP access is managed via AD Groups. Please check [this link](https://one.rackspace.com/pages/viewpage.action?pageId=723555047#GCPAccess&Permissions-Instructions:AccesstoGCPviaanexistingADGroup) for access.
-
--   Once registered, you should be able to use Create, Read, Update, and Delete tables within the [rax-enterprisebi-dev project](https://console.cloud.google.com/bigquery?project=rax-enterprisebi-dev&ws=!1m0):
-
-IMAGE HEREEEEE
-
--   Also for more [information about GCP set up](https://one.rackspace.com/pages/viewpage.action?pageId=723555047#GCPAccess&Permissions-Instructions:AccesstoGCPviaanexistingADGroup)
-
--   This is a great tool to **compare your groups to one of your peers**. Use it to make sure you have the right access: [Identity Access Comparison](https://identity.rackspace.corp/GroupDiff)
-
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla, nulla non posuere mollis, erat augue ultricies lectus, vel feugiat est sapien eget nulla. Vestibulum efficitur, velit id lacinia tristique, ipsum metus aliquam risus, nec hendrerit ligula lorem a risus. Nullam ornare, eros sit amet hendrerit efficitur, dui turpis consequat enim, non congue est libero eu ipsum.
 
 ## Timesheets
 
-1.- Start your VPN and go to [this link](https://rackspace.service-now.com/rack_sp?id=rack_sp)
-
-IMAGEEEEEEEE
-
-3.- Click on submit timesheet
-
-IMAGGEEEEEE
-
-4.- Select a date and click the populate button.
-
-IMAGGEEEEEE
-
-5.- Look at the projects you have assigned. Type the hours you worked. (Change the zeros). Fill up the all the weekdays. There must be 8 hours per workday.
-
-IMAGGEEEEEE
-
-
-
-6.  Click on the Submit button
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla, nulla non posuere mollis, erat augue ultricies lectus, vel feugiat est sapien eget nulla. Vestibulum efficitur, velit id lacinia tristique, ipsum metus aliquam risus, nec hendrerit ligula lorem a risus. Nullam ornare, eros sit amet hendrerit efficitur, dui turpis consequat enim, non congue est libero eu ipsum.
 
 ## Meetings to be aware of
 
-### BI Daily Standup
-
-The **BI Daily Standup** is our recurring meeting where each member communicates three key points:
-  
-  1.  The previous day’s advancements
-  
-  2.  The current day’s objectives
-  
-  3.  Any blockers or questions that affect the tickets
-    
-  -   In addition to these, our team leaders, scrum master, or product managers may give announcements or ask on specific critical objectives
-  
-  -   It is also a good moment to raise awareness on any issue that might affect the team’s work (for example, a newly bug found on a commonly used table)
-  
-  -   If more than a few quick comments are needed for any point, these are usually taken to calls after the standup, to be mindful of everyone’s time
-    
-### Peer Reivew/Release Planning
-    
-There are also two **peer review/release planning meetings** every week to the vet the Tableau Cloud and Big Query code and apps that are ready to be pushed to production.
-
-  -   These are mandatory for our team
-  
-  -   For your development to be peer reviewed, it must first be added to the table at [this link](https://one.rackspace.com/pages/viewpage.action?pageId=702199836)
-  
-  - The obligatory fields are “App Name”, “Update Description (contains the ticket)”, and Developer (contains your name) 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla, nulla non posuere mollis, erat augue ultricies lectus, vel feugiat est sapien eget nulla. Vestibulum efficitur, velit id lacinia tristique, ipsum metus aliquam risus, nec hendrerit ligula lorem a risus. Nullam ornare, eros sit amet hendrerit efficitur, dui turpis consequat enim, non congue est libero eu ipsum.
 
 ## Innovation Day
 
--   The **third Thursday** (try saying that quickly) of **every month** is `Innovation Day`. During this time, meetings should not be happening, unless they’re related to innovation work
-
--   All related info on this should be available at inside.rackspace.com
-
--   Keep in mind that innovation does not have to be groundbreaking, technically astounding, nor a full solution – when in doubt, think of small and workable solutions that can help the team or stakeholders (processes, communications, tools, etc.)
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla, nulla non posuere mollis, erat augue ultricies lectus, vel feugiat est sapien eget nulla. Vestibulum efficitur, velit id lacinia tristique, ipsum metus aliquam risus, nec hendrerit ligula lorem a risus. Nullam ornare, eros sit amet hendrerit efficitur, dui turpis consequat enim, non congue est libero eu ipsum.
 
 ## Communication Tools
 
--   Zoom – Video Conferencing
--   Outlook – Email\
--   Teams – chat and Video Conferencing
--   [JIRA](https://rackspace.atlassian.net/jira/software/c/projects/BIVIS/boards/4997?quickFilter=25918) – Internal ticketing and the way we track our work
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla, nulla non posuere mollis, erat augue ultricies lectus, vel feugiat est sapien eget nulla. Vestibulum efficitur, velit id lacinia tristique, ipsum metus aliquam risus, nec hendrerit ligula lorem a risus. Nullam ornare, eros sit amet hendrerit efficitur, dui turpis consequat enim, non congue est libero eu ipsum.
 
 ## Data Intake Process
 
--   New Data requests can be created in [DATA Intake Request](https://one.rackspace.com/display/GET/Global+Data+Intake) ?????? or [ITS Form](https://rackspace.atlassian.net/jira/software/c/projects/ITS/forms/form/direct/3/13)
-
--   Stakeholders asking for work should always be directed through the portal, or sent to Ashley and Nivruth, to keep our work visible and in-scope (and avoid last-minute requests)
-
--   Any new request will be Triaged by the Product team and the Product Owners and then gets assigned to the right racker.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla, nulla non posuere mollis, erat augue ultricies lectus, vel feugiat est sapien eget nulla. Vestibulum efficitur, velit id lacinia tristique, ipsum metus aliquam risus, nec hendrerit ligula lorem a risus. Nullam ornare, eros sit amet hendrerit efficitur, dui turpis consequat enim, non congue est libero eu ipsum.
 
 ## Important Links
 
--   [Wiki](https://one.rackspace.com/) – Contains all sorts of documentation from teams in RXT. Cansometimes be out-of-date but is invaluable Example:
-
-    [GPI Analysis](https://one.rackspace.com/display/GDO/Global+Price+Increase+%28GPI%29+Analysis)
-    
--   [Inside Rack](https://inside.rackspace.com/Pages/default.aspx) – Important Internal Rackspace information
-
--   [GPS](https://www.myworkday.com/rackspace/d/home.htmld) – Logging time off, Annual Reviews, Goals, etc.
-
--   [SailPoint](https://sailpoint.rackspace.corp/identityiq/home.jsf) – Managing passwords, making process requests
-
--   [SNOW](https://rackspace.service-now.com/rack_sp) – Report an Issue, Software/Application requests
-
--   [Rackspace Identity Portal (“Finder”)](https://identity.rackspace.corp/Finder?g=app-qliksense-administrator) – Very useful if looking up your SSO and permissions from SailPoint.
-
-  -   If you can’t access a resource, it’s 95% likely due to you not having a SailPoint permission
-    
-### RXT Data Sources
-
--   [CORE](https://core.rackspace.com/) – Dedicated ticketing, Account Information
-
--   [Encore](https://encore.rackspace.com/api/encore/write-local-storage) – Cloud ticketing, Account Information
-
--   [Team Files](https://raxglobal.sharepoint.com/:f:/r/sites/GlobalDataTeam-GDO_Analysts/Shared%20Documents/GDO_Analysts?csf=1&web=1&e=ohiAVi) – Central Repository for team work/outputs
-
--   [Salesforce](https://rax.lightning.force.com/one/one.app#/sObject/0066100000K9H9DAAV/view) – A tool that mostly Sales Rackers use to track inputs for sales metrics and customer information (may not have access – that’s okay, no need for now)
-
--   [El Templo](https://one.rackspace.com/pages/viewpage.action?pageId=787752020) – Mexico office FAQ on access to the office    
-    
-## Learning resources
-
-REVIEW
-
--   [MyLearn](https://learn.rackspace.com/) – Rackspace University
-
--   [Lynda.com](https://app.smartsheet.com/b/form?EQBCT=f662d0e596704f2fb008aa6d16e2f10b) – Additional, more technical training resources – free to Racker (Rackspace funds this, so it’s free for us)
-
--   [Safari.com](https://www.safaribooksonline.com/accounts/login/) – Additional, more technical training resources – free to Racker (Rackspace funds this, so it’s free for us)
-
--   [Rackspace Acronyms](https://one.rackspace.com/display/SDM/Acronyms) – Rackspace has a lot of Acronyms – this will help – promise!
-    
--   Linkedin Learning
-
-
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla, nulla non posuere mollis, erat augue ultricies lectus, vel feugiat est sapien eget nulla. Vestibulum efficitur, velit id lacinia tristique, ipsum metus aliquam risus, nec hendrerit ligula lorem a risus. Nullam ornare, eros sit amet hendrerit efficitur, dui turpis consequat enim, non congue est libero eu ipsum.
