@@ -34,7 +34,7 @@ format:
     PrettyPDF-pdf: default
 ---
 
-## Index
+## Index {auto-animate=true}
 
 :::: {.columns}
 
@@ -55,21 +55,19 @@ All resources of this talk @
 
 ::::
 
-# What is Quarto?
+## What is Quarto?
 
+![](images/confused-white-persian-guardian.gif){fig-align="center"}
 
-
-## TLDR
+## TLDR {auto-animate=true}
 
 - Quarto enables you to weave together content and executable code into a finished document.
 
-- Highlight Quarto's seamless integration with Python, R, Julia, and Observable, enabling dynamic content generation and interactive data exploration
-
-![rstudio-qmd-how-it-works.png (1400×257) (quarto.org)](https://quarto.org/docs/get-started/hello/images/rstudio-qmd-how-it-works.png)
+![(quarto.org)](https://quarto.org/docs/get-started/hello/images/rstudio-qmd-how-it-works.png)
 
 ## Running Code
 
-When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
+**Rendering a with Quarto** allows you to embed code and content like this:
 
 ```{r}
 #| echo: true
@@ -80,14 +78,30 @@ When you click the **Render** button a document will be generated that includes 
 [Check other execution options](https://quarto.org/docs/computations/execution-options.html)
 :::
 
+## Setting up your Yaml {auto-animate="true"}
+
+```yml
+---
+title: "matplotlib demo"
+format:
+  html:
+    code-fold: true
+---
+```
+
+## Setting up your Yaml {auto-animate="true"}
+
+```yml
+---
+title: "matplotlib demo"
+format:
+  html:
+    code-fold: true
+jupyter: python3
+---
+```
+
 ## Explore the QMD benefits
-
-- 1 file
-- multiple outputs
-
-## DEMO 1
-
- - show 1 file multiple outputs ([introduction folder](/introduction))
 
 ```{mermaid}
 %%| label: fig-mermaid
@@ -110,12 +124,20 @@ flowchart LR
   E(pandoc) --> I{and more}
 ```
 
+## DEMO 1
+
+![](images/hacker-truthfairytales.gif){fig-align="center"}
+
+::: {.notes}
+ - show 1 file multiple outputs ([introduction folder](/introduction))
+:::
+
 
 ## Parameterized Reporting
 
 ![](images/fireelmo.gif){fig-align="center"}
 
-## One Cat, many hats (Use cases)
+## One Cat, many hats {auto-animate=true}
 
 - Same report, multiple stakeholders
 - Same report, updates periodically
@@ -143,159 +165,104 @@ flowchart LR
 
 ::::
 
-##
+::: {.notes}
+ What are some (Use cases) for parameterized reporting?
+:::
+
+## DEMO 2
 
 <iframe src="https://drive.google.com/file/d/1uMz7iQzi06JcuuhYidNjvQDrrjhBPMeg/preview" width="100%" height="100%" allow="autoplay"></iframe>
 
 ::: {.notes}
 Here Data Scientist working within the Washing State Department of Agriculture shows us how she managed to create "Custom to every farmer, reports include project goals, measured parameter descriptions, summary statistics, maps, tables, and graphs."
-:::
-
-## DEMO 2
 
 See (param reports folder)
 
 - inside file
 - using yaml
 - simple demo
-- invoice demo python
-
-## Slide Title
-
-- Green ^[A footnote]
-- Brown
-- Purple
-
-::: aside
-Some additional commentary of more peripheral interest.
+- invoice demo python (if time allows it)
 :::
 
-## Slide Code 1
-
-```{.python code-line-numbers="6-8"}
-import numpy as np
-import matplotlib.pyplot as plt
-
-r = np.arange(0, 2, 0.01)
-theta = 2 * np.pi * r
-fig, ax = plt.subplots(subplot_kw={'projection': 'polar'})
-ax.plot(theta, r)
-ax.set_rticks([0.5, 1, 1.5, 2])
-ax.grid(True)
-plt.show()
-```
-
-## Slide Code 2
-
-```{.python code-line-numbers="7,9"}
-import numpy as np
-import matplotlib.pyplot as plt
-
-r = np.arange(0, 2, 0.01)
-theta = 2 * np.pi * r
-fig, ax = plt.subplots(subplot_kw={'projection': 'polar'})
-ax.plot(theta, r)
-ax.set_rticks([0.5, 1, 1.5, 2])
-ax.grid(True)
-plt.show()
-```
-
-## Demo Tabsets
-
-::: {.panel-tabset}
-
-### Tab A
-
-Content for `Tab A`
-
-### Tab B
-
-Content for `Tab B`
-
-:::
-
-
-
-## Stack
-
-::: {.r-stack}
-![](images/notpenguins.jpg){.fragment width="450" height="300"}
-
-![](images/r-Icon-White-Square.png){.fragment width="300" height="450"}
-
-![](images/Rackspace_Technology_Logo_RGB_RED.png){.fragment width="400" height="400"}
-:::
-
-## Animations 
-
-## {auto-animate=true}
-
-::: {style="margin-top: 100px;"}
-Animating content
-:::
-
-## {auto-animate=true}
-
-::: {style="margin-top: 200px; font-size: 3em; color: red;"}
-Animating content
-:::
-
-## Code animations
-
-## {auto-animate="true"}
-
-```r
-# Fill in the spot we created for a plot
-output$phonePlot <- renderPlot({
-  # Render a barplot
-})
-```
-
-## {auto-animate=true}
-
-```r
-# Fill in the spot we created for a plot
-output$phonePlot <- renderPlot({
-  # Render a barplot
-  barplot(WorldPhones[,input$region]*1000, 
-          main=input$region,
-          ylab="Number of Telephones",
-          xlab="Year")
-})
-```
-
-## Implicit Animation
-
-## {auto-animate=true}
-
-Animation
-
-## {auto-animate=true}
-
-Implicit
-
-Animation
 
 ## Happy Documentation 
 
+![](images/github-cat.gif){fig-align="center"}
+
+::: {.panel-tabset}
+
+### Navbar Set Up
+
+```{.yml code-line-numbers="4-9"}
+  navbar:
+    logo: "images/Rackspace_Technology_Logo_RGB_RED.png"
+    background: "#003482"
+    left:
+      - href: index.qmd
+        text: Home
+      - sidebar:Onboarding
+      - bi-infrastructure.qmd
+      - about.qmd
+```
+
+### Sidebar Set Up
+
+```{.yml code-line-numbers="19-25"}
+  sidebar:
+    - id: Onboarding
+      alignment: center
+      tools:
+      - icon: google
+        href: https://google.com
+      - icon: github
+        menu:
+          - text: Source Code
+            url:  https://code.com
+          - text: Report a Bug
+            url:  https://bugs.com
+      border: true
+      title: "Onboarding"
+      logo: "images/Rackspace_Technology_Logo_RGB_WHT.png"
+      style: "docked"
+      background: "#95008A"
+      collapse-level: 2
+      contents: 
+        - section: "First Week @Rackspace"
+          contents:
+            - onboarding docs/first_week_onboarding.qmd
+        - section: "Our Best Practices"
+          contents:
+            - onboarding docs/bi_sql_development_standards.qmd
+```
+
+:::
+
+
 ## DEMO 3
 
+![](images/github-cat.gif){fig-align="center"}
+
+::: {.notes}
 See (easy documentation folder)
 
 - `_quarto.yml` file
-- using yaml
-- simple demo
-- invoice demo python
+- sample deployment
+- add 'BI Enterprise Docs Live Demo!'
+:::
 
 ## Conclusion {auto-animate=true}
 
-try Quarto, its free
+::: {.r-fit-text}
+Why not try Quarto? its free 💸
+:::
 
 ## Conclusion {auto-animate=true}
 
-try Quarto, its free
+::: {.r-fit-text}
+Why not try Quarto? its free 💸
+Your Time and Technical debt is not 🎰
+:::
 
-Your Time and Technical debt isnt.
 
 ## QnA
 
