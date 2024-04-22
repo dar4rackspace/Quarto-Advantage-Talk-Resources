@@ -11,7 +11,7 @@
   <meta name="generator" content="quarto-1.4.553">
 
   <meta name="author" content="Daniel Amieva Rodriguez">
-  <meta name="dcterms.date" content="2024-04-18">
+  <meta name="dcterms.date" content="2024-04-22">
   <title>The Quarto Advantage</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -388,6 +388,9 @@
       margin-right: 0; 
     }
   </style>
+  <script src="quarto_advantage_files/libs/quarto-diagram/mermaid.min.js"></script>
+  <script src="quarto_advantage_files/libs/quarto-diagram/mermaid-init.js"></script>
+  <link href="quarto_advantage_files/libs/quarto-diagram/mermaid.css" rel="stylesheet">
 </head>
 <body class="quarto-dark">
   <div class="reveal">
@@ -405,7 +408,7 @@ Daniel Amieva Rodriguez
 </div>
 </div>
 
-  <p class="date">2024-04-18</p>
+  <p class="date">2024-04-22</p>
 </section>
 <section id="index" class="slide level2">
 <h2>Index</h2>
@@ -437,7 +440,8 @@ Daniel Amieva Rodriguez
 <li><p>Quarto enables you to weave together content and executable code into a finished document.</p></li>
 <li><p>Highlight Quarto’s seamless integration with Python, R, Julia, and Observable, enabling dynamic content generation and interactive data exploration</p></li>
 </ul>
-</section>
+
+<img data-src="https://quarto.org/docs/get-started/hello/images/rstudio-qmd-how-it-works.png" class="r-stretch quarto-figure-center"><p class="caption">rstudio-qmd-how-it-works.png (1400×257) (quarto.org)</p></section>
 <section id="running-code" class="slide level2">
 <h2>Running Code</h2>
 <p>When you click the <strong>Render</strong> button a document will be generated that includes both content and the output of embedded code. You can embed code like this:</p>
@@ -466,10 +470,44 @@ Daniel Amieva Rodriguez
 <ul>
 <li>show 1 file multiple outputs (<a href="/introduction">introduction folder</a>)</li>
 </ul>
+<div class="cell" data-reveal="true" data-fig-width="6" data-layout-align="default">
+<div class="cell-output-display">
+<div id="fig-mermaid" class="quarto-figure quarto-figure-center quarto-float">
+<figure class="quarto-float quarto-float-fig">
+<div aria-describedby="fig-mermaid-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div>
+<pre class="mermaid mermaid-js" data-label="fig-mermaid">flowchart LR
+  A[qmd] --&gt; B(Knitr)
+  A[qmd] --&gt; C(Jupyter)
+  B(Knitr) --&gt; D[md]
+  C(Jupyter) --&gt; D[md]
+  D[md] --&gt; E(pandoc)
+  E(pandoc) --&gt; F(HTML)
+  E(pandoc) --&gt; G(PDF)
+  E(pandoc) --&gt; H(Word)
+  E(pandoc) --&gt; I{and more}
+</pre>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-mermaid-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: How Quarto orchestrates rendering of documents: start with a qmd file, use the Knitr or Jupyter engine to perform the computations and convert it to an md file, then use Pandoc to convert to various file formats including HTML, PDF, and Word.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
 </section>
-<section id="parameterized-reports" class="slide level2">
-<h2>Parameterized Reports</h2>
-<p>One Template, many hats.</p>
+<section id="parameterized-reporting" class="slide level2">
+<h2>Parameterized Reporting</h2>
+
+<img data-src="images/fireelmo.gif" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="one-cat-many-hats-use-cases" class="slide level2">
+<h2>One Cat, many hats (Use cases)</h2>
+<ul>
+<li>Same report, multiple stakeholders</li>
+<li>Same report, updates periodically</li>
+<li>Programmatically build websites</li>
+</ul>
 <div class="columns">
 <div class="column" style="width:25%;">
 <div class="quarto-figure quarto-figure-center">
@@ -498,19 +536,30 @@ Daniel Amieva Rodriguez
 </div>
 </div>
 </section>
-<section id="whyuse-cases" class="slide level2">
-<h2>Why/Use cases</h2>
-<ul>
-<li>why?</li>
-<li>how to?</li>
-<li>inside file</li>
-<li>using yaml</li>
-</ul>
+<section id="section" class="slide level2">
+<h2></h2>
+<iframe src="https://drive.google.com/file/d/1uMz7iQzi06JcuuhYidNjvQDrrjhBPMeg/preview" width="100%" height="100%" allow="autoplay">
+</iframe>
+<aside class="notes">
+<p>Here Data Scientist working within the Washing State Department of Agriculture shows us how she managed to create “Custom to every farmer, reports include project goals, measured parameter descriptions, summary statistics, maps, tables, and graphs.”</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 <section id="demo-2" class="slide level2">
 <h2>DEMO 2</h2>
 <p>See (param reports folder)</p>
 <ul>
+<li>inside file</li>
+<li>using yaml</li>
 <li>simple demo</li>
 <li>invoice demo python</li>
 </ul>
@@ -605,13 +654,13 @@ Daniel Amieva Rodriguez
 <section id="animations" class="slide level2">
 <h2>Animations</h2>
 </section>
-<section id="section" class="slide level2" data-auto-animate="true">
+<section id="section-1" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title"></h2>
 <div style="margin-top: 100px;">
 <p>Animating content</p>
 </div>
 </section>
-<section id="section-1" class="slide level2" data-auto-animate="true">
+<section id="section-2" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title"></h2>
 <div style="margin-top: 200px; font-size: 3em; color: red;">
 <p>Animating content</p>
@@ -620,14 +669,14 @@ Daniel Amieva Rodriguez
 <section id="code-animations" class="slide level2">
 <h2>Code animations</h2>
 </section>
-<section id="section-2" class="slide level2" data-auto-animate="true">
+<section id="section-3" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title"></h2>
 <div class="sourceCode" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb5-1" class="hljs-ln-code"><a href=""></a><span class="co"># Fill in the spot we created for a plot</span></span>
 <span id="cb5-2" class="hljs-ln-code"><a href=""></a>output<span class="sc">$</span>phonePlot <span class="ot">&lt;-</span> <span class="fu">renderPlot</span>({</span>
 <span id="cb5-3" class="hljs-ln-code"><a href=""></a>  <span class="co"># Render a barplot</span></span>
 <span id="cb5-4" class="hljs-ln-code"><a href=""></a>})</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="section-3" class="slide level2" data-auto-animate="true">
+<section id="section-4" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title"></h2>
 <div class="sourceCode" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb6-1" class="hljs-ln-code"><a href=""></a><span class="co"># Fill in the spot we created for a plot</span></span>
 <span id="cb6-2" class="hljs-ln-code"><a href=""></a>output<span class="sc">$</span>phonePlot <span class="ot">&lt;-</span> <span class="fu">renderPlot</span>({</span>
@@ -641,11 +690,11 @@ Daniel Amieva Rodriguez
 <section id="implicit-animation" class="slide level2">
 <h2>Implicit Animation</h2>
 </section>
-<section id="section-4" class="slide level2" data-auto-animate="true">
+<section id="section-5" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title"></h2>
 <p>Animation</p>
 </section>
-<section id="section-5" class="slide level2" data-auto-animate="true">
+<section id="section-6" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title"></h2>
 <p>Implicit</p>
 <p>Animation</p>
@@ -677,7 +726,8 @@ Daniel Amieva Rodriguez
 <section id="further-resources" class="slide level2">
 <h2>Further Resources</h2>
 <pre><code>-  [To learn more about Quarto](https://quarto.org)
-- [Awesome Quarto](https://github.com/mcanouil/awesome-quarto#presentations)</code></pre>
+- [Awesome Quarto](https://github.com/mcanouil/awesome-quarto#presentations)
+- [Parameterized Quarto](https://jadeyryan.com/talks/2023-09-25_posit_parameterized-quarto/)</code></pre>
 <div class="quarto-auto-generated-content">
 <p><img src="images/r-icon-White-Square.png" class="slide-logo"></p>
 <div class="footer footer-default">

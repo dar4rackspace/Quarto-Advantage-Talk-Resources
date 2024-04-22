@@ -57,11 +57,15 @@ All resources of this talk @
 
 # What is Quarto?
 
+
+
 ## TLDR
 
 - Quarto enables you to weave together content and executable code into a finished document.
 
 - Highlight Quarto's seamless integration with Python, R, Julia, and Observable, enabling dynamic content generation and interactive data exploration
+
+![rstudio-qmd-how-it-works.png (1400×257) (quarto.org)](https://quarto.org/docs/get-started/hello/images/rstudio-qmd-how-it-works.png)
 
 ## Running Code
 
@@ -85,10 +89,37 @@ When you click the **Render** button a document will be generated that includes 
 
  - show 1 file multiple outputs ([introduction folder](/introduction))
 
+```{mermaid}
+%%| label: fig-mermaid
+%%| fig-width: 6
+%%| fig-cap: |
+%%|   How Quarto orchestrates rendering of documents: start with 
+%%|   a qmd file, use the Knitr or Jupyter engine to perform the 
+%%|   computations and convert it to an md file, then use Pandoc 
+%%|   to convert to various file formats including HTML, PDF, 
+%%|   and Word.
+flowchart LR
+  A[qmd] --> B(Knitr)
+  A[qmd] --> C(Jupyter)
+  B(Knitr) --> D[md]
+  C(Jupyter) --> D[md]
+  D[md] --> E(pandoc)
+  E(pandoc) --> F(HTML)
+  E(pandoc) --> G(PDF)
+  E(pandoc) --> H(Word)
+  E(pandoc) --> I{and more}
+```
 
-## Parameterized Reports
 
-One Template, many hats.
+## Parameterized Reporting
+
+![](images/fireelmo.gif){fig-align="center"}
+
+## One Cat, many hats (Use cases)
+
+- Same report, multiple stakeholders
+- Same report, updates periodically
+- Programmatically build websites
 
 :::: {.columns}
 
@@ -112,12 +143,13 @@ One Template, many hats.
 
 ::::
 
-## Use cases
+##
 
-- Same report, multiple stakeholders
-- Same report, updates periodically
-- ....
+<iframe src="https://drive.google.com/file/d/1uMz7iQzi06JcuuhYidNjvQDrrjhBPMeg/preview" width="100%" height="100%" allow="autoplay"></iframe>
 
+::: {.notes}
+Here Data Scientist working within the Washing State Department of Agriculture shows us how she managed to create "Custom to every farmer, reports include project goals, measured parameter descriptions, summary statistics, maps, tables, and graphs."
+:::
 
 ## DEMO 2
 
@@ -127,14 +159,6 @@ See (param reports folder)
 - using yaml
 - simple demo
 - invoice demo python
-
-## Slide with speaker notes
-
-Slide content
-
-::: {.notes}
-Speaker notes go here.
-:::
 
 ## Slide Title
 
@@ -190,11 +214,7 @@ Content for `Tab B`
 
 :::
 
-## Link previews
 
-[Preview](https://example.com){preview-link="true"}
-
-[NoPreview](https://example.com){preview-link="false"}
 
 ## Stack
 
@@ -204,12 +224,6 @@ Content for `Tab B`
 ![](images/r-Icon-White-Square.png){.fragment width="300" height="450"}
 
 ![](images/Rackspace_Technology_Logo_RGB_RED.png){.fragment width="400" height="400"}
-:::
-
-## Fit text 
-
-::: {.r-fit-text}
-Big Text
 :::
 
 ## Animations 
@@ -262,6 +276,17 @@ Implicit
 
 Animation
 
+## Happy Documentation 
+
+## DEMO 3
+
+See (easy documentation folder)
+
+- `_quarto.yml` file
+- using yaml
+- simple demo
+- invoice demo python
+
 ## Conclusion {auto-animate=true}
 
 try Quarto, its free
@@ -297,3 +322,5 @@ All resources of this talk @
 
     -  [To learn more about Quarto](https://quarto.org)
     - [Awesome Quarto](https://github.com/mcanouil/awesome-quarto#presentations)
+    - [Parameterized Quarto](https://jadeyryan.com/talks/2023-09-25_posit_parameterized-quarto/)
+    - [Quarto Publishing Basics](https://quarto.org/docs/publishing/)

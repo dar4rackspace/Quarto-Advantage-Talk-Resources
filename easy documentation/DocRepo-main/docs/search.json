@@ -143,25 +143,18 @@
     ]
   },
   {
-    "objectID": "index.html#simple-valuebox",
-    "href": "index.html#simple-valuebox",
+    "objectID": "index.html",
+    "href": "index.html",
     "title": "BI Enterprise Docs",
-    "section": "Simple Valuebox",
-    "text": "Simple Valuebox\n\n\n\n\n\n\n\n\n\nI got\n99 problems\n\nbslib ain't one\n\n\n\n\nhit me"
+    "section": "",
+    "text": "This is an example documentation website based off Quarto"
   },
   {
-    "objectID": "index.html#simple-reactable",
-    "href": "index.html#simple-reactable",
+    "objectID": "index.html#example-website",
+    "href": "index.html#example-website",
     "title": "BI Enterprise Docs",
-    "section": "Simple Reactable",
-    "text": "Simple Reactable\n\n\nB.I Enterprise \nRelation of Datasource 2 GCP Column Level Information\n\n Authors: Allison Marie Horst, Alison Presmanes Hill, and Kristen B Gorman   Artwork by @allison_horst \n Link to package: {palmerpenguins}"
-  },
-  {
-    "objectID": "index.html#demo-static",
-    "href": "index.html#demo-static",
-    "title": "BI Enterprise Docs",
-    "section": "Demo Static",
-    "text": "Demo Static\n\n\n\n\n\nType\n\n\n\n\nCompact\n\n\n\n\n\nLarge\n\n\n\n\n\nMidsize\n\n\n\n\n\nSmall\n\n\n\n\n\nSporty\n\n\n\n\n\nVan\n\n\n\n\n\n\nPrice\n\n\n\n\nManufacturer"
+    "section": "",
+    "text": "This is an example documentation website based off Quarto"
   },
   {
     "objectID": "about.html",
