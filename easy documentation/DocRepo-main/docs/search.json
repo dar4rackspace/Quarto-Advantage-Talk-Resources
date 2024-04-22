@@ -4,7 +4,7 @@
     "href": "onboarding docs/first_week_onboarding.html",
     "title": "Onboarding Guide for Reporting & Analytics Team",
     "section": "",
-    "text": "PENDING IMAGES: https://raxglobal-my.sharepoint.com/:w:/r/personal/guillermo_pereztello_rackspace_com/_layouts/15/doc2.aspx?sourcedoc=%7Bc3aef85e-7a0e-45c6-aa8e-90452ca5da8a%7D&action=edit&wdPid=a1e27ad",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla, nulla non posuere mollis, erat augue ultricies lectus, vel feugiat est sapien eget nulla. Vestibulum efficitur, velit id lacinia tristique, ipsum metus aliquam risus, nec hendrerit ligula lorem a risus. Nullam ornare, eros sit amet hendrerit efficitur, dui turpis consequat enim, non congue est libero eu ipsum.",
     "crumbs": [
       "First Week @Rackspace",
       "Onboarding Guide for Reporting & Analytics Team"
@@ -14,8 +14,8 @@
     "objectID": "onboarding docs/first_week_onboarding.html#logging-in",
     "href": "onboarding docs/first_week_onboarding.html#logging-in",
     "title": "Onboarding Guide for Reporting & Analytics Team",
-    "section": "Logging In",
-    "text": "Logging In\n\n\n\n\n\n\nCaution\n\n\n\nMany of the items below require double authentication\n\n\n\nWhen prompted for your SSO, use what is given to you by Help Desk. Your Password for your SSO is something that you will create following the steps that Help Desk provides.\nThe next type of authentication requires your SSO and your RSA Token (app). Instructions for this should be given to you with your laptop.\n\n\n\n\n\n\n\n\nAlways use password to login in your machine.\n\n\n\nThere is a known issue where logging in with PIN on Windows machines will cause issues connecting to SQL Server. This can be done by clicking on “Sign-in Options” and choosing the key icon in the log-in screen.\n\n\n\nIf some of the log-in is not working, make sure that you are connected to the VPN (see below)\nIf you receive your laptop before your start date, don’t set up anything.\n\n\n\n\n\n\n\nTip\n\n\n\nJust in case that that you are having issues with the setup of you computer please connect with:\n\nVíctor Navarrovictor.navarro@rackspace.com\nJohn Spencer john.spencer@rackspace.com\nEduardo Coccaro eduardo.coccaro@rackspace.com",
+    "section": "",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla, nulla non posuere mollis, erat augue ultricies lectus, vel feugiat est sapien eget nulla. Vestibulum efficitur, velit id lacinia tristique, ipsum metus aliquam risus, nec hendrerit ligula lorem a risus. Nullam ornare, eros sit amet hendrerit efficitur, dui turpis consequat enim, non congue est libero eu ipsum.",
     "crumbs": [
       "First Week @Rackspace",
       "Onboarding Guide for Reporting & Analytics Team"
@@ -26,7 +26,7 @@
     "href": "onboarding docs/first_week_onboarding.html#computer-setup",
     "title": "Onboarding Guide for Reporting & Analytics Team",
     "section": "Computer setup",
-    "text": "Computer setup\n\nCompany Portal / Software Center: this is the place where you can download all the apps directly from Rackspace\nTry this: click on the windows search on the toolbar, type company portal or portal de compania\n\nIMAGE HEEREEEEEEEEEEEEEEEEE\n\nEnsure your computer is set up with\nSQL Server Management Studio (specifically MS SQL)\n\nZoom\nTeams\nApplication installation requires getting a username and temporary password from LAPS\nNeed to be connected to the VPN\nClick on “Accept Racker UAP and view password”\nWrite down your USERNAME and PASSWORD (if you are unsure of a symbol, then paste the password on a quick note)\n\n\n\n\n\n\n\nNote\n\n\n\n\nDo NOT just copy and paste, write this down somewhere (for System DSN)\nThis password is a temporary password please change it whenever it suits you HEREEEEEEEE\n\n\n\n\nUpdate your Racker Email signature\n\n\nGo to “Outlook”\nClick on “File”\nClick on “Options”\nClick on “Mail” tab\nClick on “Signatures”\nClick on “New”\nGive your signature a name – just something for you reference\nNew Branding Signature. Here is the link so you can update yours: Link 2 Making your Custom Racker Signature\n\n\nGo for the rest of the apps that you will need in your computer, for instance PDF, Winzip, Chrome, etc…",
+    "text": "Computer setup\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla, nulla non posuere mollis, erat augue ultricies lectus, vel feugiat est sapien eget nulla. Vestibulum efficitur, velit id lacinia tristique, ipsum metus aliquam risus, nec hendrerit ligula lorem a risus. Nullam ornare, eros sit amet hendrerit efficitur, dui turpis consequat enim, non congue est libero eu ipsum.",
     "crumbs": [
       "First Week @Rackspace",
       "Onboarding Guide for Reporting & Analytics Team"
@@ -37,7 +37,7 @@
     "href": "onboarding docs/first_week_onboarding.html#vpn-setup",
     "title": "Onboarding Guide for Reporting & Analytics Team",
     "section": "VPN Setup",
-    "text": "VPN Setup\n\nGlobal protect set up\nConnect to the VPN by clicking on the AppGate icon in the system tray.\n\nIMAGE HERE\n\nEnter the following URL if you have not validated your credentials yet (or whichever link you received for setup)\nValidate your credentials with your RSA Token/password\nOnce done should be like the following image\n\nIMAGE APP GATE",
+    "text": "VPN Setup\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla, nulla non posuere mollis, erat augue ultricies lectus, vel feugiat est sapien eget nulla. Vestibulum efficitur, velit id lacinia tristique, ipsum metus aliquam risus, nec hendrerit ligula lorem a risus. Nullam ornare, eros sit amet hendrerit efficitur, dui turpis consequat enim, non congue est libero eu ipsum.",
     "crumbs": [
       "First Week @Rackspace",
       "Onboarding Guide for Reporting & Analytics Team"
@@ -48,7 +48,7 @@
     "href": "onboarding docs/first_week_onboarding.html#sailpoint-access-request",
     "title": "Onboarding Guide for Reporting & Analytics Team",
     "section": "Sailpoint access request",
-    "text": "Sailpoint access request\nThese are the key groups that you need to request access to. Follow these instructions:\n\nEnter Sailpoint Access Request Page\nRequest Access for these Groups:\n\n\n\n\n\n\n\n\nAD Group Name\nDedicated For\n\n\n\n\nrax-gdo-bianalyst\nBI Analyst (GDO & Others) - Read Only Access of GCP data and services\n\n\nrax-gdo-powerBi\nGDO BI Developer\n\n\nrax-gdo-datascience\nGDO Data Science\n\n\nrax-gdo-gts-bi\nGlobal Technical Support Operations\n\n\napp-qliksense-analyst\nAccess to the dev include folder\n\n\nfs_datawarehouse\nAllows access to the \\rackspace.corpfile share\n\n\nfs_Strategic_Account\nStrategic Team to share files/folder from the shared drive\n\n\njira-cloud-users\nJira\n\n\napp-tableau-creator\nTableau",
+    "text": "Sailpoint access request\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla, nulla non posuere mollis, erat augue ultricies lectus, vel feugiat est sapien eget nulla. Vestibulum efficitur, velit id lacinia tristique, ipsum metus aliquam risus, nec hendrerit ligula lorem a risus. Nullam ornare, eros sit amet hendrerit efficitur, dui turpis consequat enim, non congue est libero eu ipsum.",
     "crumbs": [
       "First Week @Rackspace",
       "Onboarding Guide for Reporting & Analytics Team"
@@ -59,7 +59,7 @@
     "href": "onboarding docs/first_week_onboarding.html#gcp-bigquery-setup",
     "title": "Onboarding Guide for Reporting & Analytics Team",
     "section": "GCP (BigQuery) Setup",
-    "text": "GCP (BigQuery) Setup\n\nGCP access is managed via AD Groups. Please check this link for access.\nOnce registered, you should be able to use Create, Read, Update, and Delete tables within the rax-enterprisebi-dev project:\n\nIMAGE HEREEEEE\n\nAlso for more information about GCP set up\nThis is a great tool to compare your groups to one of your peers. Use it to make sure you have the right access: Identity Access Comparison",
+    "text": "GCP (BigQuery) Setup\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla, nulla non posuere mollis, erat augue ultricies lectus, vel feugiat est sapien eget nulla. Vestibulum efficitur, velit id lacinia tristique, ipsum metus aliquam risus, nec hendrerit ligula lorem a risus. Nullam ornare, eros sit amet hendrerit efficitur, dui turpis consequat enim, non congue est libero eu ipsum.",
     "crumbs": [
       "First Week @Rackspace",
       "Onboarding Guide for Reporting & Analytics Team"
@@ -70,7 +70,7 @@
     "href": "onboarding docs/first_week_onboarding.html#timesheets",
     "title": "Onboarding Guide for Reporting & Analytics Team",
     "section": "Timesheets",
-    "text": "Timesheets\n1.- Start your VPN and go to this link\nIMAGEEEEEEEE\n3.- Click on submit timesheet\nIMAGGEEEEEE\n4.- Select a date and click the populate button.\nIMAGGEEEEEE\n5.- Look at the projects you have assigned. Type the hours you worked. (Change the zeros). Fill up the all the weekdays. There must be 8 hours per workday.\nIMAGGEEEEEE\n\nClick on the Submit button",
+    "text": "Timesheets\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla, nulla non posuere mollis, erat augue ultricies lectus, vel feugiat est sapien eget nulla. Vestibulum efficitur, velit id lacinia tristique, ipsum metus aliquam risus, nec hendrerit ligula lorem a risus. Nullam ornare, eros sit amet hendrerit efficitur, dui turpis consequat enim, non congue est libero eu ipsum.",
     "crumbs": [
       "First Week @Rackspace",
       "Onboarding Guide for Reporting & Analytics Team"
@@ -81,7 +81,7 @@
     "href": "onboarding docs/first_week_onboarding.html#meetings-to-be-aware-of",
     "title": "Onboarding Guide for Reporting & Analytics Team",
     "section": "Meetings to be aware of",
-    "text": "Meetings to be aware of\n\nBI Daily Standup\nThe BI Daily Standup is our recurring meeting where each member communicates three key points:\n\nThe previous day’s advancements\nThe current day’s objectives\nAny blockers or questions that affect the tickets\n\n\nIn addition to these, our team leaders, scrum master, or product managers may give announcements or ask on specific critical objectives\nIt is also a good moment to raise awareness on any issue that might affect the team’s work (for example, a newly bug found on a commonly used table)\nIf more than a few quick comments are needed for any point, these are usually taken to calls after the standup, to be mindful of everyone’s time\n\n\n\nPeer Reivew/Release Planning\nThere are also two peer review/release planning meetings every week to the vet the Tableau Cloud and Big Query code and apps that are ready to be pushed to production.\n\nThese are mandatory for our team\nFor your development to be peer reviewed, it must first be added to the table at this link\nThe obligatory fields are “App Name”, “Update Description (contains the ticket)”, and Developer (contains your name)",
+    "text": "Meetings to be aware of\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla, nulla non posuere mollis, erat augue ultricies lectus, vel feugiat est sapien eget nulla. Vestibulum efficitur, velit id lacinia tristique, ipsum metus aliquam risus, nec hendrerit ligula lorem a risus. Nullam ornare, eros sit amet hendrerit efficitur, dui turpis consequat enim, non congue est libero eu ipsum.",
     "crumbs": [
       "First Week @Rackspace",
       "Onboarding Guide for Reporting & Analytics Team"
@@ -92,7 +92,7 @@
     "href": "onboarding docs/first_week_onboarding.html#innovation-day",
     "title": "Onboarding Guide for Reporting & Analytics Team",
     "section": "Innovation Day",
-    "text": "Innovation Day\n\nThe third Thursday (try saying that quickly) of every month is Innovation Day. During this time, meetings should not be happening, unless they’re related to innovation work\nAll related info on this should be available at inside.rackspace.com\nKeep in mind that innovation does not have to be groundbreaking, technically astounding, nor a full solution – when in doubt, think of small and workable solutions that can help the team or stakeholders (processes, communications, tools, etc.)",
+    "text": "Innovation Day\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla, nulla non posuere mollis, erat augue ultricies lectus, vel feugiat est sapien eget nulla. Vestibulum efficitur, velit id lacinia tristique, ipsum metus aliquam risus, nec hendrerit ligula lorem a risus. Nullam ornare, eros sit amet hendrerit efficitur, dui turpis consequat enim, non congue est libero eu ipsum.",
     "crumbs": [
       "First Week @Rackspace",
       "Onboarding Guide for Reporting & Analytics Team"
@@ -103,7 +103,7 @@
     "href": "onboarding docs/first_week_onboarding.html#communication-tools",
     "title": "Onboarding Guide for Reporting & Analytics Team",
     "section": "Communication Tools",
-    "text": "Communication Tools\n\nZoom – Video Conferencing\nOutlook – Email\n\nTeams – chat and Video Conferencing\nJIRA – Internal ticketing and the way we track our work",
+    "text": "Communication Tools\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla, nulla non posuere mollis, erat augue ultricies lectus, vel feugiat est sapien eget nulla. Vestibulum efficitur, velit id lacinia tristique, ipsum metus aliquam risus, nec hendrerit ligula lorem a risus. Nullam ornare, eros sit amet hendrerit efficitur, dui turpis consequat enim, non congue est libero eu ipsum.",
     "crumbs": [
       "First Week @Rackspace",
       "Onboarding Guide for Reporting & Analytics Team"
@@ -114,7 +114,7 @@
     "href": "onboarding docs/first_week_onboarding.html#data-intake-process",
     "title": "Onboarding Guide for Reporting & Analytics Team",
     "section": "Data Intake Process",
-    "text": "Data Intake Process\n\nNew Data requests can be created in DATA Intake Request ?????? or ITS Form\nStakeholders asking for work should always be directed through the portal, or sent to Ashley and Nivruth, to keep our work visible and in-scope (and avoid last-minute requests)\nAny new request will be Triaged by the Product team and the Product Owners and then gets assigned to the right racker.",
+    "text": "Data Intake Process\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla, nulla non posuere mollis, erat augue ultricies lectus, vel feugiat est sapien eget nulla. Vestibulum efficitur, velit id lacinia tristique, ipsum metus aliquam risus, nec hendrerit ligula lorem a risus. Nullam ornare, eros sit amet hendrerit efficitur, dui turpis consequat enim, non congue est libero eu ipsum.",
     "crumbs": [
       "First Week @Rackspace",
       "Onboarding Guide for Reporting & Analytics Team"
@@ -125,18 +125,7 @@
     "href": "onboarding docs/first_week_onboarding.html#important-links",
     "title": "Onboarding Guide for Reporting & Analytics Team",
     "section": "Important Links",
-    "text": "Important Links\n\nWiki – Contains all sorts of documentation from teams in RXT. Cansometimes be out-of-date but is invaluable Example:\nGPI Analysis\nInside Rack – Important Internal Rackspace information\nGPS – Logging time off, Annual Reviews, Goals, etc.\nSailPoint – Managing passwords, making process requests\nSNOW – Report an Issue, Software/Application requests\nRackspace Identity Portal (“Finder”) – Very useful if looking up your SSO and permissions from SailPoint.\nIf you can’t access a resource, it’s 95% likely due to you not having a SailPoint permission\n\n\nRXT Data Sources\n\nCORE – Dedicated ticketing, Account Information\nEncore – Cloud ticketing, Account Information\nTeam Files – Central Repository for team work/outputs\nSalesforce – A tool that mostly Sales Rackers use to track inputs for sales metrics and customer information (may not have access – that’s okay, no need for now)\nEl Templo – Mexico office FAQ on access to the office",
-    "crumbs": [
-      "First Week @Rackspace",
-      "Onboarding Guide for Reporting & Analytics Team"
-    ]
-  },
-  {
-    "objectID": "onboarding docs/first_week_onboarding.html#learning-resources",
-    "href": "onboarding docs/first_week_onboarding.html#learning-resources",
-    "title": "Onboarding Guide for Reporting & Analytics Team",
-    "section": "Learning resources",
-    "text": "Learning resources\nREVIEW\n\nMyLearn – Rackspace University\nLynda.com – Additional, more technical training resources – free to Racker (Rackspace funds this, so it’s free for us)\nSafari.com – Additional, more technical training resources – free to Racker (Rackspace funds this, so it’s free for us)\nRackspace Acronyms – Rackspace has a lot of Acronyms – this will help – promise!\nLinkedin Learning",
+    "text": "Important Links\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla, nulla non posuere mollis, erat augue ultricies lectus, vel feugiat est sapien eget nulla. Vestibulum efficitur, velit id lacinia tristique, ipsum metus aliquam risus, nec hendrerit ligula lorem a risus. Nullam ornare, eros sit amet hendrerit efficitur, dui turpis consequat enim, non congue est libero eu ipsum.",
     "crumbs": [
       "First Week @Rackspace",
       "Onboarding Guide for Reporting & Analytics Team"
@@ -161,21 +150,14 @@
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "[https://one.rackspace.com/display/SDM/Acronyms]"
+    "text": "Example about page"
   },
   {
-    "objectID": "about.html#old-acronyms-website",
-    "href": "about.html#old-acronyms-website",
+    "objectID": "about.html#example",
+    "href": "about.html#example",
     "title": "About",
     "section": "",
-    "text": "[https://one.rackspace.com/display/SDM/Acronyms]"
-  },
-  {
-    "objectID": "about.html#acronyms",
-    "href": "about.html#acronyms",
-    "title": "About",
-    "section": "Acronyms",
-    "text": "Acronyms\n\n\n\n\n\n\n\nAbbreviation\nDefinition\n\n\n\n\nAAA\nAuthentication, Authorization, and Accounting\n\n\nACL\nAccess control list\n\n\nACV\nAnnual Contract Value\n\n\nAccount Team\nSee Support Team\n\n\nAccount Name\nThe name given to the account. In Dedicated this is likely to be the organisation’s name. In Cloud, this is created by the customer representative creating the account so can be anything.\n\n\nAIP\nAccount Intensity Plan\n\n\nAM\nAccount Manager (also see SDM)\n\n\nAMG\nAccount Management Guidelines\n\n\nAOB\nAny Other Business\n\n\nAPI\nApplication Programming Interface\n\n\nARPU\nAverage Revenue Per Unit\n\n\nASR\nAccount Strategy Review\n\n\nAUP\nAcceptable Use Policy\n\n\nBCB\nBlacksburg office according to the IATA airport code protocol.\n\n\nBDA\nBusiness Development Associate\n\n\nBDC\nBusiness Development Consultant\n\n\nBRD\nBusiness Requirements Document\n\n\nBRM\nOracle’s Billing and Revenue Management system. See Oracle’s FAQs about BRM for basic information.\n\n\nCAS\nCritical Application Services\n\n\nCAVA\nCommon Anti-Virus Agent\n\n\nCBT\nComputer-based training\n\n\nCCM\nCustomer Care Manager\n\n\nCChurn\nCloud Churn\n\n\nCE\nClient Executive\n\n\nCI/CD\nContinuous Integration/Continuous Delivery\n\n\nCEC\nCustomer Experience Center\n\n\nCES\nCustomer Effort Score\n\n\nChurn Pipeline\nA forecast of future churn with varying levels of probability of that churn occurring. The pipeline is created and maintained in CORE. It is also known as System Churn.\n\n\nControl Plane\nOpenStack Project APIs (Application Programming Interfaces) used to perform various functions on the Rackspace Private Cloud System.\n\n\nCORE\nThe operational system for Dedicated accounts, devices and tickets.\n\n\nCP2/CP3\nEmail & Apps Control Panel\n\n\nCSM\nCustomer Success Manager (previously also called Service Delivery Manager (SDM) or Account Manager (AM)\n\n\nCVP\nContract Verification Processing\n\n\nDAS\nDirect-attached storage\n\n\nDBA\nDatabase Administrator\n\n\nDBaaS\nDatabase as a Service\n\n\nDC\nData Center\n\n\nDCR\nDelta Cloud Revenue\n\n\nDChurn\nDedicated Churn\n\n\nDCOps\nDatacenter Operations\n\n\nDD\nDesign Document\n\n\nDFW\nRackspace Data Center in the Dallas/Fort Worth area, named after the DFW airport.\n\n\nDHR\nDelta Hosting Revenue\n\n\nDNS\nDomain Name Service\n\n\nDDoS\nDistributed Denial of Service Attack\n\n\nDMG\nDevice Management Guidelines\n\n\nDNSaaS\nDomain Name System as a Service\n\n\nDom0\nDomain zero\n\n\nDomU\nDomain unprivileged\n\n\nDR\nDisaster recovery\n\n\nDDTC\nDevice Due To Customer: The Percentage of On Time dedicated Device Deployments Due to the Customer.\n\n\nDTC\nDue To Customer: The Percentage of On Time dedicated Deployments Due to the Customer.\n\n\nDQD\nDiscovery Question Document\n\n\nELE\nExtinction Level Event. This was the code name for the project that became MaaS.\n\n\nE&A\nEmail & Apps\n\n\nEMEA\nEurope, Middle East and Africa, usually referring to the markets in these regions.\n\n\nEncore\nThe operational system for Cloud accounts, devices and tickets.\n\n\nEOL\nEnd of life (for a product)\n\n\nESE\nEnterprise Support Engineer (similar to Lead Engineer or LE)\n\n\nESS\nEncore Support Service. A global system that maintains relationships between teams, segments, sub-segments, business units.\n\n\nETS\nEnterprise Technical Support\n\n\nFDM\nFanatical Delivery Model\n\n\nLBaaS\nLoad balancer as a service\n\n\nGA\nGeneral Availability\n\n\nGDCI\nGlobal Data Center Infrastructure\n\n\nGPS\nGlobal People System. The system for People and HR related data.\n\n\nGRDS\nGeneral Rackspace Services Description\n\n\nGSS\nGlobal Security Services\n\n\nGTS\nGlobal Technical Support\n\n\nHEX\nHosted Microsoft Exchange service at Rackspace.\n\n\nHIPS\nHost Intrusion Prevention Systems\n\n\nHKG\nRackspace Data Center in Hong Kong, named after Hong Kong airport.\n\n\nHLP\nHigh Level Proposal (old name - now known as PD)\n\n\nHIPAA\nHealth Insurance Portability and Accountability Act\n\n\nHMDB\nHosting Matrix Data Base\n\n\nIAD\nRackspace Data Center in Dulles, named after Dulles airport in D.C.\n\n\nIB\nCustomer installed base\n\n\nIC\nImplementation Coordinator\n\n\nIDL\nInterface Description Language\n\n\nIDM\nIdentity management\n\n\nIDS/IPS\nIntrusion Detection System / Intrusion Prevention System\n\n\nIMAP\nInternet Message Access Protocol. See the Wikiipedia article Internet Message Access Protocol.\n\n\nIR\nImmediate Reactions\n\n\nIRC\nInternet Relay Chat. At Rackspace, this is the internal IRC system (irc.intra.rackspace.com). See the Wikipedia article IRC.\n\n\nISP\nInternet Service Provider.\n\n\nISR\nInside Sales Representative / Internal Strategy Review\n\n\nITPS\nInnovation Technical Planning Session\n\n\nITSM\nInformation Technology Service Management\n\n\nITIL\nIT Information Library - the implementation of ITSM that Rackspace is adopting\n\n\nKIR\nKick in the Rack\n\n\nK-RACK\nRackspace radio station\n\n\nKVM\nKernel-based Virtual Machine (KVM)\n\n\nLAMP\nLinux, Apache, MySql, and PHP (or sometimes Python or Perl).\n\n\nLDAP\nLightweight Directory Access Protocol. See the Wikipedia article LIghtweight Directory Access Protocol for an overview.\n\n\nLE\nLead Engineer (sometimes referred to as Lead Tech)\n\n\nLOE\nLevel Of Effort. This provides an estimate of time to complete a task.\n\n\nLON\nRackspace Data Center in London, named after London airport\n\n\nLT\nLead Technician\n\n\nMAR\nMonthly Account Review\n\n\nMAS\nManaged Application Services\n\n\nMaaS\nMonitoring as a Service, the project also known as ELE.\n\n\nMAMP\nFor the Mac platform, package of Apache, MySql, and PHP (or sometimes Python or Perl).\n\n\nMEX\nManaged Microsoft Exchange service at Rackspace.\n\n\nMPC\nManaged Public Cloud\n\n\nMRR\nMonthly Recurring Revenue\n\n\nMSA\nMaster Services Agreement\n\n\nMSR\nMonthly Service Review\n\n\nMVP\nMinimal Viable Product. This is used to describe a product with the minimum number of features which is still a viable product.\n\n\nNIST\nNational Institute of Standards and Technology\n\n\nNOC\nNetwork Operations Center\n\n\nNPS\nNet Promoter Score. See term in main glossary.\n\n\nNVP\nNetwork virtualization platform\n\n\nOCP\nOpen Compute Project\n\n\nONO\nOnline not in Oracle\n\n\nOracle\nThe Finance system\n\n\nORD\nRackspace Data Center in Chicago, named after Chicago airport.\n\n\nOSPC\nOpenStack Public Cloud\n\n\nOTC\nOn Time to Customer. Implementation measure of time from receipt of contract to all devices in the deployment being Online /Complete.\n\n\nPCI\nPayment Card Industry\n\n\nPD\nProposal Design\n\n\nPEN testing\nPenetration Testing\n\n\nPHI\nProtected Health Information\n\n\nPIN\nPersonal Identification Number\n\n\nPLL\nProduct Line Leader\n\n\nPM\nProject Manager or Product Manager.\n\n\nPAPI\nPower API. See Repose.\n\n\nPMO\nProgram Management Office\n\n\nPOP\nPost Office Protocol\n\n\nPPM\nPolicy and Procedures Manual\n\n\nPSH\nPublisher-Subscriber Hub, or PubSubHub for short.\n\n\nPV-OPS\nparavirt_ops or paravirtualized operations\n\n\nQBR\nQuarterly Business Review\n\n\nQE\nQuality Engineering\n\n\nQEMU\nQuick emulator\n\n\nQM\nQueue Management\n\n\nRBA\nRunbook automation\n\n\nRBAC\nRole-Based Access Control: the ability to control access to a product or service in a fine-grained way, so that people in different groups can access different parts of the service.\n\n\nRED\nRackspace Experience Design\n\n\nRGB\nRack Gives Back. Rackers get time off work to participate in community and charitable activities.\n\n\nRBAC\nRole-based access control\n\n\nRMS\nRackspace Managed Security\n\n\nRPC\nRackspace Private Cloud\n\n\nRRR\nRacker Rally Room\n\n\nRTS\nRackspace Technical Services\n\n\nRU\nRackspace University\n\n\nSA3\nSuperAdmin3\n\n\nSaaS\nSoftware as a Service\n\n\nSAN\nStorage Area Network\n\n\nSAT\nRackspace Data Center in San Antonio, named after San Antonio airport.\n\n\nSBD\nSecurity By Design\n\n\nSCIM\nSingle Customer Incident Management\n\n\nSDA\nService Delivery Associate\n\n\nSDD\nSolutions Design Document\n\n\nSDM\nService Delivery Manager (also see Account Manager)\n\n\nSDP\nService Delivery Plan\n\n\nSE\nSolutions Engineer\n\n\nSFDC\nSalesforce\n\n\nSegment\nA name given to a grouping of like Support Teams.\n\n\nSLA\nService Level Agreement\n\n\nSLT\nSenior Leadership Team\n\n\nSMP\nService Management Plan\n\n\nSMR\nService Management Report\n\n\nSSE\nSenior Support Engineer\n\n\nSSL\nSecure Socket Layer. This refers to a technology and team at Rackspace that have nothing to do with maintaining Segment to Team relationships. There is a common mi-understanding that SSL stands for Support Service Layer and carries out the function of ESS.\n\n\nSSO\nSingle Sign On\n\n\nSOA\nService-oriented architecture\n\n\nSOAP\nSimple Object Access Protocol\n\n\nSLA\nService Level Agreement\n\n\nSLT\nSenior Leadership Team\n\n\nSME\nSubject Matter Expert. A Racker that is recognised as knowledgeable in their field.\n\n\nSSL\nSecure Socket Layer. This refers to a technology and team at Rackspace and IS NOT the system that maintains segment hierarchies. See ESS for information on this.\n\n\nSupport Team\nA grouping of SDMs with a CCM managing the team. Like accounts are placed with a Support Team who manage the relationship between the accounts and Rackspace. Current examples of support Teams are EM1, Cirrus TRN1.\n\n\nSYD\nData Center in Sydney, Australia\n\n\nSystem Churn\nSee Churn Pipeline.\n\n\nTAM\nTechnical Account Manager\n\n\nTCV\nTotal Contract Value\n\n\nTPM\nTechnical Product Manager\n\n\nTSR\nTechnical Service Review\n\n\nUX\nUser Experience\n\n\nVC\nVideo Conference\n\n\nWAF\nWeb Application Firewall\n\n\nXAPI\nXen Management API"
+    "text": "Example about page"
   },
   {
     "objectID": "bi-infrastructure.html",
