@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Daniel Amieva Rodriguez">
-<meta name="dcterms.date" content="2024-04-16">
+<meta name="dcterms.date" content="2024-04-23">
 
 <title>The Quarto Advantage</title>
 <style>
@@ -70,6 +70,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="quarto_advantage_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="quarto_advantage_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="dark">
 <style>html{ scroll-behavior: smooth; }</style>
+<script src="quarto_advantage_files/libs/quarto-diagram/mermaid.min.js"></script>
+<script src="quarto_advantage_files/libs/quarto-diagram/mermaid-init.js"></script>
+<link href="quarto_advantage_files/libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
 </head>
@@ -82,36 +85,25 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#quarto" id="toc-quarto" class="nav-link active" data-scroll-target="#quarto">Quarto</a>
-  <ul class="collapse">
+  <li><a href="#index" id="toc-index" class="nav-link active" data-scroll-target="#index">Index</a></li>
+  <li><a href="#what-is-quarto" id="toc-what-is-quarto" class="nav-link" data-scroll-target="#what-is-quarto">What is Quarto?</a></li>
+  <li><a href="#tldr" id="toc-tldr" class="nav-link" data-scroll-target="#tldr">TLDR</a></li>
   <li><a href="#running-code" id="toc-running-code" class="nav-link" data-scroll-target="#running-code">Running Code</a></li>
-  </ul></li>
-  <li><a href="#getting-up" id="toc-getting-up" class="nav-link" data-scroll-target="#getting-up">Getting up</a></li>
-  <li><a href="#breakfast" id="toc-breakfast" class="nav-link" data-scroll-target="#breakfast">Breakfast</a></li>
-  <li><a href="#in-the-evening" id="toc-in-the-evening" class="nav-link" data-scroll-target="#in-the-evening">In the evening</a>
-  <ul class="collapse">
-  <li><a href="#dinner" id="toc-dinner" class="nav-link" data-scroll-target="#dinner">Dinner</a></li>
-  <li><a href="#going-to-sleep" id="toc-going-to-sleep" class="nav-link" data-scroll-target="#going-to-sleep">Going to sleep</a></li>
-  <li><a href="#slide-with-speaker-notes" id="toc-slide-with-speaker-notes" class="nav-link" data-scroll-target="#slide-with-speaker-notes">Slide with speaker notes</a></li>
-  <li><a href="#slide-title" id="toc-slide-title" class="nav-link" data-scroll-target="#slide-title">Slide Title</a></li>
-  <li><a href="#slide-code-1" id="toc-slide-code-1" class="nav-link" data-scroll-target="#slide-code-1">Slide Code 1</a></li>
-  <li><a href="#slide-code-2" id="toc-slide-code-2" class="nav-link" data-scroll-target="#slide-code-2">Slide Code 2</a></li>
-  <li><a href="#demo-tabsets" id="toc-demo-tabsets" class="nav-link" data-scroll-target="#demo-tabsets">Demo Tabsets</a></li>
-  <li><a href="#link-previews" id="toc-link-previews" class="nav-link" data-scroll-target="#link-previews">Link previews</a></li>
-  <li><a href="#stack" id="toc-stack" class="nav-link" data-scroll-target="#stack">Stack</a></li>
-  <li><a href="#fit-text" id="toc-fit-text" class="nav-link" data-scroll-target="#fit-text">Fit text</a></li>
-  <li><a href="#animations" id="toc-animations" class="nav-link" data-scroll-target="#animations">Animations</a></li>
-  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"></a></li>
-  <li><a href="#section-1" id="toc-section-1" class="nav-link" data-scroll-target="#section-1"></a></li>
-  <li><a href="#code-animations" id="toc-code-animations" class="nav-link" data-scroll-target="#code-animations">Code animations</a></li>
-  <li><a href="#section-2" id="toc-section-2" class="nav-link" data-scroll-target="#section-2"></a></li>
-  <li><a href="#section-3" id="toc-section-3" class="nav-link" data-scroll-target="#section-3"></a></li>
-  <li><a href="#implicit-animation" id="toc-implicit-animation" class="nav-link" data-scroll-target="#implicit-animation">Implicit Animation</a></li>
-  <li><a href="#section-4" id="toc-section-4" class="nav-link" data-scroll-target="#section-4"></a></li>
-  <li><a href="#section-5" id="toc-section-5" class="nav-link" data-scroll-target="#section-5"></a></li>
-  </ul></li>
+  <li><a href="#setting-up-your-yaml" id="toc-setting-up-your-yaml" class="nav-link" data-scroll-target="#setting-up-your-yaml">Setting up your Yaml</a></li>
+  <li><a href="#setting-up-your-yaml-1" id="toc-setting-up-your-yaml-1" class="nav-link" data-scroll-target="#setting-up-your-yaml-1">Setting up your Yaml</a></li>
+  <li><a href="#explore-the-qmd-benefits" id="toc-explore-the-qmd-benefits" class="nav-link" data-scroll-target="#explore-the-qmd-benefits">Explore the QMD benefits</a></li>
+  <li><a href="#demo-1" id="toc-demo-1" class="nav-link" data-scroll-target="#demo-1">DEMO 1</a></li>
+  <li><a href="#parameterized-reporting" id="toc-parameterized-reporting" class="nav-link" data-scroll-target="#parameterized-reporting">Parameterized Reporting</a></li>
+  <li><a href="#one-cat-many-hats" id="toc-one-cat-many-hats" class="nav-link" data-scroll-target="#one-cat-many-hats">One Cat, many hats</a></li>
+  <li><a href="#demo-2" id="toc-demo-2" class="nav-link" data-scroll-target="#demo-2">DEMO 2</a></li>
+  <li><a href="#happy-documentation" id="toc-happy-documentation" class="nav-link" data-scroll-target="#happy-documentation">Happy Documentation</a></li>
+  <li><a href="#demo-3" id="toc-demo-3" class="nav-link" data-scroll-target="#demo-3">DEMO 3</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
+  <li><a href="#conclusion-1" id="toc-conclusion-1" class="nav-link" data-scroll-target="#conclusion-1">Conclusion</a></li>
+  <li><a href="#qna" id="toc-qna" class="nav-link" data-scroll-target="#qna">QnA</a></li>
+  <li><a href="#further-resources" id="toc-further-resources" class="nav-link" data-scroll-target="#further-resources">Further Resources</a></li>
   </ul>
-<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="presentation-revealjs.html"><i class="bi bi-file-slides"></i>RevealJS</a></li><li><a href="quarto_advantage.pdf"><i class="bi bi-file-pdf"></i>PDF (PrettyPDF)</a></li></ul></div></nav>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="presentation-revealjs.html"><i class="bi bi-file-slides"></i>RevealJS</a></li></ul></div></nav>
 </div>
 <main class="content page-columns page-full" id="quarto-document-content">
 
@@ -135,7 +127,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">April 16, 2024</p>
+      <p class="date">April 23, 2024</p>
     </div>
   </div>
   
@@ -147,191 +139,290 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="quarto" class="level2">
-<h2 class="anchored" data-anchor-id="quarto">Quarto</h2>
-<p>Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <a href="https://quarto.org" class="uri">https://quarto.org</a>.</p>
-<section id="running-code" class="level3">
-<h3 class="anchored" data-anchor-id="running-code">Running Code</h3>
-<p>When you click the <strong>Render</strong> button a document will be generated that includes both content and the output of embedded code. You can embed code like this:</p>
+<section id="index" class="level2" data-auto-animate="true">
+<h2 data-auto-animate="true" class="anchored" data-anchor-id="index">Index</h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<ol type="1">
+<li>What is Quarto?</li>
+<li>Parameterized Reporting</li>
+<li>Happy Documentation</li>
+</ol>
+</div><div class="column" style="width:60%;">
+<p>All resources of this talk @</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/qrcode_repo.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="what-is-quarto" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-quarto">What is Quarto?</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/confused-white-persian-guardian.gif" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+</section>
+<section id="tldr" class="level2" data-auto-animate="true">
+<h2 data-auto-animate="true" class="anchored" data-anchor-id="tldr">TLDR</h2>
+<ul>
+<li>Quarto enables you to weave together content and executable code into a finished document.</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://quarto.org/docs/get-started/hello/images/rstudio-qmd-how-it-works.png" class="img-fluid figure-img"></p>
+<figcaption>(quarto.org)</figcaption>
+</figure>
+</div>
+</section>
+<section id="running-code" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="running-code">Running Code</h2>
+<p><strong>Rendering a with Quarto</strong> allows you to embed code and content like this:</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">+</span> <span class="dv">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 2</code></pre>
 </div>
 </div>
-<p>You can add options to executable code like this</p>
-<div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 4</code></pre>
-</div>
-</div>
-<p>The <code>echo: false</code> option disables the printing of code (only output is displayed).</p>
-</section>
-</section>
-<section id="getting-up" class="level2">
-<h2 class="anchored" data-anchor-id="getting-up">Getting up</h2>
-<ul>
-<li>Turn off alarm</li>
-<li>Get out of bed</li>
-</ul>
-</section>
-<section id="breakfast" class="level2">
-<h2 class="anchored" data-anchor-id="breakfast">Breakfast</h2>
-<ul>
-<li>Eat eggs</li>
-<li>Drink coffee</li>
-</ul>
-</section>
-<section id="in-the-evening" class="level1 page-columns page-full">
-<h1>In the evening</h1>
-<section id="dinner" class="level2">
-<h2 class="anchored" data-anchor-id="dinner">Dinner</h2>
-<ul>
-<li>Eat spaghetti</li>
-<li>Drink wine</li>
-</ul>
-</section>
-<section id="going-to-sleep" class="level2">
-<h2 class="anchored" data-anchor-id="going-to-sleep">Going to sleep</h2>
-<ul>
-<li>Get in bed</li>
-<li>Count sheep</li>
-</ul>
-</section>
-<section id="slide-with-speaker-notes" class="level2">
-<h2 class="anchored" data-anchor-id="slide-with-speaker-notes">Slide with speaker notes</h2>
-<p>Slide content</p>
-<div class="notes">
-<p>Speaker notes go here.</p>
-</div>
-</section>
-<section id="slide-title" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="slide-title">Slide Title</h2>
-<ul>
-<li>Green <a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></li>
-<li>Brown</li>
-<li>Purple</li>
-</ul>
 
 <div class="no-row-height column-margin column-container"><div class="margin-aside">
-<p>Some additional commentary of more peripheral interest.</p>
+<p><a href="https://quarto.org/docs/computations/execution-options.html">Check other execution options</a></p>
 </div></div></section>
-<section id="slide-code-1" class="level2">
-<h2 class="anchored" data-anchor-id="slide-code-1">Slide Code 1</h2>
-<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
-<span id="cb4-2"><a href="#cb4-2"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
-<span id="cb4-3"><a href="#cb4-3"></a></span>
-<span id="cb4-4"><a href="#cb4-4"></a>r <span class="op">=</span> np.arange(<span class="dv">0</span>, <span class="dv">2</span>, <span class="fl">0.01</span>)</span>
-<span id="cb4-5"><a href="#cb4-5"></a>theta <span class="op">=</span> <span class="dv">2</span> <span class="op">*</span> np.pi <span class="op">*</span> r</span>
-<span id="cb4-6"><a href="#cb4-6"></a>fig, ax <span class="op">=</span> plt.subplots(subplot_kw<span class="op">=</span>{<span class="st">'projection'</span>: <span class="st">'polar'</span>})</span>
-<span id="cb4-7"><a href="#cb4-7"></a>ax.plot(theta, r)</span>
-<span id="cb4-8"><a href="#cb4-8"></a>ax.set_rticks([<span class="fl">0.5</span>, <span class="dv">1</span>, <span class="fl">1.5</span>, <span class="dv">2</span>])</span>
-<span id="cb4-9"><a href="#cb4-9"></a>ax.grid(<span class="va">True</span>)</span>
-<span id="cb4-10"><a href="#cb4-10"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="setting-up-your-yaml" class="level2" data-auto-animate="true">
+<h2 data-auto-animate="true" class="anchored" data-anchor-id="setting-up-your-yaml">Setting up your Yaml</h2>
+<div class="sourceCode" id="cb3"><pre class="sourceCode yml code-with-copy"><code class="sourceCode yaml"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"matplotlib demo"</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fu">format</span><span class="kw">:</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">html</span><span class="kw">:</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">code-fold</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="slide-code-2" class="level2">
-<h2 class="anchored" data-anchor-id="slide-code-2">Slide Code 2</h2>
-<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
-<span id="cb5-2"><a href="#cb5-2"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
-<span id="cb5-3"><a href="#cb5-3"></a></span>
-<span id="cb5-4"><a href="#cb5-4"></a>r <span class="op">=</span> np.arange(<span class="dv">0</span>, <span class="dv">2</span>, <span class="fl">0.01</span>)</span>
-<span id="cb5-5"><a href="#cb5-5"></a>theta <span class="op">=</span> <span class="dv">2</span> <span class="op">*</span> np.pi <span class="op">*</span> r</span>
-<span id="cb5-6"><a href="#cb5-6"></a>fig, ax <span class="op">=</span> plt.subplots(subplot_kw<span class="op">=</span>{<span class="st">'projection'</span>: <span class="st">'polar'</span>})</span>
-<span id="cb5-7"><a href="#cb5-7"></a>ax.plot(theta, r)</span>
-<span id="cb5-8"><a href="#cb5-8"></a>ax.set_rticks([<span class="fl">0.5</span>, <span class="dv">1</span>, <span class="fl">1.5</span>, <span class="dv">2</span>])</span>
-<span id="cb5-9"><a href="#cb5-9"></a>ax.grid(<span class="va">True</span>)</span>
-<span id="cb5-10"><a href="#cb5-10"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="setting-up-your-yaml-1" class="level2" data-auto-animate="true">
+<h2 data-auto-animate="true" class="anchored" data-anchor-id="setting-up-your-yaml-1">Setting up your Yaml</h2>
+<div class="sourceCode" id="cb4"><pre class="sourceCode yml code-with-copy"><code class="sourceCode yaml"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"matplotlib demo"</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="fu">format</span><span class="kw">:</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">html</span><span class="kw">:</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">code-fold</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="fu">jupyter</span><span class="kw">:</span><span class="at"> python3</span></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="demo-tabsets" class="level2">
-<h2 class="anchored" data-anchor-id="demo-tabsets">Demo Tabsets</h2>
+<section id="explore-the-qmd-benefits" class="level2">
+<h2 class="anchored" data-anchor-id="explore-the-qmd-benefits">Explore the QMD benefits</h2>
+<div class="cell" data-fig-width="6" data-layout-align="default">
+<div class="cell-output-display">
+<div id="fig-mermaid" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-mermaid-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div>
+<pre class="mermaid mermaid-js" data-label="fig-mermaid">flowchart LR
+  A[qmd] --&gt; B(Knitr)
+  A[qmd] --&gt; C(Jupyter)
+  B(Knitr) --&gt; D[md]
+  C(Jupyter) --&gt; D[md]
+  D[md] --&gt; E(pandoc)
+  E(pandoc) --&gt; F(HTML)
+  E(pandoc) --&gt; G(PDF)
+  E(pandoc) --&gt; H(Word)
+  E(pandoc) --&gt; I{and more}
+</pre>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-mermaid-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: How Quarto orchestrates rendering of documents: start with a qmd file, use the Knitr or Jupyter engine to perform the computations and convert it to an md file, then use Pandoc to convert to various file formats including HTML, PDF, and Word.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="demo-1" class="level2">
+<h2 class="anchored" data-anchor-id="demo-1">DEMO 1</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/hacker-truthfairytales.gif" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+<div class="notes">
+<ul>
+<li>show 1 file multiple outputs (<a href="/introduction">introduction folder</a>)</li>
+</ul>
+</div>
+</section>
+<section id="parameterized-reporting" class="level2">
+<h2 class="anchored" data-anchor-id="parameterized-reporting">Parameterized Reporting</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/fireelmo.gif" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+</section>
+<section id="one-cat-many-hats" class="level2" data-auto-animate="true">
+<h2 data-auto-animate="true" class="anchored" data-anchor-id="one-cat-many-hats">One Cat, many hats</h2>
+<ul>
+<li>Same report, multiple stakeholders</li>
+<li>Same report, updates periodically</li>
+<li>Programmatically build websites</li>
+</ul>
+<div class="columns">
+<div class="column" style="width:25%;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/cat1.jpg." class="fragment img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+</div><div class="column" style="width:25%;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/cat2.jpg." class="fragment img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+</div><div class="column" style="width:25%;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/cat3.jpg." class="fragment img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+</div><div class="column" style="width:25%;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/cat4.jpg." class="fragment img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="notes">
+<p>What are some (Use cases) for parameterized reporting?</p>
+</div>
+</section>
+<section id="demo-2" class="level2">
+<h2 class="anchored" data-anchor-id="demo-2">DEMO 2</h2>
+<iframe src="https://drive.google.com/file/d/1uMz7iQzi06JcuuhYidNjvQDrrjhBPMeg/preview" width="100%" height="100%" allow="autoplay">
+</iframe>
+<div class="notes">
+<p>Here Data Scientist working within the Washing State Department of Agriculture shows us how she managed to create “Custom to every farmer, reports include project goals, measured parameter descriptions, summary statistics, maps, tables, and graphs.”</p>
+<p>See (param reports folder)</p>
+<ul>
+<li>inside file</li>
+<li>using yaml</li>
+<li>simple demo</li>
+<li>invoice demo python (if time allows it)</li>
+</ul>
+</div>
+</section>
+<section id="happy-documentation" class="level2">
+<h2 class="anchored" data-anchor-id="happy-documentation">Happy Documentation</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/github-cat.gif" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">Tab A</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Tab B</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">Navbar Set Up</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Sidebar Set Up</a></li></ul>
 <div class="tab-content">
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
-<p>Content for <code>Tab A</code></p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource yml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb5-1"><a href="#cb5-1"></a><span class="at">  </span><span class="fu">navbar</span><span class="kw">:</span></span>
+<span id="cb5-2"><a href="#cb5-2"></a><span class="at">    </span><span class="fu">logo</span><span class="kw">:</span><span class="at"> </span><span class="st">"images/Rackspace_Technology_Logo_RGB_RED.png"</span></span>
+<span id="cb5-3"><a href="#cb5-3"></a><span class="at">    </span><span class="fu">background</span><span class="kw">:</span><span class="at"> </span><span class="st">"#003482"</span></span>
+<span id="cb5-4"><a href="#cb5-4"></a><span class="at">    </span><span class="fu">left</span><span class="kw">:</span></span>
+<span id="cb5-5"><a href="#cb5-5"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">href</span><span class="kw">:</span><span class="at"> index.qmd</span></span>
+<span id="cb5-6"><a href="#cb5-6"></a><span class="at">        </span><span class="fu">text</span><span class="kw">:</span><span class="at"> Home</span></span>
+<span id="cb5-7"><a href="#cb5-7"></a><span class="at">      </span><span class="kw">-</span><span class="at"> sidebar:Onboarding</span></span>
+<span id="cb5-8"><a href="#cb5-8"></a><span class="at">      </span><span class="kw">-</span><span class="at"> bi-infrastructure.qmd</span></span>
+<span id="cb5-9"><a href="#cb5-9"></a><span class="at">      </span><span class="kw">-</span><span class="at"> about.qmd</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
-<p>Content for <code>Tab B</code></p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode numberSource yml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb6-1"><a href="#cb6-1"></a><span class="at">  </span><span class="fu">sidebar</span><span class="kw">:</span></span>
+<span id="cb6-2"><a href="#cb6-2"></a><span class="at">    </span><span class="kw">-</span><span class="at"> </span><span class="fu">id</span><span class="kw">:</span><span class="at"> Onboarding</span></span>
+<span id="cb6-3"><a href="#cb6-3"></a><span class="at">      </span><span class="fu">alignment</span><span class="kw">:</span><span class="at"> center</span></span>
+<span id="cb6-4"><a href="#cb6-4"></a><span class="at">      </span><span class="fu">tools</span><span class="kw">:</span></span>
+<span id="cb6-5"><a href="#cb6-5"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">icon</span><span class="kw">:</span><span class="at"> google</span></span>
+<span id="cb6-6"><a href="#cb6-6"></a><span class="at">        </span><span class="fu">href</span><span class="kw">:</span><span class="at"> https://google.com</span></span>
+<span id="cb6-7"><a href="#cb6-7"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">icon</span><span class="kw">:</span><span class="at"> github</span></span>
+<span id="cb6-8"><a href="#cb6-8"></a><span class="at">        </span><span class="fu">menu</span><span class="kw">:</span></span>
+<span id="cb6-9"><a href="#cb6-9"></a><span class="at">          </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> Source Code</span></span>
+<span id="cb6-10"><a href="#cb6-10"></a><span class="at">            </span><span class="fu">url</span><span class="kw">:</span><span class="at">  https://code.com</span></span>
+<span id="cb6-11"><a href="#cb6-11"></a><span class="at">          </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> Report a Bug</span></span>
+<span id="cb6-12"><a href="#cb6-12"></a><span class="at">            </span><span class="fu">url</span><span class="kw">:</span><span class="at">  https://bugs.com</span></span>
+<span id="cb6-13"><a href="#cb6-13"></a><span class="at">      </span><span class="fu">border</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
+<span id="cb6-14"><a href="#cb6-14"></a><span class="at">      </span><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Onboarding"</span></span>
+<span id="cb6-15"><a href="#cb6-15"></a><span class="at">      </span><span class="fu">logo</span><span class="kw">:</span><span class="at"> </span><span class="st">"images/Rackspace_Technology_Logo_RGB_WHT.png"</span></span>
+<span id="cb6-16"><a href="#cb6-16"></a><span class="at">      </span><span class="fu">style</span><span class="kw">:</span><span class="at"> </span><span class="st">"docked"</span></span>
+<span id="cb6-17"><a href="#cb6-17"></a><span class="at">      </span><span class="fu">background</span><span class="kw">:</span><span class="at"> </span><span class="st">"#95008A"</span></span>
+<span id="cb6-18"><a href="#cb6-18"></a><span class="at">      </span><span class="fu">collapse-level</span><span class="kw">:</span><span class="at"> </span><span class="dv">2</span></span>
+<span id="cb6-19"><a href="#cb6-19"></a><span class="at">      </span><span class="fu">contents</span><span class="kw">:</span><span class="at"> </span></span>
+<span id="cb6-20"><a href="#cb6-20"></a><span class="at">        </span><span class="kw">-</span><span class="at"> </span><span class="fu">section</span><span class="kw">:</span><span class="at"> </span><span class="st">"First Week @Rackspace"</span></span>
+<span id="cb6-21"><a href="#cb6-21"></a><span class="at">          </span><span class="fu">contents</span><span class="kw">:</span></span>
+<span id="cb6-22"><a href="#cb6-22"></a><span class="at">            </span><span class="kw">-</span><span class="at"> onboarding docs/first_week_onboarding.qmd</span></span>
+<span id="cb6-23"><a href="#cb6-23"></a><span class="at">        </span><span class="kw">-</span><span class="at"> </span><span class="fu">section</span><span class="kw">:</span><span class="at"> </span><span class="st">"Our Best Practices"</span></span>
+<span id="cb6-24"><a href="#cb6-24"></a><span class="at">          </span><span class="fu">contents</span><span class="kw">:</span></span>
+<span id="cb6-25"><a href="#cb6-25"></a><span class="at">            </span><span class="kw">-</span><span class="at"> onboarding docs/bi_sql_development_standards.qmd</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </div>
 </section>
-<section id="link-previews" class="level2">
-<h2 class="anchored" data-anchor-id="link-previews">Link previews</h2>
-<p><a href="https://example.com" data-preview-link="true">Preview</a></p>
-<p><a href="https://example.com" data-preview-link="false">NoPreview</a></p>
-</section>
-<section id="stack" class="level2">
-<h2 class="anchored" data-anchor-id="stack">Stack</h2>
-<div class="r-stack">
-<p><img src="images/notpenguins.jpg" class="fragment" width="450" height="300"></p>
-<p><img src="images/r-Icon-White-Square.png" class="fragment" width="300" height="450"></p>
-<p><img src="images/Rackspace_Technology_Logo_RGB_RED.png" class="fragment" width="400" height="400"></p>
+<section id="demo-3" class="level2">
+<h2 class="anchored" data-anchor-id="demo-3">DEMO 3</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/github-cat.gif" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+<div class="notes">
+<p>See (easy documentation folder)</p>
+<ul>
+<li><code>_quarto.yml</code> file</li>
+<li>sample deployment</li>
+<li>add ‘BI Enterprise Docs Live Demo!’</li>
+</ul>
 </div>
 </section>
-<section id="fit-text" class="level2">
-<h2 class="anchored" data-anchor-id="fit-text">Fit text</h2>
+<section id="conclusion" class="level2" data-auto-animate="true">
+<h2 data-auto-animate="true" class="anchored" data-anchor-id="conclusion">Conclusion</h2>
 <div class="r-fit-text">
-<p>Big Text</p>
+<p>Why not try Quarto? its free 💸</p>
 </div>
 </section>
-<section id="animations" class="level2">
-<h2 class="anchored" data-anchor-id="animations">Animations</h2>
-</section>
-<section id="section" class="level2" data-auto-animate="true">
-<h2 data-auto-animate="true" class="anchored" data-anchor-id="section"></h2>
-<div style="margin-top: 100px;">
-<p>Animating content</p>
+<section id="conclusion-1" class="level2" data-auto-animate="true">
+<h2 data-auto-animate="true" class="anchored" data-anchor-id="conclusion-1">Conclusion</h2>
+<div class="r-fit-text">
+<p>Why not try Quarto? its free 💸</p>
+<p>Time and Technical Debt isnt 🎰</p>
 </div>
 </section>
-<section id="section-1" class="level2" data-auto-animate="true">
-<h2 data-auto-animate="true" class="anchored" data-anchor-id="section-1"></h2>
-<div style="margin-top: 200px; font-size: 3em; color: red;">
-<p>Animating content</p>
+<section id="qna" class="level2">
+<h2 class="anchored" data-anchor-id="qna">QnA</h2>
+<div class="columns">
+<div class="column" style="width:70%;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/notpenguins.jpg" class="quarto-figure quarto-figure-center figure-img" width="650" height="550"></p>
+</figure>
+</div>
+</div><div class="column" style="width:30%;">
+<p>All resources of this talk @</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/qrcode_repo.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+</div>
 </div>
 </section>
-<section id="code-animations" class="level2">
-<h2 class="anchored" data-anchor-id="code-animations">Code animations</h2>
-</section>
-<section id="section-2" class="level2" data-auto-animate="true">
-<h2 data-auto-animate="true" class="anchored" data-anchor-id="section-2"></h2>
-<div class="sourceCode" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Fill in the spot we created for a plot</span></span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>output<span class="sc">$</span>phonePlot <span class="ot">&lt;-</span> <span class="fu">renderPlot</span>({</span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Render a barplot</span></span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>})</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-<section id="section-3" class="level2" data-auto-animate="true">
-<h2 data-auto-animate="true" class="anchored" data-anchor-id="section-3"></h2>
-<div class="sourceCode" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Fill in the spot we created for a plot</span></span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>output<span class="sc">$</span>phonePlot <span class="ot">&lt;-</span> <span class="fu">renderPlot</span>({</span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Render a barplot</span></span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">barplot</span>(WorldPhones[,input<span class="sc">$</span>region]<span class="sc">*</span><span class="dv">1000</span>, </span>
-<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>          <span class="at">main=</span>input<span class="sc">$</span>region,</span>
-<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>          <span class="at">ylab=</span><span class="st">"Number of Telephones"</span>,</span>
-<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>          <span class="at">xlab=</span><span class="st">"Year"</span>)</span>
-<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>})</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-<section id="implicit-animation" class="level2">
-<h2 class="anchored" data-anchor-id="implicit-animation">Implicit Animation</h2>
-</section>
-<section id="section-4" class="level2" data-auto-animate="true">
-<h2 data-auto-animate="true" class="anchored" data-anchor-id="section-4"></h2>
-<p>Animation</p>
-</section>
-<section id="section-5" class="level2" data-auto-animate="true">
-<h2 data-auto-animate="true" class="anchored" data-anchor-id="section-5"></h2>
-<p>Implicit</p>
-<p>Animation</p>
-</section>
+<section id="further-resources" class="level2">
+<h2 class="anchored" data-anchor-id="further-resources">Further Resources</h2>
+<ul>
+<li><a href="https://quarto.org">To learn more about Quarto</a></li>
+<li><a href="https://github.com/mcanouil/awesome-quarto#presentations">Awesome Quarto</a></li>
+<li><a href="https://jadeyryan.com/talks/2023-09-25_posit_parameterized-quarto/">Parameterized Quarto</a></li>
+<li><a href="https://quarto.org/docs/publishing/">Quarto Publishing Basics</a></li>
+</ul>
 </section>
 
-
-<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
-
-<ol>
-<li id="fn1"><p>A footnote<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-</ol>
-</section></div></main>
+</main>
 <!-- /main column -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {

@@ -31,7 +31,6 @@ format:
         smooth-scroll: true
         message: false
         warning: false
-    PrettyPDF-pdf: default
 ---
 
 ## Index {auto-animate=true}
